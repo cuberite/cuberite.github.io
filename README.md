@@ -1,1 +1,1 @@
-This repository defines the web front page for mc-server.org
+This repository defines the web front page for cuberite.org
