@@ -1,141 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Cuberite - A performant C++ Minecraft compatible game server</title>
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/bootstrap-sandstone.min.css">
-  <link rel="stylesheet" href="css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="shortcut icon" href="assets/logo.png">
-</head>
-<body>
-  <center>
-    <div class="container">
-      <img src="assets/logo.png" alt="Cuberite Logo" class="mainlogo"/>
-      <div class="page-header">
-        <h1>Cuberite<br><small>A custom Minecraft compatible game server written in C++. It's a fast, lightweight, and awesome replacement for Vanilla.</small></h1>
-      </div>
-      <h3>Downloads!</h3>
-      <table class="table table-striped table-condensed table-bordered">
-        <tr>
-          <td>
-            64bit
-          </td>
-          <td>
-            <a class="btn btn-success btn-block" href="http://builds.cuberite.org/job/Cuberite%20Linux%20x64%20Master/lastSuccessfulBuild/artifact/Cuberite.tar.gz"><i class="fa fa-linux fa-2x pull-left"></i>Linux 64bit <span class="label label-default">MC 1.8.8</span></a>
-          </td>
-          <td>
-            <a class="btn btn-success btn-block" href="http://builds.cuberite.org/job/Cuberite%20Windows%20x64%20Master/lastSuccessfulBuild/artifact/Install/Cuberite.zip"><i class="fa fa-windows fa-2x pull-left"></i>Windows 64bit <span class="label label-default">MC 1.8.8</span></a>
-          </td>
-          <td>
-            <a class="btn btn-success btn-block" href="https://skydrive.live.com/?mkt=en-US#cid=EAC2A6E3A23C2250&amp;id=EAC2A6E3A23C2250%21109"><i class="fa fa-apple fa-2x pull-left"></i>MacOS 64bit <span class="label label-danger">MC 1.6</span></a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            32bit
-          </td>
-          <td>
-            <a class="btn btn-success btn-block" href="http://builds.cuberite.org/job/Cuberite%20Linux%20x86%20Master/lastSuccessfulBuild/artifact/Cuberite.tar.gz"><i class="fa fa-linux fa-2x pull-left"></i>Linux 32bit <span class="label label-default">MC 1.8.8</span></a>
-          </td>
-          <td>
-            <a class="btn btn-success btn-block" href="http://builds.cuberite.org/job/Cuberite%20Windows%20x86%20Master/lastSuccessfulBuild/artifact/Install/Cuberite.zip"><i class="fa fa-windows fa-2x pull-left"></i>Windows 32bit <span class="label label-default">MC 1.8.8</span></a>
-          </td>
-          <td>
-            <a class="btn btn-danger disabled btn-block" href=""><i class="fa fa-apple fa-2x pull-left"></i><strike>MacOS 32bit</strike></a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            ARMv6<br>
-            (Raspberry PI)
-          </td>
-          <td>
-            <a class="btn btn-success btn-block" href="http://builds.cuberite.org/job/Cuberite%20Linux%20raspi-armhf%20Master/lastSuccessfulBuild/artifact/Cuberite.tar.gz"><i class="fa fa-linux fa-2x pull-left"></i>Linux ARMv6 <span class="label label-default">MC 1.8.8</span></a>
-          </td>
-          <td>
-            <a class="btn btn-danger disabled btn-block" href=""><i class="fa fa-windows fa-2x pull-left"></i><strike>Windows ARMv6</strike></a>
-          </td>
-          <td>
-            <a class="btn btn-danger disabled btn-block" href=""><i class="fa fa-apple fa-2x pull-left"></i><strike>MacOS ARMv6</strike></a>
-          </td>
-        </tr>
-      </table>
-      <img src="https://travis-ci.org/cuberite/cuberite.svg?branch=master" alt="Build Status">
-      <br>
-      <h3>More!</h3>
-      <table class="table">
-        <tr>
-          <td>
-            <div class="panel panel-warning">
-              <div class="panel-heading">
-                <center><b>More information</b></center>
-              </div>
-              <div class="panel-body">
-                <a class="btn btn-warning btn-block" href="http://book.cuberite.org/"><i class="fa fa-book fa-2x pull-left"></i>User's Manual</a><br>
-                <a class="btn btn-warning btn-block" href="http://api-docs.cuberite.org"><i class="fa fa-code fa-2x pull-left"></i>API Documentation</a><br>
-                <a class="btn btn-warning btn-block" href="http://wiki.mc-server.org"><i class="fa fa-magic fa-2x pull-left"></i>Wiki</a><br>
-                <a class="btn btn-warning btn-block" href="http://newsletter.cuberite.org/subscribe.htm"><i class="fa fa-envelope fa-2x pull-left"></i>Newsletter</a>
-              </div>
-            </div>
-            <div class="panel panel-danger">
-              <div class="panel-heading">
-                <center><b>Discuss</b></center>
-              </div>
-              <div class="panel-body">
-                <a class="btn btn-danger btn-block" href="http://forum.mc-server.org"><i class="fa fa-weixin fa-2x pull-left"></i>Forum</a>
-                <p class="bg-warning"><center><b>Or join the IRC:  irc.freenode.net#cuberite</b></center</p>
-              </div>
-            </div>
-          </td>
-          <td>
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <center><b>Get the sourcecode ...</b></center>
-              </div>
-              <div class="panel-body">
-                <a class="btn btn-default btn-block" href="https://github.com/cuberite/cuberite"><i class="fa fa-github fa-3x pull-left"></i>... on Github</a>
-              </div>
-            </div>
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <center><b>Other installation methods</b></center>
-              </div>
-              <div class="panel-body">
-                <a class="btn btn-info btn-block" href="http://doinstall.bearbin.net/install?url=https://github.com/cuberite/cuberite"><i class="fa fa-cloud-upload fa-2x pull-left"></i>Install on DigitalOcean</a><br>
-                <a class="btn btn-primary btn-block" href="http://gamocosm.com"><i class="fa fa-shopping-cart fa-2x pull-left"></i>Rent a server at Gamocosm</a>
-              </div>
-            </div>
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <center><b>Extend</b></center>
-              </div>
-              <div class="panel-body">
-                <a class="btn btn-success btn-block" href="http://forum.mc-server.org/forumdisplay.php?fid=2"><i class="fa fa-plug fa-2x pull-left"></i>Install plugins</a><br>
-              </div>
-            </div>
-          </td>
-        </tr>
-      </table>
-    </div>
-  </center>
-  <script type="text/javascript" src="https://www.fight215.org/count/scripts/count.min.js"></script>
-  	<!-- Piwik -->
-	<script type="text/javascript">
-		var _paq = _paq || [];
-		_paq.push(['trackPageView']);
-		_paq.push(['enableLinkTracking']);
-		(function() {
-			var u="https://analytics.bearbin.net/";
-			_paq.push(['setTrackerUrl', u+'piwik.php']);
-			_paq.push(['setSiteId', 5]);
-			var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
-			g.defer=true; g.async=true; g.src=u+'js/'; s.parentNode.insertBefore(g,s);
-		})();
-	</script>
-	<noscript><p><img src="http://analytics.bearbin.net/piwik.php?idsite=5" style="border:0;" alt="" /></p></noscript>
-</body>
-</html>
+---
+layout: default
+---
+<div id="intro">
+<div id="intro-body">
+<h1>A custom Minecraft compatible game server written in C++</h1>
+<div id="row1">
+<a href="http://builds.cuberite.org/job/Cuberite%20Linux%20x86%20Master/lastSuccessfulBuild/artifact/Cuberite.tar.gz" class="linux">Linux 32-bit</a>
+<a href="http://builds.cuberite.org/job/Cuberite%20Linux%20x64%20Master/lastSuccessfulBuild/artifact/Cuberite.tar.gz" class="linux">Linux 64-bit</a>
+<a href="http://builds.cuberite.org/job/Cuberite%20Linux%20raspi-armhf%20Master/lastSuccessfulBuild/artifact/Cuberite.tar.gz" class="linux">Linux ARMV6</a>
+</div>
+<div id="row2">
+<a href="http://builds.cuberite.org/job/Cuberite%20Windows%20x86%20Master/lastSuccessfulBuild/artifact/Install/Cuberite.zip" class="windows">Windows 32-bit</a>
+<a href="http://builds.cuberite.org/job/Cuberite%20Windows%20x64%20Master/lastSuccessfulBuild/artifact/Install/Cuberite.zip" class="windows">Windows 64-bit</a>
+</div>
+<span id="source">or <a href="http://book.cuberite.org/#1.2">compile Cuberite yourself</a></span>
+</div>
+</div>
+<div id="advantages">
+<div id="advantages-body">
+<div id="leftcolumn">
+<span id="speed"></span>
+<h3>Speed</h3>
+<p>Cuberite is fast and lightweight. Better performance than a vanilla server.</p>
+</div>
+<div id="centercolumn">
+<span id="foss"></span>
+<h3>FOSS</h3>
+<p>Cuberite is free and open source, which means anyone can help making it better.</p>
+</div>
+<div id="rightcolumn">
+<span id="plugins"></span>
+<h3>Plugins</h3>
+<p>Expand your server's functionality with plugins, like Essentials and WorldEdit.</p>
+</div>
+</div>
+</div>
