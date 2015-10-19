@@ -117,23 +117,17 @@ body {
 	display: table;
 	-webkit-tap-highlight-color: rgba(255,255,255,.2);
 	-webkit-transform: translateZ(0);
-	-webkit-backface-visibility: hidden;
-	-webkit-touch-callout: none;
-	-webkit-user-select: none;
-	-khtml-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	line-height: 1;
 }
 ::-moz-selection {
-	background: #fcfcfc;
-	background: rgba(255,255,255,.2);
+	background: #7b7b7b;
+	background: rgba(255,255,255,.04);
 }
 ::selection {
-	background: #fcfcfc;
-	background: rgba(255,255,255,.2);
+	background: #7b7b7b;
+	background: rgba(255,255,255,.04);
 }
 ::-webkit-input-placeholder {
 	color: rgba(0,0,0,0.55);
@@ -350,7 +344,7 @@ a, input, #dropdownmenu label, button {
 	top: -2px;
 	margin-right: 1.1%;
 }
-#row1 a:hover, #row1 a:focus, #row2 a:hover, #row2 a:focus, button:hover, button:focus {
+#row1 a:hover, #row1 a:focus, #row2 a:hover, #row2 a:focus {
 	background-color: rgba(255,255,255,.75);
 	color: #101010;
 }
@@ -541,11 +535,11 @@ a.post-title:hover, a.post-title:focus {
 }
 /* Inputs */
 button {
-	border: 1px solid rgba(255,255,255,0);
-	background-color: rgba(0,0,0,0.45);
-	-moz-border-radius: 3px;
-	-webkit-border-radius: 3px;
-	border-radius: 3px;
+	border: none;
+	background: rgba(0,0,0,0.6);
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
 	padding: 8px 12px 8px 12px;
 	display: inline-block;
 	text-align: left;
@@ -554,18 +548,23 @@ button {
 	color: #fff;
 	font-family: montserratregular,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
+button:hover, button:focus {
+	background: #000;
+	outline: none;
+}
 input {
-	border: 1px solid rgba(255,255,255,0);
+	border: none;
 	font-size: 0.875em;
-	-moz-border-radius: 3px;
-	-webkit-border-radius: 3px;
-	border-radius: 3px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
 	padding: 7px 12px 7px 12px;
-	background: rgba(255,255,255,0.55);
+	background: rgba(255,255,255,0.6);
 	font-family: montserratlight,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 input:focus {
 	background: #fff;
+	outline: none;
 }
 /* Specific rules for smaller screens */
 @media (max-width:1067px){
