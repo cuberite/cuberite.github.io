@@ -1,0 +1,39 @@
+---
+layout: default
+title: Blog
+icon: blog
+---
+<div id="main">
+<div id="main-body">
+<h2 id="{{ page.icon }}">{{ page.title }}</h2>
+{% for post in paginator.posts %}
+<div class="post">
+<a href="{{ post.url }}" class="post-title">{{ post.title }}</a>
+{{ post.content }}
+<div class="postfooter">Written on {{ post.date | date: "%B %e, %Y" }}</div>
+</div>{% endfor %}{% if paginator.total_pages != 1 %}{% if paginator.total_pages < 7 %}
+<div id="pagination">{% if paginator.total_pages >= 10 %}{% if paginator.previous_page %}
+<a href="/blog/">&laquo;&laquo;</a>{% endif %}{% endif %}{% if paginator.previous_page %}{% if paginator.previous_page == 1 %}
+<a href="/blog/">&laquo;</a>{% else %}
+<a href="/blog/page/{{paginator.previous_page}}">&laquo;</a>{% endif %}{% endif %}{% if paginator.page == 1 %}
+<em>1</em>{% else %}
+<a href="/blog/">1</a>{% endif %}{% for count in (2..paginator.total_pages) %}{% if count == paginator.page %}
+<em>{{count}}</em>{% else %}
+<a href="/blog/page/{{count}}">{{count}}</a>{% endif %}{% endfor %}{% if paginator.next_page %}
+<a href="/blog/page/{{paginator.next_page}}">&raquo;</a>{% endif %}{% if paginator.total_pages >= 10 %}{% if paginator.next_page %}
+<a href="/blog/page/{{paginator.total_pages}}">&raquo;&raquo;</a>{% endif %}{% endif %}
+</div>{% else %}{% assign page_start = paginator.page | minus: 2 %}{% assign page_end = paginator.page | plus: 2 %}{% if page_end > paginator.total_pages %}{% assign page_end = paginator.total_pages %}{% assign page_start = paginator.page | minus: 4 %}{% endif %}{% if page_start < 2 %}{% assign page_end = paginator.page | plus: 3 %}{% assign page_start = paginator.page | minus: 1 %}{% endif %}{% if page_start == 0 %}{% assign page_end = paginator.page | plus: 4 %}{% assign page_start = paginator.page %}{% endif %}
+<div class="pagination">{% if paginator.total_pages > 5 %} {% if paginator.previous_page %}
+<a href="/blog/">&laquo;&laquo;</a>{% endif %}{% endif %}{% if paginator.previous_page %}{% if paginator.previous_page == 1 %}
+<a href="/blog/">&laquo;</a>{% else %}
+<a href="/blog/page/{{paginator.previous_page}}">&laquo;</a>{% endif %}{% endif %}{% if page_start == 1 %}{% assign page_end = paginator.page | plus: 4 %}{% assign page_start = 2 %}{% if paginator.page == 1 %}
+<em>1</em>{% else %}
+<a href="/blog/">1</a>{% endif %}{% endif %}{% for count in (page_start..page_end) %}{% if count == paginator.page %}
+<em>{{count}}</em>{% else %}
+<a href="/blog/page/{{count}}">{{count}}</a>{% endif %}{% endfor %}{% if paginator.next_page %}
+<a href="/blog/page/{{paginator.next_page}}">&raquo;</a>{% endif %}{% if paginator.total_pages > 5 %} {% if paginator.next_page %}
+<a href="/blog/page/{{paginator.total_pages}}">&raquo;&raquo;</a>{% endif %}{% endif %}
+</ul>
+</div>{% endif %}{% endif %}
+</div>
+</div>

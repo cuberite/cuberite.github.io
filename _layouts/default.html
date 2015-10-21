@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="A custom Minecraft compatible game server written in C++. It's a fast, lightweight, and awesome replacement for Vanilla.">
+<meta property="og:description" content="A custom Minecraft compatible game server written in C++. It's a fast, lightweight, and awesome replacement for Vanilla." />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://cuberite.org/" />
+<meta property="og:site_name" content="Cuberite" />
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#111010">
+<meta name="apple-mobile-web-app-title" content="Cuberite">
+<meta name="application-name" content="Cuberite">
+<meta name="msapplication-TileColor" content="#111010">
+<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+<meta name="theme-color" content="#111010">
+{% if page.title %}<meta property="og:title" content="{{ page.title }}" />
+<meta property="twitter:title" content="{{ page.title }}" />{% endif %}
+{% feed_meta %}
+<title>{% if page.title %}{{ page.title }} – {% endif %}Cuberite - A custom Minecraft compatible game server written in C++</title>
+<link rel="stylesheet" href="/style.css">
+{% if page.icon %}<style type="text/css">#{{ page.icon }}button{background-color:rgba(0,0,0,.8);}</style>{% endif %}
+</head>
+<body>
+<div id="navigation">
+<div id="logo">
+<a href="/">Cuberite</a>
+</div>
+<div id="links">
+<a href="/">Home</a>
+<a href="/blog/" id="blogbutton">Blog</a>
+<a href="http://forum.mc-server.org">Discuss</a>
+<a href="/support/" id="supportbutton">Support</a>
+<a href="/plugins/" id="pluginbutton">Plugins</a>
+<a href="/contribute/" id="contributebutton">Contribute</a>
+</div>
+<input type="checkbox" id="dropdownbutton"/>
+<div id="dropdownmenu">
+<label for="dropdownbutton"></label>
+<div id="dropdown">
+<a href="/">Home</a>
+<a href="/blog/">Blog</a>
+<a href="http://forum.mc-server.org">Discuss</a>
+<a href="/support/">Support</a>
+<a href="/plugins/">Plugins</a>
+<a href="/contribute/">Contribute</a>
+</div>
+</div>
+</div>
+{{ content }}
+<div id="footer">
+<div id="footer-content">
+<a href="https://gratipay.com/cuberite/">Donate</a>
+<a href="/newsletter/">Newsletter</a>
+<a href="/license/">License</a>
+<span></span>
+<a href="http://api-docs.cuberite.org/">API Docs</a>
+<a href="http://book.cuberite.org/">User Manual</a>
+<a href="http://wiki.mc-server.org/">Wiki</a>
+</div>
+<input type="checkbox" id="fdropdownbutton"/>
+<div id="fdropdownmenu">
+<label for="fdropdownbutton"></label>
+<div id="fdropdown">
+<a href="https://gratipay.com/cuberite/">Donate</a>
+<a href="/newsletter/">Newsletter</a>
+<a href="/license/">License</a>
+<a href="http://api-docs.cuberite.org/">API Docs</a>
+<a href="http://book.cuberite.org/">User Manual</a>
+<a href="http://wiki.mc-server.org/">Wiki</a>
+</div>
+</div>
+<noscript><img src="http://analytics.bearbin.net/piwik.php?idsite=5&amp;rec=1" alt=""/></noscript>
+</div>
+<script type="text/javascript">var _paq = _paq || [];_paq.push(['trackPageView']);_paq.push(['enableLinkTracking']);(function() {var u="https://analytics.bearbin.net/";_paq.push(['setTrackerUrl', u+'piwik.php']);_paq.push(['setSiteId', 5]);var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';g.defer=true; g.async=true; g.src=u+'js/'; s.parentNode.insertBefore(g,s);})();</script>
+</body>
+</html>
