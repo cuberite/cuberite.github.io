@@ -33,7 +33,7 @@
 {% if page.title %}<meta property="og:title" content="{{ page.title }}" />
 <meta property="twitter:title" content="{{ page.title }}" />{% endif %}
 {% feed_meta %}
-<title>{% if page.title %}{{ page.title }} – {% endif %}Cuberite - A custom Minecraft compatible game server written in C++</title>
+<title>{% if page.title %}{{ page.title }} – {% endif %}{% if page.path contains '_posts' %}Blog - {% endif %}Cuberite{% if page.url == "/index.html" %} - A custom Minecraft compatible game server written in C++{% endif %}</title>
 <link rel="stylesheet" href="/style.css">
 {% if page.icon %}<style type="text/css">#{{ page.icon }}button{background-color:rgba(0,0,0,.8);}</style>{% endif %}
 </head>
@@ -67,23 +67,23 @@
 <div id="footer">
 <div id="footer-content">
 <a href="https://gratipay.com/cuberite/">Donate</a>
-<a href="/newsletter/">Newsletter</a>
 <a href="/license/">License</a>
+<a href="/newsletter/">Newsletter</a>
 <span></span>
 <a href="http://api-docs.cuberite.org/">API Docs</a>
+<a href="http://forum.mc-server.org/showthread.php?tid=1596">FAQ</a>
 <a href="http://book.cuberite.org/">User Manual</a>
-<a href="http://wiki.mc-server.org/">Wiki</a>
 </div>
 <input type="checkbox" id="fdropdownbutton"/>
 <div id="fdropdownmenu">
 <label for="fdropdownbutton"></label>
 <div id="fdropdown">
-<a href="https://gratipay.com/cuberite/">Donate</a>
-<a href="/newsletter/">Newsletter</a>
-<a href="/license/">License</a>
 <a href="http://api-docs.cuberite.org/">API Docs</a>
+<a href="https://gratipay.com/cuberite/">Donate</a>
+<a href="http://forum.mc-server.org/showthread.php?tid=1596">FAQ</a>
+<a href="/license/">License</a>
+<a href="/newsletter/">Newsletter</a>
 <a href="http://book.cuberite.org/">User Manual</a>
-<a href="http://wiki.mc-server.org/">Wiki</a>
 </div>
 </div>
 <noscript><img src="http://analytics.bearbin.net/piwik.php?idsite=5&amp;rec=1" alt=""/></noscript>
