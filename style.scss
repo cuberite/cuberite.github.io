@@ -366,6 +366,12 @@ a, input, #dropdownmenu label, button {
 #source a:hover, #source a:focus {
 	color: #fff;
 }
+#source a:first-child {
+	margin-right: 16px;
+}
+#source a:last-child {
+	margin-left: 15px;
+}
 /* Download Buttons */
 #row1 {
 	margin-bottom: 1.3%;
