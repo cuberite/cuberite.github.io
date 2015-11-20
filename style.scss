@@ -366,6 +366,12 @@ a, input, #dropdownmenu label, button {
 #source a:hover, #source a:focus {
 	color: #fff;
 }
+#source a:first-child {
+	margin-right: 16px;
+}
+#source a:last-child {
+	margin-left: 15px;
+}
 /* Download Buttons */
 #row1 {
 	margin-bottom: 1.3%;
@@ -513,6 +519,9 @@ a.post-title:hover, a.post-title:focus {
 	background-color: rgba(0,0,0,.6);
 	text-align: center;
 	padding-bottom: 5px;
+}
+#footer-content {
+	margin-left: 27px;
 }
 #footer-content a {
 	font-size: 0.875em;
