@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'Cuberite Meetup'
+forumLink: 'http://forum.mc-server.org/showthread.php?tid=2338'
 ---
 Hello everyone! To celebrate 1000 stars on GitHub, we're arranging a meetup at a [hackerspace](https://en.wikipedia.org/wiki/Hackerspace) in Germany. At the meetup, you will meet other members of the Cuberite community, learn how to write plugins, contribute to discussions about Cuberite's development, implement new features in Cuberite and more. There is an  [agenda](https://github.com/cuberite/MeetupAgenda2016) of things to do, but it isn't final yet. Feel free to suggest something you want to do.
 
