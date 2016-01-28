@@ -6,12 +6,11 @@ icon: news
 <div id="main">
 <div id="main-body">
 <h2 id="{{ page.icon }}">{{ page.title }}</h2>
-{% for post in site.posts %}
-<div class="post">
-<a href="{{ post.url }}" class="post-title">{{ post.title }}</a>
-<div class="post-footer">Written on {{ post.date | date: "%B %e, %Y" }}</div>
-</div>{% endfor %}
-<form id="newsletter" action="https://newsletter.cuberite.org/subscribe.php" method="POST">
+{% for post in site.posts %}<div class="post">
+<a href="{{ post.url }}">{{ post.title }}</a>
+<span>{{ post.date | date: "%B %e, %Y" }}</span>
+</div>
+{% endfor %}<form id="newsletter" action="https://newsletter.cuberite.org/subscribe.php" method="POST">
 <input type="email" name="email" placeholder="email@example.com">
 <button type="submit">Subscribe</button>
 </form>

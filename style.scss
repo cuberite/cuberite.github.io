@@ -233,22 +233,19 @@ a:hover, a:focus {
 #support:before {
 	content: "\3f";
 }
-#source {
-	display: block;
+#main-footer {
+	color: rgba(255,255,255,.7);
 	font-size: 0.875em;
-	margin: 1.875em 0 0 0;
+	padding: 0.375em 0 0 0;
 }
-#source a {
+#main-footer a {
+	color: rgba(255,255,255,.5);
+}
+#main-footer a:hover, #main-footer a:focus {
 	color: rgba(255,255,255,.7);
 }
-#source a:hover, #source a:focus {
-	color: #fff;
-}
-#source a:first-child {
-	margin: 0 0.750em 0 0;
-}
-#source a:last-child {
-	margin: 0 0 0 0.750em;
+#main-footer span, #download-footer span {
+	margin: 0 0.750em 0 0.750em;
 }
 /* Download Buttons */
 .downloadbutton {
@@ -324,6 +321,17 @@ a:hover, a:focus {
 #downloadbutton-linux:hover #downloadmenu-linux, #downloadbutton-windows:hover #downloadmenu-windows, #downloadbutton-freebsd:hover #downloadmenu-freebsd, #downloadbutton-osx:hover #downloadmenu-osx {
 	display: block;
 }
+#download-footer {
+	display: block;
+	font-size: 0.875em;
+	margin: 1.875em 0 0 0;
+}
+#download-footer a {
+	color: rgba(255,255,255,.7);
+}
+#download-footer a:hover, #download-footer a:focus {
+	color: #fff;
+}
 /* Information Banner */
 #banner {
 	background: rgba(49,162,0,.15);
@@ -374,30 +382,24 @@ a:hover, a:focus {
 .post {
 	padding: 0 0 1.938em 0;
 }
-.post a {
-	color: rgba(255,255,255,.6);
-}
-.post a:hover, .post a:focus {
-	color: rgba(255,255,255,.8);
-}
-.post-title {
-	font-size: 1.125em;
-	text-transform: uppercase;
-}
 .post:first-of-type {
 	padding: 0.438em 0 1.938em 0;
 }
 .post:last-of-type {
 	padding: 0 0 1.875em 0;
 }
-.post-footer {
-	color: rgba(255,255,255,.7);
-	font-size: 0.875em;
-	padding: 0.375em 0 0 0;
+.post a {
+	color: rgba(255,255,255,.6);
+	font-size: 1.125em;
+	text-transform: uppercase;
 }
-.post .post-footer {
-	color: #fff;
+.post a:hover, .post a:focus {
+	color: rgba(255,255,255,.8);
+}
+.post span {
+	display: block;
 	font-family: montserratlight,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 0.875em;
 	padding: 0.688em 0 0 0;
 }
 /* Footer */

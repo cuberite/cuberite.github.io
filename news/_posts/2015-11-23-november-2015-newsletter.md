@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'November 2015 Newsletter'
+discuss: 'http://forum.mc-server.org/showthread.php?tid=2335'
 ---
 Hi everyone! It's been a while since the last newsletter went out, but I've finally got around to writing another one. In the future, newsletters will probably number 2 or fewer per month, plus important update and security announcements. Introduction, explanation.
 
