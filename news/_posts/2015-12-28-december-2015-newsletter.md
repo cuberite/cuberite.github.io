@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'December 2015 Newsletter'
+forumLink: 'http://forum.mc-server.org/showthread.php?tid=2337'
 ---
 Hi everyone! This is the December 2015 edition of the Cuberite newsletter.
 
