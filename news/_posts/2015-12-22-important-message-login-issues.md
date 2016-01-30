@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Important Message: Login Issues'
-discuss: 'http://forum.mc-server.org/showthread.php?tid=2336'
+discuss: 'http://forum.cuberite.org/showthread.php?tid=2336'
 ---
 It has come to our attention that Mojang has changed the certificate on the session servers. This means that players will not have been able to log in to your servers.
 
