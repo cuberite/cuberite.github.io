@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'January 2016 Newsletter'
+discuss: 'https://forum.cuberite.org/showthread.php?tid=2356'
 ---
 Hi folks! This is the January 2016 edition of the Cuberite newsletter.
 
