@@ -142,7 +142,7 @@ a:hover, a:focus {
 	display: table-row;
 	height: 0;
 }
-#logo a:before, #mobilemenu-navigation label:before, .downloadbutton:before, #speed, #foss, #plugins, #contribute:before, #license:before, #news:before, #notfound:before, #plugin:before, #privacy:before, #support:before, #mobilemenu-footer label:before {
+#logo a:before, #mobilemenu-navigation label:before, .downloadbutton:before, #speed, #foss, #plugin, #contribute:before, #license:before, #news:before, #not-found:before, #plugins:before, #privacy:before, #support:before, #mobilemenu-footer label:before {
 	font-family: 'icons';
 }
 /* Navigation Bar */
@@ -208,7 +208,7 @@ a:hover, a:focus {
 #intro input {
 	display: none;
 }
-#contribute:before, #license:before, #news:before, #notfound:before, #plugin:before, #privacy:before, #support:before {
+#contribute:before, #license:before, #news:before, #not-found:before, #plugins:before, #privacy:before, #support:before {
 	margin: 0 0.563em 0 0;
 	vertical-align: top;
 }
@@ -221,10 +221,10 @@ a:hover, a:focus {
 #news:before {
 	content: "\1f56b";
 }
-#notfound:before {
+#not-found:before {
 	content: "\26a0";
 }
-#plugin:before {
+#plugins:before {
 	content: '\1f50c';
 }
 #privacy:before {
@@ -342,7 +342,7 @@ a:hover, a:focus {
 	text-align: center;
 	padding: 0.750em;
 }
-/* Advantages-box */
+/* Advantages Box */
 #advantages {
 	background: rgba(0,0,0,.3);
 	width: 100%;
@@ -355,7 +355,7 @@ a:hover, a:focus {
 #advantages-body h3 {
 	margin: 1.250em 0 0.938em 0;
 }
-#speed:before, #foss:before, #plugins:before {
+#speed:before, #foss:before, #plugin:before {
 	font-size: 5.000em;
 }
 #speed:before {
@@ -366,7 +366,7 @@ a:hover, a:focus {
 	content: '\26d8';
 	color: #9E3A3A;
 }
-#plugins:before {
+#plugin:before {
 	content: '\1f50c';
 	color: #51A838;
 }
@@ -491,7 +491,7 @@ input:focus {
 	html { font-size: 92%; }
 }
 @media (max-width: 800px) {
-	/* Advantages */
+	/* Advantages Box */
 	#leftcolumn, #centercolumn, #rightcolumn {
 		display: block;
 		width: 100%;
