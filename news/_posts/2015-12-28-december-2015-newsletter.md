@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'December 2015 Newsletter'
-discuss: 'https://forum.cuberite.org/showthread.php?tid=2337'
+discuss: 'https://forum.cuberite.org/thread-2337.html'
 ---
 Hi everyone! This is the December 2015 edition of the Cuberite newsletter.
 
