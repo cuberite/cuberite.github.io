@@ -1,4 +1,4 @@
-permalink: /news/:title/
+permalink: /:categories/:title/
 sass:
   style: :compressed
 gems:
