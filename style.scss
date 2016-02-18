@@ -142,7 +142,7 @@ a:hover, a:focus {
 	display: table-row;
 	height: 0;
 }
-#logo a:before, #mobilemenu-navigation label:before, .downloadbutton:before, #speed, #foss, #plugin, #contribute:before, #license:before, #news:before, #not-found:before, #plugins:before, #privacy:before, #support:before, #mobilemenu-footer label:before {
+#logo a:before, #mobilemenu-navigation label:before, .downloadbutton:before, #speed, #foss, #plugin, #contribute:before, #license:before, #news:before, #not-found:before, #plugins:before, #privacy:before, #support:before, #previous:before, #next:before, #mobilemenu-footer label:before {
 	font-family: 'icons';
 }
 /* Navigation Bar */
@@ -401,6 +401,41 @@ a:hover, a:focus {
 	font-family: montserratlight,"Helvetica Neue",Helvetica,Arial,sans-serif;
 	font-size: 0.875em;
 	padding: 0.688em 0 0 0;
+}
+#pagination {
+	font-size: 0.813em;
+	margin: 2.188em 0 0 0;
+}
+#pagination a, #pagination span {
+	background: rgba(0,0,0,0.6);
+	display: inline-block;
+	padding: 0.875em 0.875em 0.813em 0.875em;
+	-moz-border-radius: 0.125em;
+	-webkit-border-radius: 0.125em;
+	-o-border-radius: 0.125em;
+	border-radius: 0.125em
+}
+#pagination a {
+	color: #fff;
+}
+#pagination a:hover, #pagination a:focus {
+	background: #000;
+}
+#pagination span {
+	color: rgba(255,255,255,0.6);
+	cursor: default;
+}
+#previous {
+	margin: 0 0.063em 0 0;
+}
+#next {
+	margin: 0 0 0 0.063em;
+}
+#previous:before {
+	content: '\ab';
+}
+#next:before {
+	content: '\bb';
 }
 /* Footer */
 #footer {
