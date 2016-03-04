@@ -13,8 +13,8 @@
    viewBox="0 0 1716.3687 337.00039"
    preserveAspectRatio="xMidYMid meet"
    id="svg3444"
-   inkscape:version="0.48.4 r9939"
-   sodipodi:docname="logo_gray.svg">
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="logo_white.svg">
   <defs
      id="defs3448" />
   <sodipodi:namedview
@@ -27,12 +27,12 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:window-width="1366"
-     inkscape:window-height="713"
+     inkscape:window-height="712"
      id="namedview3446"
      showgrid="false"
      inkscape:zoom="0.79311236"
-     inkscape:cx="329.00725"
-     inkscape:cy="209.45233"
+     inkscape:cx="149.33536"
+     inkscape:cy="199.36549"
      inkscape:window-x="0"
      inkscape:window-y="30"
      inkscape:window-maximized="1"
@@ -54,19 +54,42 @@ Created by potrace 1.12, written by Peter Selinger 2001-2015
   </cc:Work>
 </rdf:RDF>
 </metadata>
-  <text
-     xml:space="preserve"
-     style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:-6.27199984000000033px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Montserrat;-inkscape-font-specification:Montserrat"
-     x="453.26691"
-     y="259.25455"
-     id="text3320"
-     sodipodi:linespacing="125%"><tspan
-       sodipodi:role="line"
-       id="tspan3322"
-       x="453.26691"
-       y="259.25455"
-       style="font-size:264px;font-weight:bold;text-align:start;letter-spacing:-6.27199984000000033px;text-anchor:start;fill:#ffffff;fill-opacity:1;font-family:Montserrat;-inkscape-font-specification:Montserrat Bold"
-       dx="-37.079975">CUBERITE</tspan></text>
+  <g
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32px;line-height:125%;font-family:Montserrat;-inkscape-font-specification:Montserrat;letter-spacing:-6.27199984px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none"
+     id="text3320">
+    <path
+       d="m 523.63493,222.82255 q 30.36,0 49.632,-24.024 l 26.4,27.192 q -31.416,35.376 -74.184,35.376 -42.504,0 -70.224,-26.928 -27.456,-26.928 -27.456,-67.848 0,-41.184 27.984,-68.640003 28.248,-27.456 68.904,-27.456 45.408,0 76.032,34.584003 l -25.608,29.04 q -19.536,-24.288 -48.576,-24.288 -23.232,0 -39.864,15.312 -16.368,15.048 -16.368,40.92 0,25.608 15.576,41.184 15.576,15.576 37.752,15.576 z"
+       style="font-weight:bold;font-size:264px;font-family:Montserrat;-inkscape-font-specification:'Montserrat Bold';text-align:start;letter-spacing:-6.27199984px;text-anchor:start;fill:#ffffff;fill-opacity:1"
+       id="path4815" />
+    <path
+       d="m 674.81831,211.73455 q 10.296,12.672 27.72,12.672 17.424,0 27.456,-12.672 10.296,-12.936 10.296,-35.112 l 0,-101.904003 41.184,0 0,103.224003 q 0,40.128 -22.176,61.776 -22.176,21.384 -56.76,21.384 -34.584,0 -57.024,-21.648 -22.176,-21.648 -22.176,-61.512 l 0,-103.224003 41.184,0 0,101.904003 q 0,22.176 10.296,35.112 z"
+       style="font-weight:bold;font-size:264px;font-family:Montserrat;-inkscape-font-specification:'Montserrat Bold';text-align:start;letter-spacing:-6.27199984px;text-anchor:start;fill:#ffffff;fill-opacity:1"
+       id="path4817" />
+    <path
+       d="m 899.00594,259.25455 -80.784,0 0,-184.536003 71.808,0 q 18.744,0 32.208,4.488 13.728,4.488 20.592,12.144 12.408,14.256003 12.408,32.208003 0,21.648 -13.992,32.208 -4.752,3.696 -6.6,4.752 -1.848,0.792 -6.6,2.904 17.16,3.696 27.192,15.576 10.296,11.616 10.296,29.04 0,19.272 -13.2,34.056 -15.312,17.16 -53.328,17.16 z m -39.6,-109.824 19.536,0 q 17.16,0 25.344,-3.696 8.448,-3.696 8.448,-15.84 0,-12.408 -7.656,-16.368 -7.656,-3.96 -25.872,-3.96 l -19.8,0 0,39.864 z m 0,74.976 28.248,0 q 17.688,0 26.4,-4.224 8.976,-4.488 8.976,-17.16 0,-12.936 -9.504,-16.896 -9.24,-4.224 -29.832,-4.224 l -24.288,0 0,42.504 z"
+       style="font-weight:bold;font-size:264px;font-family:Montserrat;-inkscape-font-specification:'Montserrat Bold';text-align:start;letter-spacing:-6.27199984px;text-anchor:start;fill:#ffffff;fill-opacity:1"
+       id="path4819" />
+    <path
+       d="m 1127.0215,74.718547 0,36.696003 -91.872,0 0,38.016 82.632,0 0,35.112 -82.632,0 0,38.28 94.776,0 0,36.432 -135.95996,0 0,-184.536003 133.05596,0 z"
+       style="font-weight:bold;font-size:264px;font-family:Montserrat;-inkscape-font-specification:'Montserrat Bold';text-align:start;letter-spacing:-6.27199984px;text-anchor:start;fill:#ffffff;fill-opacity:1"
+       id="path4821" />
+    <path
+       d="m 1310.1159,135.96655 q 0,44.352 -35.112,57.288 l 46.728,66 -50.688,0 -40.92,-58.872 -28.512,0 0,58.872 -41.184,0 0,-184.536003 69.96,0 q 43.032,0 61.248,14.52 18.48,14.520003 18.48,46.728003 z m -78.408,28.776 q 21.12,0 28.776,-6.864 7.656,-6.864 7.656,-21.648 0,-15.048 -7.92,-20.592 -7.92,-5.544 -27.72,-5.544 l -30.888,0 0,54.648 30.096,0 z"
+       style="font-weight:bold;font-size:264px;font-family:Montserrat;-inkscape-font-specification:'Montserrat Bold';text-align:start;letter-spacing:-6.27199984px;text-anchor:start;fill:#ffffff;fill-opacity:1"
+       id="path4823" />
+    <path
+       d="m 1345.9684,74.718547 41.184,0 0,184.536003 -41.184,0 0,-184.536003 z"
+       style="font-weight:bold;font-size:264px;font-family:Montserrat;-inkscape-font-specification:'Montserrat Bold';text-align:start;letter-spacing:-6.27199984px;text-anchor:start;fill:#ffffff;fill-opacity:1"
+       id="path4825" />
+    <path
+       d="m 1504.4654,110.35855 0,148.896 -41.184,0 0,-148.896 -52.272,0 0,-35.640003 145.728,0 0,35.640003 -52.272,0 z"
+       style="font-weight:bold;font-size:264px;font-family:Montserrat;-inkscape-font-specification:'Montserrat Bold';text-align:start;letter-spacing:-6.27199984px;text-anchor:start;fill:#ffffff;fill-opacity:1"
+       id="path4827" />
+    <path
+       d="m 1713.4648,74.718547 0,36.696003 -91.872,0 0,38.016 82.632,0 0,35.112 -82.632,0 0,38.28 94.776,0 0,36.432 -135.96,0 0,-184.536003 133.056,0 z"
+       style="font-weight:bold;font-size:264px;font-family:Montserrat;-inkscape-font-specification:'Montserrat Bold';text-align:start;letter-spacing:-6.27199984px;text-anchor:start;fill:#ffffff;fill-opacity:1"
+       id="path4829" />
+  </g>
   <g
      id="g3410"
      transform="matrix(0.1,0,0,-0.1,-75.651346,332.96565)"
