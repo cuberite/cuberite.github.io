@@ -396,10 +396,10 @@ a:hover, a:focus {
 	background: rgba(0,0,0,0.6);
 	display: inline-block;
 	padding: 0.875em 0.875em 0.813em 0.875em;
-	-moz-border-radius: 0.125em;
-	-webkit-border-radius: 0.125em;
-	-o-border-radius: 0.125em;
-	border-radius: 0.125em
+	-moz-border-radius: 0.188em;
+	-webkit-border-radius: 0.188em;
+	-o-border-radius: 0.188em;
+	border-radius: 0.188em;
 }
 #pagination a {
 	color: #fff;
@@ -468,32 +468,36 @@ a:hover, a:focus {
 	content: '\25b6';
 }
 /* Inputs */
-button {
-	background: rgba(0,0,0,.6);
-	color: #fff;
+button, input {
 	font-size: 0.875em;
-	padding: 0.688em;
-	cursor: pointer;
-	-moz-border-radius: 0.125em;
-	-webkit-border-radius: 0.125em;
-	-o-border-radius: 0.125em;
-	border-radius: 0.125em;
+	height: 2.500em;
+	line-height: 2.500em;
+	padding: 0 0.750em 0 0.750em;
+	vertical-align: top;
+	-moz-border-radius: 0.188em;
+	-webkit-border-radius: 0.188em;
+	-o-border-radius: 0.188em;
+	border-radius: 0.188em;
 }
-button:hover, button:focus {
-	background: #000;
+input::-moz-focus-inner, button::-moz-focus-inner { 
+	border: 0;
+	padding: 0;
 }
 input {
 	background: rgba(255,255,255,.6);
 	font-family: montserratlight,"Helvetica Neue",Helvetica,Arial,sans-serif;
-	font-size: 0.875em;
-	padding: 0.688em;
-	-moz-border-radius: 0.125em;
-	-webkit-border-radius: 0.125em;
-	-o-border-radius: 0.125em;
-	border-radius: 0.125em;
+	width: 14.375em;
 }
 input:focus {
 	background: #fff;
+}
+button {
+	background: rgba(0,0,0,.6);
+	color: #fff;
+	cursor: pointer;
+}
+button:hover, button:focus {
+	background: #000;
 }
 /* Responsive Design */
 @media (min-width: 0px) {
