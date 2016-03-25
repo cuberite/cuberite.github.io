@@ -63,7 +63,7 @@
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: top;
+	vertical-align: baseline;
 }
 html, body {
 	width: 100%;
@@ -150,7 +150,7 @@ a:hover, a:focus {
 	font-family: 'icons';
 }
 #navigation a:hover, #navigation a:focus, #footer a:hover, #footer a:focus, #active {
-	background: rgba(0,0,0,.8);
+	background: rgba(0,0,0,.5);
 }
 /* Navigation Bar */
 #navigation {
@@ -158,32 +158,30 @@ a:hover, a:focus {
 	display: table-row;
 	line-height: 0;
 }
-#logo {
-	float: left;
-}
 #logo a {
 	color: #fff;
+	float: left;
 	font-size: 1.500em;
 	text-transform: uppercase;
-	display: inline-block;
 	padding: 1.313em 1em 1.313em 1em;
 	margin: 0 0 0 0.625em;
 }
 #logo a:before {
 	content: '\25a0';
 	font-size: 1.125em;
-	margin-right: 0.500em;
+	margin: 0 0.500em 0 0;
 	vertical-align: top;
 }
 #navigation-links {
-	font-size: 0.875em;
 	float: right;
-	margin: 0 1.000em 0 0;
+	margin: 0 0.750em 0 0;
 }
 #navigation-links a {
 	color: #fff;
-	display: inline-block;
+	float: left;
+	font-size: 0.875em;
 	padding: 2.250em 2.000em 2.250em 2.000em;
+	margin: 0 0.188em 0 0.188em;
 }
 /* Intro and Main */
 #intro, #main {
@@ -433,27 +431,29 @@ a:hover, a:focus {
 }
 #footer a {
 	color: #fff;
-	display: inline-block;
 }
 #footer-links {
-	float: left;
-	margin: 0 0 0 1.000em;
+	margin: 0 0 0 0.813em;
 }
 #footer-links a {
+	float: left;
 	font-size: 0.875em;
 	padding: 1.875em;
+	margin: 0 0.188em 0 0.188em;
 }
 #social {
 	float: right;
-	margin: 0 1.000em 0 0;
+	margin: 0 0.813em 0 0;
 }
 #social a {
-	font-size: 1.188em;
-	padding: 1.313em;
+	float: left;
+	font-size: 1.250em;
+	padding: 1.250em 1.188em 1.313em 1.188em;
+	margin: 0 0.188em 0 0.188em;
 }
 #social a#google {
-	font-size: 1.563em;
-	padding: 1.000em;
+	font-size: 1.688em;
+	padding: 0.938em 0.750em 0.938em 0.750em;
 }
 #google:before {
 	content: '\47';
@@ -547,7 +547,7 @@ input:focus {
 		margin: 0;
 	}
 	#navigation-links label, #footer-links label {
-		font-size: 1.500em;
+		font-size: 1.313em;
 		cursor: pointer;
 	}
 	#navigation-links label {
@@ -559,7 +559,7 @@ input:focus {
 	}
 	#footer-links label {
 		float: right;
-		padding: 1.000em;
+		padding: 1.188em 1.000em 1.250em 1.000em;
 	}
 	#footer-links label:before {
 		content: '\2026';
@@ -574,7 +574,7 @@ input:focus {
 		width: 100%;
 	}
 	#navigation-links-body {
-		top: 4.438em;
+		top: 3.938em;
 	}
 	#footer-links-body {
 		bottom: 0;
@@ -588,13 +588,17 @@ input:focus {
 	}
 	#navigation-links-body a, #footer-links-body a {
 		display: block;
-		padding: 2.000em 1.750em 2.000em 1.750em;
+		float: none;
+		padding: 2.000em 1.625em 2.000em 1.625em;
 	}
 	#navigation-links-body a:hover, #navigation-links-body a:focus, #footer-links-body a:hover, #footer-links-body a:focus {
 		background: #000;
 	}
 	#social {
-		float: none;
+		float: left;
+	}
+	#social a:first-child {
+		margin: 0 0.188em 0 0;
 	}
 	/* Download Buttons */
 	.downloadbutton {
