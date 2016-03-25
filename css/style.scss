@@ -63,7 +63,7 @@
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;
+	vertical-align: top;
 }
 html, body {
 	width: 100%;
@@ -450,7 +450,6 @@ a:hover, a:focus {
 #social a {
 	font-size: 1.188em;
 	padding: 1.313em;
-	vertical-align: middle;
 }
 #social a#google {
 	font-size: 1.563em;
