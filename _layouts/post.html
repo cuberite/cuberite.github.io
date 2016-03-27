@@ -3,7 +3,7 @@ layout: default
 ---
 <div id="main">
 <div id="main-body">
-<h2 id="news">{{ page.title }}</h2>
+<h2 class="news">{{ page.title }}</h2>
 {{ content }}<div id="main-footer">
 {{ page.date | date: "%B %e, %Y" }}{% if page.discuss %}<span>&bull;</span><a href="{{ page.discuss }}">Discuss this post</a>{% endif %}
 </div>
