@@ -96,8 +96,7 @@ h3 {
 	font-size: 1.125em;
 	margin: 1.125em 0 0.625em 0;
 }
-p {
-	font-family: montserratlight,"Helvetica Neue",Helvetica,Arial,sans-serif;
+p, ul {
 	line-height: 1.6em;
 	margin: 0 0 0.938em 0;
 }
@@ -109,6 +108,9 @@ a:hover, a:focus {
 	color: rgba(255,255,255,.6);
 }
 /* Combined Rules */
+p, #banner, .post span, input {
+	font-family: montserratlight,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
 #navigation input, #intro input, #footer input, #footer img {
 	display: none;
 }
@@ -289,13 +291,12 @@ a:hover, a:focus {
 }
 /* Information Banner */
 #banner {
-	background: rgba(49,162,0,.15);
+	background: rgba(49,162,0,.12);
 	color: rgba(255,255,255,.75);
-	font-family: montserratlight,"Helvetica Neue",Helvetica,Arial,sans-serif;
 	font-size: 0.938em;
-	line-height: 1.6;
-	text-align: center;
+	line-height: 1.6em;
 	padding: 0.750em;
+	text-align: center;
 }
 /* Advantages Box */
 #advantages {
@@ -351,7 +352,6 @@ a:hover, a:focus {
 }
 .post span {
 	display: block;
-	font-family: montserratlight,"Helvetica Neue",Helvetica,Arial,sans-serif;
 	font-size: 0.875em;
 	margin: 0.688em 0 0 0;
 }
@@ -446,7 +446,6 @@ input::-moz-focus-inner, button::-moz-focus-inner {
 }
 input {
 	background: rgba(255,255,255,.6);
-	font-family: montserratlight,"Helvetica Neue",Helvetica,Arial,sans-serif;
 	width: 14.375em;
 }
 input:focus {
