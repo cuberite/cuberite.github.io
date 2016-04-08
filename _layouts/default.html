@@ -1,58 +1,72 @@
-<!DOCTYPE html>
+{% capture content %}<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>{% if page.title %}{{ page.title }} – {% endif %}{% if page.path contains '_posts' %}News - {% endif %}Cuberite{% if page.url == "/" %} - A custom Minecraft compatible game server written in C++{% endif %}</title>
-<meta name="description" content="{{ site.description }}">
-<link rel="canonical" href="{{ site.url }}{{ page.url | replace:'/index.html','/' }}">
-<link rel="stylesheet" href="/css/style.css">
-<link rel="alternate" type="application/atom+xml" href="/feed.xml">
-<link rel="icon" type="image/png" href="/icons/favicon-32x32.png" sizes="32x32">
-<link rel="icon" type="image/png" href="/icons/android-chrome-192x192.png" sizes="192x192">
-<link rel="icon" type="image/png" href="/icons/favicon-96x96.png" sizes="96x96">
-<link rel="icon" type="image/png" href="/icons/favicon-16x16.png" sizes="16x16">
-<link rel="manifest" href="/icons/manifest.json">
-<link rel="mask-icon" href="/icons/safari-pinned-tab.svg">
-<meta name="theme-color" content="#101010">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{% if page.title %}{{ page.title }} – {% endif %}{% if page.path contains '_posts' %}News - {% endif %}Cuberite{% if page.url == "/" %} - A custom Minecraft compatible game server written in C++{% endif %}</title>
+	<meta name="description" content="{{ site.description }}">
+	<link rel="canonical" href="{{ site.url }}{{ page.url | replace:'/index.html','/' }}">
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="alternate" type="application/atom+xml" href="/feed.xml">
+	<link rel="icon" type="image/png" href="/icons/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="/icons/android-chrome-192x192.png" sizes="192x192">
+	<link rel="icon" type="image/png" href="/icons/favicon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="/icons/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="/icons/manifest.json">
+	<link rel="mask-icon" href="/icons/safari-pinned-tab.svg">
+	<meta name="theme-color" content="#101010">
 </head>
 <body>
-<div id="navigation">
-<div id="logo">
-<a href="/">Cuberite</a>
-</div>
-<input type="checkbox" id="navigation-links-toggle"/>
-<div id="navigation-links">
-<label for="navigation-links-toggle"></label>
-<div id="navigation-links-body">
-<a href="https://forum.cuberite.org/" class="forum">Forum</a>
-<a href="https://book.cuberite.org/" class="manual">Manual</a>
-<a href="/support/" class="support"{% if page.url == "/support/" %} id="active"{% endif %}>Support</a>
-<a href="/plugins/" class="plugins"{% if page.url == "/plugins/" %} id="active"{% endif %}>Plugins</a>
-<a href="/contribute/" class="contribute"{% if page.url == "/contribute/" %} id="active"{% endif %}>Contribute</a>
-</div>
-</div>
-</div>
-{{ content }}<div id="footer">
-<input type="checkbox" id="footer-links-toggle"/>
-<div id="footer-links">
-<label for="footer-links-toggle"></label>
-<div id="footer-links-body">
-<a href="/news/">News</a>
-<a href="https://salt.bountysource.com/teams/cuberite">Donate</a>
-<a href="https://kiwiirc.com/client/irc.freenode.net/#cuberite">IRC</a>
-<a href="http://api-docs.cuberite.org/">API Docs</a>
-<a href="/license/">License</a>
-<a href="/privacy/">Privacy</a>
-</div>
-</div>
-<div id="social">
-<a href="https://plus.google.com/+cuberiteorg" id="google" title="Google+"></a>
-<a href="https://twitter.com/cuberiteproject" id="twitter" title="Twitter"></a>
-<a href="https://www.youtube.com/c/cuberiteorg" id="youtube" title="YouTube"></a>
-</div>
-<noscript><img src="https://analytics.cuberite.org/piwik.php?idsite=1&amp;rec=1" alt=""/></noscript>
-</div>
-<script type="text/javascript">var _paq = _paq || [];_paq.push(['trackPageView']);_paq.push(['enableLinkTracking']);(function() {var u="https://analytics.cuberite.org/";_paq.push(['setTrackerUrl', u+'piwik.php']);_paq.push(['setSiteId', 1]);var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';g.defer=true; g.async=true; g.src='/js/analytics.js'; s.parentNode.insertBefore(g,s);})();</script>
+	<div id="navigation">
+		<div id="logo">
+			<a href="/">Cuberite</a>
+		</div>
+		<input type="checkbox" id="navigation-links-toggle"/>
+		<div id="navigation-links">
+			<label for="navigation-links-toggle"></label>
+			<div id="navigation-links-body">
+				<a href="https://forum.cuberite.org/" class="forum">Forum</a>
+				<a href="https://book.cuberite.org/" class="manual">Manual</a>
+				<a href="/support/" class="support"{% if page.url == "/support/" %} id="active"{% endif %}>Support</a>
+				<a href="/plugins/" class="plugins"{% if page.url == "/plugins/" %} id="active"{% endif %}>Plugins</a>
+				<a href="/contribute/" class="contribute"{% if page.url == "/contribute/" %} id="active"{% endif %}>Contribute</a>
+			</div>
+		</div>
+	</div>
+	{{ content }}
+	<div id="footer">
+		<input type="checkbox" id="footer-links-toggle"/>
+		<div id="footer-links">
+			<label for="footer-links-toggle"></label>
+			<div id="footer-links-body">
+				<a href="/news/">News</a>
+				<a href="https://salt.bountysource.com/teams/cuberite">Donate</a>
+				<a href="https://kiwiirc.com/client/irc.freenode.net/#cuberite">IRC</a>
+				<a href="http://api-docs.cuberite.org/">API Docs</a>
+				<a href="/license/">License</a>
+				<a href="/privacy/">Privacy</a>
+			</div>
+		</div>
+		<div id="social">
+			<a href="https://plus.google.com/+cuberiteorg" id="google" title="Google+"></a>
+			<a href="https://twitter.com/cuberiteproject" id="twitter" title="Twitter"></a>
+			<a href="https://www.youtube.com/c/cuberiteorg" id="youtube" title="YouTube"></a>
+		</div>
+		<noscript>
+			<img src="https://analytics.cuberite.org/piwik.php?idsite=1&amp;rec=1" alt=""/>
+		</noscript>
+	</div>
+	<script type="text/javascript">
+		var _paq = _paq || [];
+		_paq.push(['trackPageView']);
+		_paq.push(['enableLinkTracking']);
+		(function() {
+			var u="https://analytics.cuberite.org/";
+			_paq.push(['setTrackerUrl', u+'piwik.php']);
+			_paq.push(['setSiteId', 1]);
+			var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+			g.type='text/javascript';g.defer=true; g.async=true; g.src='/js/analytics.js'; s.parentNode.insertBefore(g,s);
+		})();
+	</script>
 </body>
-</html>
+</html>{% endcapture %}{{ content | strip_newlines | replace:'	','' }}

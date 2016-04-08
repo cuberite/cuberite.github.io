@@ -2,17 +2,25 @@
 layout: page
 title: News
 ---
-{% for post in paginator.posts %}<div class="post">
-<a href="{{ post.url }}">{{ post.title }}</a>
-<span>{{ post.date | date: "%B %e, %Y" }}</span>
-</div>
-{% endfor %}<form action="https://newsletter.cuberite.org/subscribe.php" method="POST">
-<input type="email" placeholder="email@example.com" required>
-<button type="submit">Subscribe</button>
+{% for post in paginator.posts %}
+	<div class="post">
+		<a href="{{ post.url }}">{{ post.title }}</a>
+		<span>{{ post.date | date: "%B %e, %Y" }}</span>
+	</div>
+{% endfor %}
+<form action="https://newsletter.cuberite.org/subscribe.php" method="POST">
+	<input type="email" placeholder="email@example.com" required>
+	<button type="submit">Subscribe</button>
 </form>
-<div id="pagination">{% if paginator.previous_page %}
-<a href="{{ paginator.previous_page_path }}" id="previous" title="Previous"></a>{% else %}
-<span id="previous"></span>{% endif %}{% if paginator.next_page %}
-<a href="{{ paginator.next_page_path }}" id="next" title="Next"></a>{% else %}
-<span id="next"></span>{% endif %}
+<div id="pagination">
+	{% if paginator.previous_page %}
+		<a href="{{ paginator.previous_page_path }}" id="previous" title="Previous"></a>
+	{% else %}
+		<span id="previous"></span>
+	{% endif %}
+	{% if paginator.next_page %}
+		<a href="{{ paginator.next_page_path }}" id="next" title="Next"></a>
+	{% else %}
+		<span id="next"></span>
+	{% endif %}
 </div>
