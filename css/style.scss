@@ -373,10 +373,10 @@ p, #banner, .post span, input {
 	cursor: default;
 }
 #previous {
-	margin: 0 0.063em 0 0;
+	margin: 0 0.313em 0 0;
 }
 #next {
-	margin: 0 0 0 0.063em;
+	margin: 0 0 0 0.313em;
 }
 #previous:before {
 	content: '\ab';
@@ -452,6 +452,7 @@ button {
 	background: rgba(0,0,0,.6);
 	color: #fff;
 	cursor: pointer;
+	margin: 0 0 0 0.438em;
 }
 button:hover, button:focus {
 	background: #000;
