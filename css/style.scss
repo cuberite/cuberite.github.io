@@ -118,7 +118,7 @@ p, #banner, .post span, input {
 	-webkit-animation: fadein 1.5s;
 	animation: fadein 1.5s;
 }
-#navigation a:before, #navigation-links label:before, .downloadbutton:before, #advantages span, h2:before, #previous:before, #next:before, #footer-links label:before, #social a:before {
+#navigation a:before, #navigation-links label:before, .downloadbutton:before, #advantages span, h2:before, #previous:before, #next:before, #footer-links label:before, #media-links a:before {
 	font-family: 'icons';
 }
 #navigation a:hover, #navigation a:focus, #footer a:hover, #footer a:focus, #active {
@@ -402,17 +402,17 @@ p, #banner, .post span, input {
 	padding: 1.875em;
 	margin: 0 0.188em 0 0.188em;
 }
-#social {
+#media-links {
 	float: right;
 	margin: 0 0.813em 0 0;
 }
-#social a {
+#media-links a {
 	float: left;
 	font-size: 1.250em;
 	padding: 1.250em 1.188em 1.313em 1.188em;
 	margin: 0 0.188em 0 0.188em;
 }
-#social a#google {
+#media-links a#google {
 	font-size: 1.688em;
 	padding: 0.938em 0.750em 0.938em 0.750em;
 }
@@ -558,10 +558,10 @@ button:hover, button:focus {
 	#navigation-links-body a:hover, #navigation-links-body a:focus, #footer-links-body a:hover, #footer-links-body a:focus {
 		background: #000;
 	}
-	#social {
+	#media-links {
 		float: left;
 	}
-	#social a:first-child {
+	#media-links a:first-child {
 		margin: 0 0.188em 0 0;
 	}
 	/* Download Buttons */
