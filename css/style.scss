@@ -114,7 +114,7 @@ p, #banner, .post span, input {
 #navigation input, #intro input, #footer input, #footer img {
 	display: none;
 }
-#intro-body, #main-body, #advantages-body, #banner-body {
+#intro-body, #main-body, #advantages-body, #banner-blue-body, #banner-green-body {
 	-webkit-animation: fadein 1.5s;
 	animation: fadein 1.5s;
 }
@@ -123,6 +123,14 @@ p, #banner, .post span, input {
 }
 #navigation a:hover, #navigation a:focus, #footer a:hover, #footer a:focus, #active {
 	background: rgba(0,0,0,.35);
+}
+#banner-blue, #banner-green {
+	color: rgba(255,255,255,.75);
+	font-family: montserratlight,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 0.938em;
+	line-height: 1.6;
+	text-align: center;
+	padding: 0.750em;
 }
 /* Icons */
 .contribute:before {
@@ -289,14 +297,13 @@ p, #banner, .post span, input {
 #download-footer a:hover, #download-footer a:focus {
 	color: #fff;
 }
-/* Information Banner */
-#banner {
-	background: rgba(49,162,0,.12);
-	color: rgba(255,255,255,.75);
-	font-size: 0.938em;
-	line-height: 1.6em;
-	padding: 0.750em;
-	text-align: center;
+/* Blue Banner */
+#banner-blue {
+	background: rgba(43,149,255,.05);
+}
+/* Green Banner */
+#banner-green {
+	background: rgba(49,162,0,.15);
 }
 /* Advantages Box */
 #advantages {
