@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>{% if page.title %}{{ page.title }} – {% endif %}{% if page.path contains '_posts' %}News - {% endif %}Cuberite{% if page.url == "/" %} - A custom Minecraft compatible game server written in C++{% endif %}</title>
+	<title>{% if page.title %}{{ page.title }} – {% endif %}{% if page.path contains '_posts' %}News - {% endif %}Cuberite{% if page.url == "/" %} - A lightweight, fast and extensible game server for Minecraft{% endif %}</title>
 	<meta name="description" content="{{ site.description }}">
 	<link rel="canonical" href="{{ site.url }}{{ page.url | replace:'/index.html','/' }}">
 	<link rel="stylesheet" href="/css/style.css">
@@ -35,22 +35,30 @@
 	</div>
 	{{ content }}
 	<div id="footer">
-		<input type="checkbox" id="footer-links-toggle"/>
-		<div id="footer-links">
-			<label for="footer-links-toggle"></label>
-			<div id="footer-links-body">
-				<a href="/news/">News</a>
-				<a href="https://salt.bountysource.com/teams/cuberite">Donate</a>
-				<a href="https://kiwiirc.com/client/irc.freenode.net/#cuberite">IRC</a>
-				<a href="http://api-docs.cuberite.org/">API Docs</a>
-				<a href="/license/">License</a>
-				<a href="/privacy/">Privacy</a>
+		<div id="mobile-links">
+			<a href="/" class="home show-mobile">Home</a>
+			<a href="https://book.cuberite.org/" class="manual show-mobile">Manual</a>
+			<a href="/support/" class="support show-mobile"{% if page.url == "/support/" %} id="active"{% endif %}>Support</a>
+			<a href="/plugins/" class="plugins show-mobile"{% if page.url == "/plugins/" %} id="active"{% endif %}>Plugins</a>
+			<input type="checkbox" id="footer-links-toggle"/>
+			<div id="footer-links">
+				<label for="footer-links-toggle">More</label>
+				<div id="footer-links-body">
+					<a href="/about/">About</a>
+					<a href="https://forum.cuberite.org/" class="show-mobile-block">Forum</a>
+					<a href="/contribute/" class="show-mobile-block">Contribute</a>
+					<a href="/news/">News</a>
+					<a href="https://salt.bountysource.com/teams/cuberite">Donate</a>
+					<a href="https://webchat.freenode.net/?channels=cuberite">IRC</a>
+					<a href="http://api-docs.cuberite.org/">API Docs</a>
+					<a href="/privacy/">Privacy</a>
+					<div id="media-links">
+						<a href="https://plus.google.com/+cuberiteorg" id="google"></a>
+						<a href="https://twitter.com/cuberiteproject" id="twitter"></a>
+						<a href="https://www.youtube.com/c/cuberiteorg" id="youtube"></a>
+					</div>
+				</div>
 			</div>
-		</div>
-		<div id="media-links">
-			<a href="https://plus.google.com/+cuberiteorg" id="google"></a>
-			<a href="https://twitter.com/cuberiteproject" id="twitter"></a>
-			<a href="https://www.youtube.com/c/cuberiteorg" id="youtube"></a>
 		</div>
 		<noscript>
 			<img src="https://analytics.cuberite.org/piwik.php?idsite=1&amp;rec=1" alt=""/>

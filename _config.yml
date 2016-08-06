@@ -3,7 +3,6 @@ description: A custom Minecraft compatible game server written in C++. It's a fa
 url: https://cuberite.org
 author: Cuberite Team
 exclude:
-  - CNAME
   - LICENSE
   - README.md
 sass:
