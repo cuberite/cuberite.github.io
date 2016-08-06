@@ -23,14 +23,11 @@
 		</div>
 		<input type="checkbox" id="navigation-links-toggle"/>
 		<div id="navigation-links">
-			<label for="navigation-links-toggle"></label>
-			<div id="navigation-links-body">
-				<a href="https://forum.cuberite.org/" class="forum">Forum</a>
-				<a href="https://book.cuberite.org/" class="manual">Manual</a>
-				<a href="/support/" class="support"{% if page.url == "/support/" %} id="active"{% endif %}>Support</a>
-				<a href="/plugins/" class="plugins"{% if page.url == "/plugins/" %} id="active"{% endif %}>Plugins</a>
-				<a href="/contribute/" class="contribute"{% if page.url == "/contribute/" %} id="active"{% endif %}>Contribute</a>
-			</div>
+			<a href="https://forum.cuberite.org/" class="forum">Forum</a>
+			<a href="https://book.cuberite.org/" class="manual">Manual</a>
+			<a href="/support/" class="support"{% if page.url == "/support/" %} id="active"{% endif %}>Support</a>
+			<a href="/plugins/" class="plugins"{% if page.url == "/plugins/" %} id="active"{% endif %}>Plugins</a>
+			<a href="/contribute/" class="contribute"{% if page.url == "/contribute/" %} id="active"{% endif %}>Contribute</a>
 		</div>
 	</div>
 	{{ content }}

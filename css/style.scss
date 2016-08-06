@@ -115,14 +115,14 @@ a:hover, a:focus {
 p, #banner, .post span, input {
 	font-family: montserratlight,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
-#navigation input, #intro input, #footer input, #footer img, #footer label, .show-mobile, .show-mobile-block {
+#intro input, #footer input, #footer img, #footer label, .show-mobile, .show-mobile-block {
 	display: none;
 }
 #intro-body, #main-body, #advantages-body, #banner-blue-body, #banner-green-body {
 	-webkit-animation: scalein .6s ease both;
 	animation: scalein .6s ease both;
 }
-#navigation a:before, #navigation-links label:before, .downloadbutton:before, h2:before, #previous:before, #next:before, #mobile-links a:before, #footer-links label:before, #media-links a:before {
+#navigation a:before, .downloadbutton:before, h2:before, #previous:before, #next:before, #mobile-links a:before, #footer-links label:before, #media-links a:before {
 	font-family: 'icons';
 }
 #navigation a:hover, #navigation a:focus, #footer a:hover, #footer a:focus, #footer-links label:hover, #footer-links label:focus, #active {
@@ -163,9 +163,6 @@ p, #banner, .post span, input {
 }
 .home:before {
 	content: "\2302";
-}
-.license:before {
-	content: "\1f528";
 }
 .manual:before {
 	content: "\1F4D6";
