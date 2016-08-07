@@ -28,12 +28,6 @@
 @keyframes fadein {
 	from { opacity: 0; }
 }
-@-webkit-keyframes scalein {
-	from { opacity: 0; transform: scale(.9); }
-}
-@keyframes scalein {
-	from { opacity: 0; transform: scale(.9); }
-}
 /* Main */
 * {
 	margin: 0;
@@ -119,8 +113,8 @@ p, #banner, .post span, input {
 	display: none;
 }
 #intro-body, #main-body, #advantages-body, #banner-blue-body, #banner-green-body {
-	-webkit-animation: scalein .6s ease both;
-	animation: scalein .6s ease both;
+	-webkit-animation: fadein 1.5s;
+	animation: fadein 1.5s;
 }
 #navigation a:before, .downloadbutton:before, h2:before, #previous:before, #next:before, #mobile-links a:before, #footer-links label:before, #media-links a:before {
 	font-family: 'icons';
