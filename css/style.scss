@@ -127,6 +127,10 @@ td {
 	background: rgba(0,0,0,.2);
 	padding: 1.000em;
 }
+code {
+	font-style: italic;
+	font-weight: bold;
+}
 a {
 	color: rgba(255,255,255,.4);
 	text-decoration: none;
@@ -433,10 +437,6 @@ h2.manual {
 	margin: 0;
 	white-space: pre-line;
 }
-#manual-content code {
-	font-style: italic;
-	font-weight: bold;
-}
 .codebox {
 	background: rgba(0,0,0,.3);
 	display: block;
@@ -589,7 +589,8 @@ button:hover, button:focus {
 		margin: 0 0 0.125em 0;
 		text-align: right;
 	}
-	td code {
+	td:before {
+		content: attr(data-label);
 		display: block;
 		float: left;
 		font-family: montserratregular,"Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -878,7 +879,7 @@ button:hover, button:focus {
 		color: #000;
 		text-shadow: none;
 	}
-	body, th, td, .code-box, .info-box, .warning-box, #pagination a, #pagination span, .button {
+	body, th, td, .codebox, .infobox, .warnbox, #pagination a, #pagination span, .button {
 		background: none;
 	}
 	table, th, td {
@@ -910,7 +911,7 @@ button:hover, button:focus {
 		display: block;
 		padding: 0;
 	}
-	.info-box, .warning-box {
+	.infobox, .warnbox {
 		border: 0.063em solid #404040;
 	}
 	#pagination a, #pagination span, .button {
