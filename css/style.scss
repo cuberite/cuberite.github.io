@@ -72,7 +72,7 @@ body {
 :-ms-input-placeholder {
 	color: rgba(0,0,0,.55);
 }
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, dt {
 	font-style: normal;
 	font-weight: normal;
 	text-transform: uppercase;
@@ -99,7 +99,7 @@ h4 {
 	margin: 1.750em 0 0.938em 0;
 	text-align: left;
 }
-h5 {
+h5, dt {
 	margin: 1.750em 0 0.625em 1.125em;
 	text-align: left;
 }
@@ -142,13 +142,13 @@ td code, #intro input, #footer input, #footer img, #footer label, .show-mobile, 
 	-webkit-animation: fadein .7s;
 	animation: fadein .7s;
 }
-#navigation a:before, .downloadbutton:before, h2:before, #previous:before, #next:before, .info-box-body:before, .warning-box-body:before, #mobile-links a:before, #footer-links label:before, #media-links a:before {
+#navigation a:before, .downloadbutton:before, h2:before, #previous:before, #next:before, .infobox:before, .warnbox:before, #mobile-links a:before, #footer-links label:before, #media-links a:before {
 	font-family: 'icons';
 }
 #navigation a:hover, #navigation a:focus, #footer a:hover, #footer a:focus, #footer-links label:hover, #footer-links label:focus, #active {
 	background: rgba(10,10,10,.35);
 }
-p, td, #banner-blue, #banner-green, .post span, .info-box, .warning-box, input {
+p, td, dd, #banner-blue, #banner-green, .post span, .infobox, .warnbox, input {
 	font-family: montserratlight,"Helvetica Neue",Helvetica,Arial,sans-serif;
 	line-height: 1.6;
 }
@@ -411,7 +411,7 @@ h2:before, #navigation a:before, #left-three, #center-three, #right-three, #left
 	padding: 6% 22% 6% 22%;
 	text-align: justify;
 }
-#manual-body h2, #manual-body h3, #manual-body ul, .code-box {
+#manual-body h2, #manual-body h3, #manual-body ul, .codebox {
 	text-align: left;
 }
 h2.manual {
@@ -429,7 +429,15 @@ h2.manual {
 #manual-content h3 {
 	margin: 1.875em 0 0.938em 0;
 }
-.code-box {
+#manual-content pre {
+	margin: 0;
+	white-space: pre-line;
+}
+#manual-content code {
+	font-style: italic;
+	font-weight: bold;
+}
+.codebox {
 	background: rgba(0,0,0,.3);
 	display: block;
 	font-family: monospace;
@@ -440,30 +448,29 @@ h2.manual {
 	margin: 0 1.000em 1.688em 1.000em;
 	word-break: break-all;
 }
-#manual-content blockquote {
-	margin: 0 0 0 2.000em;
+.codebox code {
+	font-style: normal;
+	font-weight: normal;
 }
-.info-box, .warning-box {
+.infobox, .warnbox {
+	color: rgba(0,0,0,.6);
+	font-size: 0.938em;
 	padding: 1.000em;
 	margin: 0 1.000em 1.688em 1.000em;
-	color: rgba(0,0,0,.6);
-	font-family: montserratlight,"Helvetica Neue",Helvetica,Arial,sans-serif;
-	font-size: 0.938em;
-	line-height: 1.6;
 }
-.info-box {
+.infobox {
 	background: rgba(43,149,255,.35);
 }
-.warning-box {
+.warnbox {
 	background: rgba(228,167,0,0.35);
 }
-.info-box-body:before, .warning-box-body:before {
+.infobox:before, .warnbox:before {
 	margin: 0 0.625em 0 0;
 }
-.info-box-body:before {
+.infobox:before {
 	content: "\2139";
 }
-.warning-box-body:before {
+.warnbox:before {
 	content: "\26a0";
 }
 /* Footer */
