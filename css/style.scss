@@ -437,6 +437,9 @@ h2.manual {
 	margin: 0;
 	white-space: pre-line;
 }
+#manual-content dd {
+	margin: 0 0 0 2.000em;
+}
 .codebox {
 	background: rgba(0,0,0,.3);
 	display: block;
