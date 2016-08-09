@@ -38,3 +38,11 @@ a:hover, a:focus {
 #footer-links-body {
 	background: #BBBBBB;
 }
+@media print {
+	body {
+		color: #000;
+	}
+	body, th, td, .code-box, .info-box, .warning-box, #pagination a, #pagination span, .button {
+		background: none;
+	}
+}
