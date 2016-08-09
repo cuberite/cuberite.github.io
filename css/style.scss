@@ -72,7 +72,7 @@ body {
 :-ms-input-placeholder {
 	color: rgba(0,0,0,.55);
 }
-h1, h2, h3 {
+h1, h2, h3, h4, h5 {
 	font-style: normal;
 	font-weight: normal;
 	text-transform: uppercase;
@@ -86,7 +86,6 @@ h1 {
 h2:before {
 	cursor: default;
 	margin: 0 0.563em 0 0;
-	vertical-align: top;
 }
 h2 {
 	font-size: 1.500em;
@@ -96,9 +95,37 @@ h3 {
 	font-size: 1.125em;
 	margin: 1.125em 0 0.625em 0;
 }
+h4 {
+	margin: 1.750em 0 0.938em 0;
+	text-align: left;
+}
+h5 {
+	margin: 1.750em 0 0.625em 1.125em;
+	text-align: left;
+}
 p, ul {
-	line-height: 1.6em;
+	line-height: 1.6;
 	margin: 0 0 0.938em 0;
+}
+em {
+	font-style: italic;
+}
+strong {
+	font-weight: bold;
+}
+table {
+	border-spacing: 0.125em;
+	width: 100%;
+}
+th {
+	background: rgba(0,0,0,.4);
+	padding: 1.000em;
+	text-transform: uppercase;
+	white-space: nowrap;
+}
+td {
+	background: rgba(0,0,0,.2);
+	padding: 1.000em;
 }
 a {
 	color: rgba(255,255,255,.4);
@@ -108,29 +135,25 @@ a:hover, a:focus {
 	color: rgba(255,255,255,.6);
 }
 /* Combined Rules */
-p, #banner, .post span, input {
-	font-family: montserratlight,"Helvetica Neue",Helvetica,Arial,sans-serif;
-}
-#intro input, #footer input, #footer img, #footer label, .show-mobile, .show-mobile-block {
+td code, #intro input, #footer input, #footer img, #footer label, .show-mobile, .show-mobile-block {
 	display: none;
 }
-#intro-body, #main-body, #advantages-body, #banner-blue-body, #banner-green-body {
+#intro-body, #main-body, #manual-body, #banner-blue-body, #banner-green-body {
 	-webkit-animation: fadein .7s;
 	animation: fadein .7s;
 }
-#navigation a:before, .downloadbutton:before, h2:before, #previous:before, #next:before, #mobile-links a:before, #footer-links label:before, #media-links a:before {
+#navigation a:before, .downloadbutton:before, h2:before, #previous:before, #next:before, .info-box-body:before, .warning-box-body:before, #mobile-links a:before, #footer-links label:before, #media-links a:before {
 	font-family: 'icons';
 }
 #navigation a:hover, #navigation a:focus, #footer a:hover, #footer a:focus, #footer-links label:hover, #footer-links label:focus, #active {
 	background: rgba(10,10,10,.35);
 }
-#banner-blue, #banner-green {
-	color: rgba(255,255,255,.75);
+p, td, #banner-blue, #banner-green, .post span, .info-box, .warning-box, input {
 	font-family: montserratlight,"Helvetica Neue",Helvetica,Arial,sans-serif;
-	font-size: 0.938em;
 	line-height: 1.6;
-	text-align: center;
-	padding: 0.750em;
+}
+h2:before, #navigation a:before, #left-three, #center-three, #right-three, #left-two, #right-two, button, input {
+	vertical-align: top;
 }
 .button, #pagination a, #pagination span {
 	background: #eaeaea;
@@ -182,7 +205,6 @@ p, #banner, .post span, input {
 #left-three, #center-three, #right-three {
 	display: inline-block;
 	width: 30%;
-	vertical-align: top;
 }
 #left-three, #center-three {
 	margin: 0 2.500em 0 0;
@@ -190,7 +212,6 @@ p, #banner, .post span, input {
 #left-two, #right-two {
 	display: inline-block;
 	width: 45%;
-	vertical-align: top;
 }
 #left-two {
 	margin: 0 2.500em 0 0;
@@ -213,7 +234,6 @@ p, #banner, .post span, input {
 	content: '\25a0';
 	font-size: 1.125em;
 	margin: 0 0.500em 0 0;
-	vertical-align: top;
 }
 #navigation-links {
 	float: right;
@@ -222,7 +242,6 @@ p, #banner, .post span, input {
 #navigation-links a:before {
 	font-size: 1.250em;
 	margin: 0 0.625em 0 0;
-	vertical-align: top;
 }
 #navigation-links a {
 	color: #eaeaea;
@@ -232,11 +251,11 @@ p, #banner, .post span, input {
 	margin: 0 0.188em 0 0.188em;
 }
 /* Intro and Main */
-#intro, #main {
+#intro, #main, #manual {
 	display: table-row;
 	height: 100%;
 }
-#intro-body, #main-body {
+#intro-body, #main-body, #manual-body {
 	display: table-cell;
 	vertical-align: middle;
 	text-align: center;
@@ -332,11 +351,18 @@ p, #banner, .post span, input {
 #download-footer a:hover, #download-footer a:focus {
 	color: #fff;
 }
-/* Blue Banner */
+/* Banners */
+#banner-blue, #banner-green {
+	color: rgba(255,255,255,.75);
+	font-family: montserratlight,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 0.938em;
+	line-height: 1.6;
+	text-align: center;
+	padding: 0.750em;
+}
 #banner-blue {
 	background: rgba(43,149,255,.05);
 }
-/* Green Banner */
 #banner-green {
 	background: rgba(49,162,0,.15);
 }
@@ -379,6 +405,66 @@ p, #banner, .post span, input {
 }
 #next:before {
 	content: '\bb';
+}
+/* Manual */
+#manual-body {
+	padding: 6% 22% 6% 22%;
+	text-align: justify;
+}
+#manual-body h2, #manual-body h3, #manual-body ul, .code-box {
+	text-align: left;
+}
+h2.manual {
+	font-size: 1.8em;
+}
+#manual-body ul {
+	margin: 0 0 1.563em 0;
+}
+#manual-body li {
+	margin: 0 0 0 2.000em;
+}
+#manual-content h2 {
+	margin: 1.875em 0 -0.625em 0;
+}
+#manual-content h3 {
+	margin: 1.875em 0 0.938em 0;
+}
+.code-box {
+	background: rgba(0,0,0,.3);
+	display: block;
+	font-family: monospace;
+	line-height: 1.6;
+	max-height: 15.000em;
+	overflow: auto;
+	padding: 0.625em;
+	margin: 0 1.000em 1.688em 1.000em;
+	word-break: break-all;
+}
+#manual-content blockquote {
+	margin: 0 0 0 2.000em;
+}
+.info-box, .warning-box {
+	padding: 1.000em;
+	margin: 0 1.000em 1.688em 1.000em;
+	color: rgba(0,0,0,.6);
+	font-family: montserratlight,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 0.938em;
+	line-height: 1.6;
+}
+.info-box {
+	background: rgba(43,149,255,.35);
+}
+.warning-box {
+	background: rgba(228,167,0,0.35);
+}
+.info-box-body:before, .warning-box-body:before {
+	margin: 0 0.625em 0 0;
+}
+.info-box-body:before {
+	content: "\2139";
+}
+.warning-box-body:before {
+	content: "\26a0";
 }
 /* Footer */
 #footer {
@@ -429,7 +515,6 @@ button, input {
 	height: 2.500em;
 	line-height: 2.500em;
 	padding: 0 0.750em 0 0.750em;
-	vertical-align: top;
 }
 input::-moz-focus-inner, button::-moz-focus-inner { 
 	border: 0;
@@ -481,6 +566,30 @@ button:hover, button:focus {
 @media (min-width: 700px) {
 	html { font-size: 90%; }
 }
+@media (max-width: 700px) {
+	thead {
+		display: none;
+	}
+	tr:last-child, td:last-child {
+		border-bottom: 0;
+	}
+	tr {
+		display: block;
+		margin: 0 0 2.000em 0;
+	}
+	td {
+		display: block;
+		margin: 0 0 0.125em 0;
+		text-align: right;
+	}
+	td code {
+		display: block;
+		float: left;
+		font-family: montserratregular,"Helvetica Neue",Helvetica,Arial,sans-serif;
+		margin: 0 1.000em 0 0;
+		text-transform: uppercase;
+	}
+}
 @media (min-width: 800px) {
 	html { font-size: 92%; }
 }
@@ -491,6 +600,9 @@ button:hover, button:focus {
 	}
 	#left-two {
 		margin: 1.875em 0 2.500em 0
+	}
+	#manual-body {
+		padding: 6% 8% 6% 8%;
 	}
 }
 @media (min-width: 900px) {
@@ -624,6 +736,9 @@ button:hover, button:focus {
 	#center-three {
 		margin: 0 0 2.500em 0;
 	}
+	#manual-body {
+		padding: 6% 12% 6% 12%;
+	}
 }
 @media (min-width: 1100px) {
 	html { font-size: 98%; }
@@ -747,4 +862,39 @@ button:hover, button:focus {
 }
 @media (min-width: 5100px) {
 	html { font-size: 178%; }
+}
+@media print {
+	@page {
+		margin: 2.75cm;
+	}
+	body, h1 {
+		color: #000;
+		text-shadow: none;
+	}
+	table, th, td {
+		border: 0.063em solid #000;
+		border-collapse: collapse;
+	}
+	a {
+		color: #252525;
+		text-decoration: underline;
+	}
+	a:after {
+		content: " (" attr(href) ")";
+		font-size: 80%;
+	}
+	#navigation, #footer {
+		display: none;
+	}
+	#intro-body, #main-body, #manual-body {
+		display: block;
+		padding: 0;
+	}
+	.info-box, .warning-box {
+		border: 0.063em solid #404040;
+	}
+	.button {
+		border: 0.063em solid #000;
+		box-shadow: none;
+	}
 }

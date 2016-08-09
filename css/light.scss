@@ -1,0 +1,40 @@
+---
+---
+body {
+	background: #EAEAEA;
+	color: #464646;
+	text-shadow: none;
+}
+::-moz-selection {
+	background: #CCCCCC;
+}
+::selection {
+	background: #CCCCCC;
+}
+th {
+	background: #BBBBBB;
+}
+td {
+	background: #D2D2D2;
+}
+a {
+	color: #5098CE;
+}
+a:hover, a:focus {
+	color: #74B2E1;
+}
+#navigation a:hover, #navigation a:focus, #footer a:hover, #footer a:focus, #footer-links label:hover, #footer-links label:focus, #active {
+	background: #C6C6C6;
+}
+#navigation, #footer, .code-box {
+	background: #D2D2D2;
+}
+#logo a, #navigation-links a, #footer a {
+	color: #4A4A4A;
+}
+#main-footer {
+	color: #797979
+}
+#footer-links-body {
+	background: #BBBBBB;
+}
