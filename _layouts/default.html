@@ -24,9 +24,9 @@
 		<div id="navigation-links">
 			<a href="https://forum.cuberite.org/" class="forum">Forum</a>
 			<a href="https://book.cuberite.org/" class="manual">Manual</a>
-			<a href="/support/" class="support"{% if page.url == "/support/" %} id="active"{% endif %}>Support</a>
-			<a href="/plugins/" class="plugins"{% if page.url == "/plugins/" %} id="active"{% endif %}>Plugins</a>
-			<a href="/contribute/" class="contribute"{% if page.url == "/contribute/" %} id="active"{% endif %}>Contribute</a>
+			<a href="/support/" class="support{% if page.url == "/support/" %} active{% endif %}">Support</a>
+			<a href="/plugins/" class="plugins{% if page.url == "/plugins/" %} active{% endif %}">Plugins</a>
+			<a href="/contribute/" class="contribute{% if page.url == "/contribute/" %} active{% endif %}">Contribute</a>
 		</div>
 	</div>
 	{{ content }}
@@ -34,8 +34,8 @@
 		<div id="mobile-links">
 			<a href="/" class="home show-mobile">Home</a>
 			<a href="https://book.cuberite.org/" class="manual show-mobile">Manual</a>
-			<a href="/support/" class="support show-mobile"{% if page.url == "/support/" %} id="active"{% endif %}>Support</a>
-			<a href="/plugins/" class="plugins show-mobile"{% if page.url == "/plugins/" %} id="active"{% endif %}>Plugins</a>
+			<a href="/support/" class="support show-mobile{% if page.url == "/support/" %} active{% endif %}">Support</a>
+			<a href="/plugins/" class="plugins show-mobile{% if page.url == "/plugins/" %} active{% endif %}">Plugins</a>
 			<input type="checkbox" id="footer-links-toggle"/>
 			<div id="footer-links">
 				<label for="footer-links-toggle">More</label>
