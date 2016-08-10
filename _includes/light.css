@@ -1,5 +1,3 @@
----
----
 body {
 	background: #EAEAEA;
 	color: #464646;
@@ -11,12 +9,6 @@ body {
 ::selection {
 	background: #CCCCCC;
 }
-th {
-	background: #BBBBBB;
-}
-td {
-	background: #D2D2D2;
-}
 a {
 	color: #5098CE;
 }
@@ -26,7 +18,7 @@ a:hover, a:focus {
 #navigation a:hover, #navigation a:focus, #footer a:hover, #footer a:focus, #footer-links label:hover, #footer-links label:focus, .active {
 	background: #C6C6C6;
 }
-#navigation, #footer, .codebox {
+#navigation, #footer {
 	background: #D2D2D2;
 }
 #logo a, #navigation-links a, #footer a {
@@ -42,7 +34,7 @@ a:hover, a:focus {
 	body {
 		color: #000;
 	}
-	body, th, td, .codebox, .infobox, .warnbox, #pagination a, #pagination span, .button {
+	body, #pagination a, #pagination span, .button {
 		background: none;
 	}
 }
