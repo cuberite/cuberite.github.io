@@ -77,7 +77,7 @@ h3 {
 }
 p,
 ul {
-	line-height: 1.6;
+	line-height: 1.6em;
 	margin: 0 0 0.938em 0;
 }
 em {
@@ -135,7 +135,7 @@ p,
 .post span,
 input {
 	font-family: montserratlight, "Helvetica Neue", Helvetica, Arial, sans-serif;
-	line-height: 1.6;
+	line-height: 1.6em;
 }
 h2:before,
 #navigation a:before,
@@ -335,7 +335,7 @@ input {
 #downloadbutton-freebsd:before {
 	content: '\1f608';
 }
-#downloadbutton-osx:before {
+#downloadbutton-macos:before {
 	content: '\1f34e';
 }
 .downloadmenu {
@@ -362,7 +362,7 @@ input {
 #downloadbutton-linux:hover #downloadmenu-linux,
 #downloadbutton-windows:hover #downloadmenu-windows,
 #downloadbutton-freebsd:hover #downloadmenu-freebsd,
-#downloadbutton-osx:hover #downloadmenu-osx {
+#downloadbutton-macos:hover #downloadmenu-macos {
 	display: block;
 }
 #download-footer {
@@ -381,9 +381,7 @@ input {
 #banner-blue,
 #banner-green {
 	color: rgba(255, 255, 255, .75);
-	font-family: montserratlight, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 0.938em;
-	line-height: 1.6;
 	text-align: center;
 	padding: 0.750em;
 }
@@ -620,7 +618,7 @@ button:focus {
 	#downloadbutton-linux-mobile:checked + #downloadbutton-linux .downloadmenu,
 	#downloadbutton-windows-mobile:checked + #downloadbutton-windows .downloadmenu,
 	#downloadbutton-freebsd-mobile:checked + #downloadbutton-freebsd .downloadmenu,
-	#downloadbutton-osx-mobile:checked + #downloadbutton-osx .downloadmenu {
+	#downloadbutton-macos-mobile:checked + #downloadbutton-macos .downloadmenu {
 		display: block;
 		animation: fadein .4s;
 	}
@@ -703,7 +701,7 @@ button:focus {
 	#downloadbutton-linux:hover #downloadmenu-linux,
 	#downloadbutton-windows:hover #downloadmenu-windows,
 	#downloadbutton-freebsd:hover #downloadmenu-freebsd,
-	#downloadbutton-osx:hover #downloadmenu-osx {
+	#downloadbutton-macos:hover #downloadmenu-macos {
 		display: none;
 	}
 }
