@@ -12,16 +12,26 @@ body {
 a {
 	color: #5098CE;
 }
-a:hover, a:focus {
+a:hover,
+a:focus {
 	color: #74B2E1;
 }
-#navigation a:hover, #navigation a:focus, #footer a:hover, #footer a:focus, #footer-links label:hover, #footer-links label:focus, .active {
+#navigation a:hover,
+#navigation a:focus,
+#footer a:hover,
+#footer a:focus,
+#footer-links label:hover,
+#footer-links label:focus,
+.active {
 	background: #C6C6C6;
 }
-#navigation, #footer {
+#navigation,
+#footer {
 	background: #D2D2D2;
 }
-#logo a, #navigation-links a, #footer a {
+#logo a,
+#navigation-links a,
+#footer a {
 	color: #4A4A4A;
 }
 #main-footer {
@@ -34,7 +44,10 @@ a:hover, a:focus {
 	body {
 		color: #000;
 	}
-	body, #pagination a, #pagination span, .button {
+	body,
+	#pagination a,
+	#pagination span,
+	.button {
 		background: none;
 	}
 }
