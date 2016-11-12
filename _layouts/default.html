@@ -3,7 +3,16 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>{% if page.title %}{{ page.title }} – {% endif %}{% if page.path contains '_posts' %}News - {% endif %}Cuberite{% if page.url == "/" %} - A lightweight, fast and extensible game server for Minecraft{% endif %}</title>
+	<title>{% if page.title %}
+			{{ page.title }} – 
+		{% endif %}
+		{% if page.path contains '_posts' %}
+			News - 
+		{% endif %}
+		Cuberite
+		{% if page.url == "/" %}
+			 - A lightweight, fast and extensible game server for Minecraft
+		{% endif %}</title>
 	<meta name="description" content="{{ site.description }}">
 	<link rel="canonical" href="{{ site.url }}{{ page.url | replace:'/index.html','/' }}">
 	<link rel="stylesheet" href="/css/fonts.css">
@@ -16,7 +25,10 @@
 	<link rel="mask-icon" href="/icons/safari-pinned-tab.svg">
 	<meta name="theme-color" content="#101010">
 	<style type="text/css">
-		{% capture style %}{% include style.css %}{% endcapture %}{{ style | scssify }}
+		{% capture style %}
+		{% include style.css %}
+		{% endcapture %}
+		{{ style | scssify }}
 	</style>
 </head>
 <body>
