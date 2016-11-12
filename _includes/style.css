@@ -110,7 +110,7 @@ p, #banner-blue, #banner-green, .post span, input {
 h2:before, #navigation a:before, #left-three, #center-three, #right-three, #left-two, #right-two, button, input {
 	vertical-align: top;
 }
-.button, #pagination a, #pagination span {
+.button, .downloadbutton, #pagination a, #pagination span {
 	background: #eaeaea;
 	border-radius: 0.313em;
 	box-shadow: 0 0.125em 0.063em rgba(0, 0, 0, 0.15);
@@ -250,19 +250,13 @@ h2:before, #navigation a:before, #left-three, #center-three, #right-three, #left
 }
 /* Download Buttons */
 .downloadbutton {
-	background: #eaeaea;
-	border-radius: 0.313em;
-	box-shadow: 0 0.125em 0.063em rgba(0,0,0,.15);
-	color: #1e1e1e;
 	font-size: 1.125em;
 	cursor: pointer;
-	width: 8.125em;
-	margin: 0 0.375em 0 0.375em;
+	width: 8.750em;
+	margin: 0 0.500em 0 0.500em;
 	padding: 0.750em;
-	display: inline-block;
 	position: relative;
-	line-height: 30px;
-	text-shadow: none;
+	line-height: 1.688em;
 }
 .downloadbutton:hover, .downloadbutton:focus {
 	background: #C3C3C3;
@@ -295,7 +289,7 @@ h2:before, #navigation a:before, #left-three, #center-three, #right-three, #left
 .downloadmenu a {
 	color: #1e1e1e;
 	display: block;
-	padding: 0.5em;
+	padding: 0.500em;
 }
 .downloadmenu a:hover, .downloadmenu a:focus {
 	background: #eaeaea;
