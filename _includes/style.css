@@ -578,7 +578,7 @@ button:hover, button:focus {
 	/* Download Buttons */
 	.downloadbutton {
 		display: block;
-		margin: 0.5em 0 0.5em 0;
+		margin: 0 0 1.125em 0;
 		width: auto;
 	}
 	.downloadbutton:hover, .downloadbutton:focus {
