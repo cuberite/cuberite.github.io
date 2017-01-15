@@ -362,7 +362,8 @@ input {
 #downloadbutton-linux:hover #downloadmenu-linux,
 #downloadbutton-windows:hover #downloadmenu-windows,
 #downloadbutton-freebsd:hover #downloadmenu-freebsd,
-#downloadbutton-macos:hover #downloadmenu-macos {
+#downloadbutton-macos:hover #downloadmenu-macos,
+#downloadbutton-android:hover #downloadmenu-android:hover {
 	display: block;
 }
 #download-footer {
@@ -618,7 +619,8 @@ button:focus {
 	#downloadbutton-linux-mobile:checked + #downloadbutton-linux .downloadmenu,
 	#downloadbutton-windows-mobile:checked + #downloadbutton-windows .downloadmenu,
 	#downloadbutton-freebsd-mobile:checked + #downloadbutton-freebsd .downloadmenu,
-	#downloadbutton-macos-mobile:checked + #downloadbutton-macos .downloadmenu {
+	#downloadbutton-macos-mobile:checked + #downloadbutton-macos .downloadmenu,
+	#downloadbutton-android-mobile:checked + #downloadbutton-android .downloadmenu {
 		display: block;
 		animation: fadein .4s;
 	}
@@ -701,7 +703,8 @@ button:focus {
 	#downloadbutton-linux:hover #downloadmenu-linux,
 	#downloadbutton-windows:hover #downloadmenu-windows,
 	#downloadbutton-freebsd:hover #downloadmenu-freebsd,
-	#downloadbutton-macos:hover #downloadmenu-macos {
+	#downloadbutton-macos:hover #downloadmenu-macos,
+	#downloadbutton-android:hover #downloadmenu-android {
 		display: none;
 	}
 }
