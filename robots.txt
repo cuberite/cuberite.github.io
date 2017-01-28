@@ -1,3 +1,3 @@
 User-agent: *
 Disallow:
-Sitemap: http://cuberite.org/sitemap.xml
+Sitemap: https://cuberite.org/sitemap.xml

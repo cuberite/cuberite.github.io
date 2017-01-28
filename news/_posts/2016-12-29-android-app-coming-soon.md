@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Android app coming soon'
-discuss: 'https://forum.cuberite.org/thread-2721.html'
+discussion-id: 2721
 ---
 A few years ago, there was a possibility to run Cuberite on Android with our Android app. As development on Cuberite continued, the app was unintentionally left behind due to several issues. We are happy to announce that users will be able to run Cuberite on Android again, by using our new and improved Android app. It is not ready for release quite yet, but we expect to make it available in the beginning of 2017.
 
