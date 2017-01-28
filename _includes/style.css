@@ -282,10 +282,10 @@ input {
 	text-align: center;
 }
 #intro-body {
-	padding: 4% 10% 4% 10%;
+	padding: 4%;
 }
 #main-body {
-	padding: 6% 10% 6% 10%;
+	padding: 6%;
 }
 #intro h2 {
 	margin: 0 0 1.175em 0;
@@ -311,7 +311,7 @@ input {
 .downloadbutton {
 	font-size: 1.125em;
 	cursor: pointer;
-	width: 7.875em;
+	width: 7.500em;
 	margin: 0 0.500em 0 0.500em;
 	padding: 0.750em;
 	position: relative;
@@ -338,6 +338,9 @@ input {
 #downloadbutton-macos:before {
 	content: '\1f34e';
 }
+#downloadbutton-android:before {
+	content: '\1f916';
+}
 .downloadmenu {
 	background: #C3C3C3;
 	border-radius: 0 0 0.313em 0.313em;
@@ -362,7 +365,8 @@ input {
 #downloadbutton-linux:hover #downloadmenu-linux,
 #downloadbutton-windows:hover #downloadmenu-windows,
 #downloadbutton-freebsd:hover #downloadmenu-freebsd,
-#downloadbutton-macos:hover #downloadmenu-macos {
+#downloadbutton-macos:hover #downloadmenu-macos,
+#downloadbutton-android:hover #downloadmenu-android {
 	display: block;
 }
 #download-footer {
@@ -576,7 +580,7 @@ button:focus {
 		font-size: 94%;
 	}
 }
-@media (max-width: 900px) {
+@media (max-width: 950px) {
 	body {
 		padding: 0 0 3.750em 0;
 	}
@@ -618,7 +622,8 @@ button:focus {
 	#downloadbutton-linux-mobile:checked + #downloadbutton-linux .downloadmenu,
 	#downloadbutton-windows-mobile:checked + #downloadbutton-windows .downloadmenu,
 	#downloadbutton-freebsd-mobile:checked + #downloadbutton-freebsd .downloadmenu,
-	#downloadbutton-macos-mobile:checked + #downloadbutton-macos .downloadmenu {
+	#downloadbutton-macos-mobile:checked + #downloadbutton-macos .downloadmenu,
+	#downloadbutton-android-mobile:checked + #downloadbutton-android .downloadmenu {
 		display: block;
 		animation: fadein .4s;
 	}
@@ -701,7 +706,8 @@ button:focus {
 	#downloadbutton-linux:hover #downloadmenu-linux,
 	#downloadbutton-windows:hover #downloadmenu-windows,
 	#downloadbutton-freebsd:hover #downloadmenu-freebsd,
-	#downloadbutton-macos:hover #downloadmenu-macos {
+	#downloadbutton-macos:hover #downloadmenu-macos,
+	#downloadbutton-android:hover #downloadmenu-android {
 		display: none;
 	}
 }
