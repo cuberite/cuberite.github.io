@@ -5,6 +5,7 @@ author: Cuberite Team
 exclude:
   - LICENSE
   - README.md
+  - TRADEMARK
 sass:
   style: :compressed
 gems:
