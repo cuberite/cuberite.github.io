@@ -77,13 +77,38 @@
 	{{ content }}
 	<div id="footer">
 		<div id="mobile-links">
-			<a href="/" class="home show-mobile">Home</a>
-			<a href="https://book.cuberite.org/" class="manual show-mobile">Manual</a>
-			<a href="/support/" class="support show-mobile{% if page.url == "/support/" %} active{% endif %}">Support</a>
-			<a href="/plugins/" class="plugins show-mobile{% if page.url == "/plugins/" %} active{% endif %}">Plugins</a>
+			<a href="/" class="show-mobile{% if page.url == "/" %} active{% endif %}">
+				<svg aria-hidden="true" height="1.750em" viewBox="0 0 24 24" width="1.750em">
+					<path d="{% include _icons/home %}" />
+				</svg>
+				Home
+			</a>
+			<a href="https://book.cuberite.org/" class="show-mobile">
+				<svg aria-hidden="true" height="1.750em" viewBox="0 0 24 24" width="1.750em">
+					<path d="{% include _icons/manual %}" />
+				</svg>
+				Manual
+			</a>
+			<a href="/support/" class="show-mobile{% if page.url == "/support/" %} active{% endif %}">
+				<svg aria-hidden="true" height="1.750em" viewBox="0 0 24 24" width="1.750em">
+					<path d="{% include _icons/support %}" />
+				</svg>
+				Support
+			</a>
+			<a href="/plugins/" class="show-mobile{% if page.url == "/plugins/" %} active{% endif %}">
+				<svg aria-hidden="true" height="1.750em" viewBox="0 0 24 24" width="1.750em">
+					<path d="{% include _icons/plugins %}" />
+				</svg>
+				Plugins
+			</a>
 			<input type="checkbox" id="footer-links-toggle"/>
 			<div id="footer-links">
-				<label for="footer-links-toggle">More</label>
+				<label for="footer-links-toggle">
+					<svg aria-hidden="true" height="1.750em" viewBox="0 0 24 24" width="1.750em">
+						<path d="{% include _icons/more %}" />
+					</svg>
+					More
+				</label>
 				<div id="footer-links-body">
 					<a href="/about/">About</a>
 					<a href="https://forum.cuberite.org/" class="show-mobile-block">Forum</a>

@@ -28,6 +28,7 @@ body {
 	background-size: 75px 80px;
 	background-color: #1e1e1e;
 	color: #eaeaea;
+	fill: #eaeaea;
 	font-family: montserratregular, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	display: table;
 	line-height: 1.000em;
@@ -850,12 +851,14 @@ button:focus {
 	body,
 	h1 {
 		color: #000;
+		fill: #000;
 		text-shadow: none;
 	}
 	body,
+	.button,
+	.downloadbutton,
 	#pagination a,
-	#pagination span,
-	.button {
+	#pagination span {
 		background: none;
 	}
 	a,
@@ -893,15 +896,23 @@ button:focus {
 		display: block;
 		padding: 0;
 	}
+	#banner-blue,
+	#banner-green {
+		color: #000;
+		background: none;
+		fill: #000;
+	}
+	.button,
+	.downloadbutton,
 	#pagination a,
-	#pagination span,
-	.button {
+	#pagination span {
 		border: 0.063em solid #000;
 		box-shadow: none;
 	}
+	.button a,
+	.downloadbutton,
 	#pagination a,
-	#pagination span,
-	.button a {
+	#pagination span {
 		color: #000;
 		fill: #000;
 	}
