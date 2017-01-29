@@ -34,14 +34,44 @@
 <body>
 	<div id="navigation">
 		<div id="logo">
-			<a href="/">Cuberite</a>
+			<a href="/">
+				<svg aria-hidden="true" height="1.125em" viewBox="0 0 24 24" width="1.125em">
+					<path d="{% include _icons/cuberite %}" />
+				</svg>
+				Cuberite
+			</a>
 		</div>
 		<div id="navigation-links">
-			<a href="https://forum.cuberite.org/" class="forum">Forum</a>
-			<a href="https://book.cuberite.org/" class="manual">Manual</a>
-			<a href="/support/" class="support{% if page.url == "/support/" %} active{% endif %}">Support</a>
-			<a href="/plugins/" class="plugins{% if page.url == "/plugins/" %} active{% endif %}">Plugins</a>
-			<a href="/contribute/" class="contribute{% if page.url == "/contribute/" %} active{% endif %}">Contribute</a>
+			<a href="https://forum.cuberite.org/">
+				<svg aria-hidden="true" height="1.313em" viewBox="0 0 24 24" width="1.313em">
+					<path d="{% include _icons/forum %}" />
+				</svg>
+				Forum
+			</a>
+			<a href="https://book.cuberite.org/">
+				<svg aria-hidden="true" height="1.313em" viewBox="0 0 24 24" width="1.313em">
+					<path d="{% include _icons/manual %}" />
+				</svg>
+				Manual
+			</a>
+			<a href="/support/"{% if page.url == "/support/" %} class="active"{% endif %}>
+				<svg aria-hidden="true" height="1.313em" viewBox="0 0 24 24" width="1.313em" >
+					<path d="{% include _icons/support %}" />
+				</svg>
+				Support
+			</a>
+			<a href="/plugins/"{% if page.url == "/plugins/" %} class="active"{% endif %}>
+				<svg aria-hidden="true" height="1.313em" viewBox="0 0 24 24" width="1.313em">
+					<path d="{% include _icons/plugins %}" />
+				</svg>
+				Plugins
+			</a>
+			<a href="/contribute/"{% if page.url == "/contribute/" %} class="active"{% endif %}>
+				<svg aria-hidden="true" height="1.313em" viewBox="0 0 24 24" width="1.313em">
+					<path d="{% include _icons/contribute %}" />
+				</svg>
+				Contribute
+			</a>
 		</div>
 	</div>
 	{{ content }}
@@ -64,9 +94,21 @@
 					<a href="https://api.cuberite.org/">API Docs</a>
 					<a href="/privacy/">Privacy</a>
 					<div id="media-links">
-						<a href="https://plus.google.com/+cuberiteorg" id="google"></a>
-						<a href="https://twitter.com/cuberiteproject" id="twitter"></a>
-						<a href="https://www.youtube.com/c/cuberiteorg" id="youtube"></a>
+						<a href="https://plus.google.com/+cuberiteorg" id="google">
+							<svg aria-hidden="true" height="1.375em" viewBox="7 0 24 24" width="2.188em">
+								<path d="{% include _icons/google %}" />
+							</svg>
+						</a>
+						<a href="https://twitter.com/cuberiteproject" id="twitter">
+							<svg aria-hidden="true" height="1.375em" viewBox="0 0 24 24" width="1.375em">
+								<path d="{% include _icons/twitter %}" />
+							</svg>
+						</a>
+						<a href="https://www.youtube.com/c/cuberiteorg" id="youtube">
+							<svg aria-hidden="true" height="1.375em" viewBox="0 0 24 24" width="1.375em" >
+								<path d="{% include _icons/youtube %}" />
+							</svg>
+						</a>
 					</div>
 				</div>
 			</div>

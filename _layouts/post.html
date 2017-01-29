@@ -3,9 +3,14 @@ layout: default
 ---
 <div id="main">
 	<div id="main-body">
-		<h2 class="news">{{ page.title }}</h2>
+		<h2>
+			<svg aria-hidden="true" height="1.000em" viewBox="0 0 24 24" width="1.000em">
+				<path d="{% include _icons/news %}" />
+			</svg>
+			{{ page.title }}
+		</h2>
 		{{ content }}
-		<div id="main-footer">
+		<div id="post-footer">
 			{{ page.date | date: "%B %e, %Y" }}
 			{% if page.discuss %}
 				<span>&bull;</span>

@@ -30,7 +30,7 @@ body {
 	color: #eaeaea;
 	font-family: montserratregular, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	display: table;
-	line-height: 1;
+	line-height: 1.000em;
 	text-shadow: 0 0.125em 0 rgba(0, 0, 0, .1);
 	-webkit-tap-highlight-color: rgba(255, 255, 255, .1);
 }
@@ -59,25 +59,23 @@ h3 {
 }
 h1 {
 	font-size: 2.875em;
-	line-height: 1.4em;
+	line-height: 1.375em;
 	margin: 0 0 1.250em 0;
 	text-shadow: 0 0.063em 0.063em rgba(0, 0, 0, .15);
-}
-h2:before {
-	cursor: default;
-	margin: 0 0.563em 0 0;
 }
 h2 {
 	font-size: 1.500em;
 	margin: 0 0 0.625em 0;
 }
+h2 svg {
+	margin: 0 0.563em 0 0;
+}
 h3 {
 	font-size: 1.125em;
-	margin: 1.125em 0 0.625em 0;
+	margin: 2.125em 0 0.750em 0;
 }
 p,
 ul {
-	line-height: 1.6em;
 	margin: 0 0 0.938em 0;
 }
 em {
@@ -85,6 +83,9 @@ em {
 }
 strong {
 	font-weight: bold;
+}
+svg {
+	vertical-align: middle;
 }
 a {
 	color: rgba(255, 255, 255, .4);
@@ -110,15 +111,10 @@ a:focus {
 #banner-green-body {
 	animation: fadein .7s;
 }
-#navigation a:before,
-.downloadbutton:before,
-h2:before,
-#previous:before,
-#next:before,
-#mobile-links a:before,
-#footer-links label:before,
-#media-links a:before {
-	font-family: 'icons';
+#navigation a,
+#footer a {
+	color: #eaeaea;
+	fill: #eaeaea;
 }
 #navigation a:hover,
 #navigation a:focus,
@@ -135,10 +131,8 @@ p,
 .post span,
 input {
 	font-family: montserratlight, "Helvetica Neue", Helvetica, Arial, sans-serif;
-	line-height: 1.6em;
+	line-height: 1.625em;
 }
-h2:before,
-#navigation a:before,
 #left-three,
 #center-three,
 #right-three,
@@ -148,6 +142,10 @@ button,
 input {
 	vertical-align: top;
 }
+#post-footer span,
+#download-footer span {
+	margin: 0 0.750em 0 0.750em;
+}
 .button,
 .downloadbutton,
 #pagination a,
@@ -156,6 +154,7 @@ input {
 	border-radius: 0.313em;
 	box-shadow: 0 0.125em 0.063em rgba(0, 0, 0, 0.15);
 	color: #1e1e1e;
+	fill: #1e1e1e;
 	display: inline-block;
 	text-shadow: none;
 }
@@ -165,41 +164,7 @@ input {
 #pagination a:focus {
 	background: #C3C3C3;
 	color: #1e1e1e;
-}
-/* Icons */
-
-.about:before {
-	content: "\24d8";
-}
-.contribute:before {
-	content: "\26d8";
-}
-.forum:before {
-	content: "\1F4AC";
-}
-.getting-started:before {
-	content: "\1f680";
-}
-.home:before {
-	content: "\2302";
-}
-.manual:before {
-	content: "\1F4D6";
-}
-.news:before {
-	content: "\1f56b";
-}
-.not-found:before {
-	content: "\26a0";
-}
-.plugins:before {
-	content: '\1f50c';
-}
-.privacy:before {
-	content: '\1f441';
-}
-.support:before {
-	content: "\3f";
+	fill: #1e1e1e;
 }
 /* Columns */
 
@@ -238,35 +203,30 @@ input {
 #navigation {
 	background: rgba(10, 10, 10, 0.4);
 	display: table-row;
-	line-height: 0;
+	line-height: 3.875em;
 }
 #logo a {
-	color: #eaeaea;
 	float: left;
 	font-size: 1.500em;
 	text-transform: uppercase;
-	padding: 1.313em 1em 1.313em 1em;
-	margin: 0 0 0 0.625em;
+	padding: 0 0.750em;
+	margin: 0 0 0 0.750em;
 }
-#logo a:before {
-	content: '\25a0';
-	font-size: 1.125em;
-	margin: 0 0.500em 0 0;
+#logo svg {
+	margin: 0 0.625em 0 0;
 }
 #navigation-links {
 	float: right;
 	margin: 0 0.750em 0 0;
 }
-#navigation-links a:before {
-	font-size: 1.250em;
-	margin: 0 0.625em 0 0;
-}
 #navigation-links a {
-	color: #eaeaea;
 	float: left;
 	font-size: 0.875em;
-	padding: 2.250em 1.750em 2.250em 1.750em;
-	margin: 0 0.188em 0 0.188em;
+	padding: 0 1.625em;
+	margin: 0 0.188em;
+}
+#navigation-links svg {
+	margin: 0 0.875em 0 0;
 }
 /* Intro and Main */
 
@@ -288,23 +248,7 @@ input {
 	padding: 6%;
 }
 #intro h2 {
-	margin: 0 0 1.175em 0;
-}
-#main-footer {
-	color: rgba(255, 255, 255, .7);
-	font-size: 0.875em;
-	padding: 0.375em 0 0 0;
-}
-#main-footer a {
-	color: rgba(255, 255, 255, .5);
-}
-#main-footer a:hover,
-#main-footer a:focus {
-	color: rgba(255, 255, 255, .7);
-}
-#main-footer span,
-#download-footer span {
-	margin: 0 0.750em 0 0.750em;
+	margin: 0 0 1.250em 0;
 }
 /* Download Buttons */
 
@@ -312,47 +256,32 @@ input {
 	font-size: 1.125em;
 	cursor: pointer;
 	width: 7.500em;
-	margin: 0 0.500em 0 0.500em;
-	padding: 0.750em;
+	margin: 0 0.500em;
+	padding: 0 0.750em;
 	position: relative;
-	line-height: 1.688em;
+	line-height: 3.125em;
 }
 .downloadbutton:hover,
 .downloadbutton:focus {
 	background: #C3C3C3;
 	border-radius: 0.313em 0.313em 0 0;
 }
-.downloadbutton:before {
-	font-size: 1.563em;
+.downloadbutton svg {
 	float: left;
-}
-#downloadbutton-linux:before {
-	content: '\1f427';
-}
-#downloadbutton-windows:before {
-	content: '\1f5d4';
-}
-#downloadbutton-freebsd:before {
-	content: '\1f608';
-}
-#downloadbutton-macos:before {
-	content: '\1f34e';
-}
-#downloadbutton-android:before {
-	content: '\1f916';
+	margin: 0.750em 0 0 0;
 }
 .downloadmenu {
 	background: #C3C3C3;
 	border-radius: 0 0 0.313em 0.313em;
 	display: none;
-	margin: 0.688em 0 0 -0.750em;
+	margin: 0 0 0 -0.750em;
 	position: absolute;
 	width: 100%;
 }
 .downloadmenu a {
 	color: #1e1e1e;
 	display: block;
-	padding: 0.500em;
+	padding: 0 0.500em;
 }
 .downloadmenu a:hover,
 .downloadmenu a:focus {
@@ -385,9 +314,14 @@ input {
 #banner-blue,
 #banner-green {
 	color: rgba(255, 255, 255, .75);
+	fill: rgba(255, 255, 255, .75);
 	font-size: 0.938em;
 	text-align: center;
 	padding: 0.750em;
+}
+#banner-blue svg,
+#banner-green svg {
+	padding: 0 0.750em 0 0;
 }
 #banner-blue {
 	background: rgba(43, 149, 255, .05);
@@ -414,17 +348,28 @@ input {
 	font-size: 0.875em;
 	margin: 0.688em 0 0 0;
 }
+#post-footer {
+	color: rgba(255, 255, 255, .7);
+	font-size: 0.875em;
+	padding: 0.375em 0 0 0;
+}
+#post-footer a {
+	color: rgba(255, 255, 255, .5);
+}
+#post-footer a:hover,
+#post-footer a:focus {
+	color: rgba(255, 255, 255, .7);
+}
 #pagination {
-	font-size: 0.813em;
 	margin: 2.188em 0 3.375em 0;
 }
 #pagination a,
 #pagination span {
-	padding: 0.875em 0.875em 0.813em 0.875em;
+	padding: 0.750em;
 }
 #pagination span {
 	color: #676767;
-	cursor: default;
+	fill: #676767;
 }
 #previous {
 	margin: 0 0.313em 0 0;
@@ -432,21 +377,12 @@ input {
 #next {
 	margin: 0 0 0 0.313em;
 }
-#previous:before {
-	content: '\ab';
-}
-#next:before {
-	content: '\bb';
-}
 /* Footer */
 
 #footer {
 	background: rgba(10, 10, 10, 0.4);
 	display: table-row;
-	line-height: 0;
-}
-#footer a {
-	color: #eaeaea;
+	line-height: 3.375em;
 }
 #footer-links {
 	margin: 0 0 0 0.813em;
@@ -454,32 +390,18 @@ input {
 #footer-links a {
 	float: left;
 	font-size: 0.875em;
-	padding: 1.875em;
-	margin: 0 0.188em 0 0.188em;
+	padding: 0 1.875em;
+	margin: 0 0.188em;
 }
 #media-links {
 	float: right;
 	margin: 0 0.813em 0 0;
 }
+#media-links a:first-child {
+	padding: 0 1.375em;
+}
 #media-links a {
-	font-size: 1.250em;
-	padding: 1.250em 1.188em 1.313em 1.188em;
-}
-#media-links a#google {
-	font-size: 1.688em;
-	padding: 0.938em 0.750em 0.938em 0.750em;
-}
-#google:before {
-	content: '\47';
-}
-#twitter:before {
-	content: '\1f426';
-}
-#twitch:before {
-	content: '\1f5e9';
-}
-#youtube:before {
-	content: '\25b6';
+	padding: 0 1.625em;
 }
 /* Inputs */
 
@@ -489,7 +411,7 @@ input {
 	font-size: 0.875em;
 	height: 2.500em;
 	line-height: 2.500em;
-	padding: 0 0.750em 0 0.750em;
+	padding: 0 0.750em;
 }
 input::-moz-focus-inner,
 button::-moz-focus-inner {
@@ -590,7 +512,6 @@ button:focus {
 		text-align: center;
 	}
 	#logo a {
-		display: inline-block;
 		float: none;
 		margin: 0;
 	}
@@ -605,7 +526,6 @@ button:focus {
 		left: 0;
 	}
 	#footer-links {
-		float: none;
 		margin: 0;
 	}
 	#footer-links-body {
@@ -614,9 +534,13 @@ button:focus {
 		overflow-y: scroll;
 		position: fixed;
 		width: 100%;
-		height: 15em;
+		height: 15.000em;
 		bottom: 3.750em;
 		left: 0;
+	}
+	#footer-links-body,
+	#media-links a {
+		line-height: 3.375em;
 	}
 	#footer-links-toggle:checked + #footer-links #footer-links-body,
 	#downloadbutton-linux-mobile:checked + #downloadbutton-linux .downloadmenu,
@@ -630,7 +554,6 @@ button:focus {
 	#footer-links a {
 		display: block;
 		float: none;
-		padding: 2.000em 1.625em 2.000em 1.625em;
 		margin: 0;
 	}
 	#footer-links a:hover,
@@ -644,21 +567,19 @@ button:focus {
 	#mobile-links,
 	#media-links {
 		display: table;
+		line-height: 1.875em;
 		table-layout: fixed;
 		width: 100%;
 	}
-	#mobile-links a:before,
-	#footer-links label:before {
-		display: table;
-		font-size: 1.750em;
-		margin: 0.063em auto 0.750em auto;
+	#mobile-links a.show-mobile svg,
+	#footer-links label svg {
+		display: block;
+		padding: 0.750em 0 0 0;
+		margin: 0 auto;
 	}
 	#mobile-links a.show-mobile,
 	#media-links a {
 		display: table-cell;
-	}
-	#footer-links label:before {
-		content: '\2026';
 	}
 	#footer-links label {
 		cursor: pointer;
@@ -667,24 +588,11 @@ button:focus {
 	#mobile-links a.show-mobile,
 	#footer-links label {
 		font-size: 0.750em;
-		padding: 1.563em 0 1.250em 0;
 		text-align: center;
 	}
 	#media-links {
 		float: none;
-		margin: 0;
-	}
-	#media-links a {
-		float: none;
-		font-size: 0.875em;
-		padding: 0;
-	}
-	#media-links a:before {
-		margin: 0.875em auto 0.625em auto;
-	}
-	#media-links a#google {
-		font-size: 1.125em;
-		padding: 0;
+		text-align: center;
 	}
 	/* Download Buttons */
 	
@@ -700,7 +608,7 @@ button:focus {
 	.downloadmenu {
 		position: static;
 		background: none;
-		margin: 0.750em -0.750em -0.750em -0.750em;
+		margin: 0 -0.750em 0 -0.750em;
 		width: auto;
 	}
 	#downloadbutton-linux:hover #downloadmenu-linux,
@@ -951,7 +859,7 @@ button:focus {
 		background: none;
 	}
 	a,
-	#main-footer a,
+	#post-footer a,
 	#download-footer a,
 	.post a {
 		color: #5098CE;
@@ -995,5 +903,6 @@ button:focus {
 	#pagination span,
 	.button a {
 		color: #000;
+		fill: #000;
 	}
 }
