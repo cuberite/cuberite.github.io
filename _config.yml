@@ -11,6 +11,6 @@ sass:
 gems:
   - jekyll-feed
   - jekyll-sitemap
-permalink: /:categories/:title/
+permalink: /news/:title/
 paginate: 5
 paginate_path: /news/:num/
