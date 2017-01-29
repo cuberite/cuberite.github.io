@@ -70,6 +70,7 @@ h2 {
 }
 h2 svg {
 	margin: 0 0.563em 0 0;
+	top: 0.188em;
 }
 h3 {
 	font-size: 1.125em;
@@ -86,7 +87,7 @@ strong {
 	font-weight: bold;
 }
 svg {
-	vertical-align: middle;
+	position: relative;
 }
 a {
 	color: rgba(255, 255, 255, .4);
@@ -215,6 +216,7 @@ input {
 }
 #logo svg {
 	margin: 0 0.625em 0 0;
+	top: 0.250em;
 }
 #navigation-links {
 	float: right;
@@ -228,6 +230,7 @@ input {
 }
 #navigation-links svg {
 	margin: 0 0.875em 0 0;
+	top: 0.313em;
 }
 /* Intro and Main */
 
@@ -269,7 +272,7 @@ input {
 }
 .downloadbutton svg {
 	float: left;
-	margin: 0.750em 0 0 0;
+	top: 0.750em;
 }
 .downloadmenu {
 	background: #C3C3C3;
@@ -323,6 +326,7 @@ input {
 #banner-blue svg,
 #banner-green svg {
 	padding: 0 0.750em 0 0;
+	top: 0.188em;
 }
 #banner-blue {
 	background: rgba(43, 149, 255, .05);
@@ -366,7 +370,7 @@ input {
 }
 #pagination a,
 #pagination span {
-	padding: 0.750em;
+	padding: 0.750em 0.750em 0.625em 0.750em;
 }
 #pagination span {
 	color: #676767;
@@ -403,6 +407,9 @@ input {
 }
 #media-links a {
 	padding: 0 1.625em;
+}
+#media-links svg {
+	top: 0.313em;
 }
 /* Inputs */
 
