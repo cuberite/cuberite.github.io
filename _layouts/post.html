@@ -12,7 +12,7 @@ layout: default
 		{{ content }}
 		<div id="post-footer">
 			{{ page.date | date: "%B %e, %Y" }}
-			{% if page.discuss %}
+			{% if page.discussion-id %}
 				<span>&bull;</span>
 				<a href="https://forum.cuberite.org/thread-{{ page.discussion-id }}.html">Discuss this post</a>
 			{% endif %}
