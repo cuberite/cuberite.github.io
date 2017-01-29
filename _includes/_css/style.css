@@ -282,6 +282,7 @@ input {
 	margin: 0 0 0 -0.750em;
 	position: absolute;
 	width: 100%;
+	z-index: 1;
 }
 .downloadmenu a {
 	color: #1e1e1e;
