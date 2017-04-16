@@ -380,7 +380,7 @@ input {
 .downloadmenu a {
 	color: #1e1e1e;
 	display: block;
-	padding: 0 0.500em;
+	line-height: 2.625em;
 }
 .downloadmenu a:hover,
 .downloadmenu a:focus {
