@@ -340,44 +340,46 @@ input {
 	padding: 0 0.750em;
 	position: relative;
 	line-height: 3.125em;
+	transition-delay: .19s;
 }
 .downloadbutton:hover,
 .downloadbutton:focus {
 	background: #C3C3C3;
 	border-radius: 0.313em 0.313em 0 0;
+	transition-delay: 0s;
+}
+.downloadbutton:hover > span {
+	max-height: 8.000em;
 }
 .downloadbutton svg {
 	float: left;
 	top: 0.750em;
 }
-.downloadmenu {
+.downloadbutton span {
 	background: #C3C3C3;
 	border-radius: 0 0 0.313em 0.313em;
-	display: none;
+	box-shadow: 0 0.125em 0.063em rgba(0, 0, 0, 0.15);
+	display: block;
 	margin: 0 0 0 -0.750em;
+	max-height: 0;
+	overflow: hidden;
 	position: absolute;
+	transition: max-height 150ms ease;
 	width: 100%;
 	z-index: 1;
 }
-.downloadmenu a {
+.downloadbutton span a {
 	color: #1e1e1e;
 	display: block;
 	line-height: 2.625em;
 }
-.downloadmenu a:hover,
-.downloadmenu a:focus {
+.downloadbutton span a:hover,
+.downloadbutton span a:focus {
 	background: #eaeaea;
 }
-.downloadmenu a:last-child:hover,
-.downloadmenu a:last-child:focus {
+.downloadbutton span a:last-child:hover,
+.downloadbutton span a:last-child:focus {
 	border-radius: 0 0 0.313em 0.313em;
-}
-#downloadbutton-linux:hover #downloadmenu-linux,
-#downloadbutton-windows:hover #downloadmenu-windows,
-#downloadbutton-freebsd:hover #downloadmenu-freebsd,
-#downloadbutton-macos:hover #downloadmenu-macos,
-#downloadbutton-android:hover #downloadmenu-android {
-	display: block;
 }
 #download-footer {
 	font-size: 0.875em;
@@ -531,14 +533,6 @@ button:focus {
 	}
 	/* Menus */
 
-	#navigation,
-	#footer,
-	#footer-links {
-		background: rgba(10, 10, 10, 0.95);
-		right: 0;
-		left: 0;
-		z-index: 1;
-	}
 	#navigation a:hover,
 	#navigation a:focus,
 	#footer a:hover,
@@ -549,9 +543,12 @@ button:focus {
 		background: #000;
 	}
 	#navigation {
+		background: rgba(10, 10, 10, 0.95);
 		position: fixed;
 		text-align: center;
 		top: 0;
+		width: 100%;
+		z-index: 1;
 	}
 	#logo a {
 		display: block;
@@ -562,6 +559,7 @@ button:focus {
 		display: none;
 	}
 	#footer {
+		background: rgba(10, 10, 10, 0.95);
 		bottom: -15.000em;
 		position: fixed;
 		transition: all 200ms ease;
@@ -571,7 +569,6 @@ button:focus {
 	}
 	#footer-links {
 		height: 15.000em;
-		line-height: 3.375em;
 		overflow-y: scroll;
 	}
 	#footer-links a {
@@ -635,26 +632,18 @@ button:focus {
 	.downloadbutton:focus {
 		border-radius: 0.313em;
 	}
-	.downloadmenu {
-		position: static;
+	.downloadbutton span {
+		box-shadow: none;
+		position: relative;
 		background: none;
 		margin: 0 -0.750em 0 -0.750em;
 		width: auto;
 	}
-	#downloadbutton-linux:hover #downloadmenu-linux,
-	#downloadbutton-windows:hover #downloadmenu-windows,
-	#downloadbutton-freebsd:hover #downloadmenu-freebsd,
-	#downloadbutton-macos:hover #downloadmenu-macos,
-	#downloadbutton-android:hover #downloadmenu-android {
-		display: none;
+	.downloadbutton:hover > span {
+		max-height: 0;
 	}
-	#downloadbutton-linux-mobile:checked + #downloadbutton-linux .downloadmenu,
-	#downloadbutton-windows-mobile:checked + #downloadbutton-windows .downloadmenu,
-	#downloadbutton-freebsd-mobile:checked + #downloadbutton-freebsd .downloadmenu,
-	#downloadbutton-macos-mobile:checked + #downloadbutton-macos .downloadmenu,
-	#downloadbutton-android-mobile:checked + #downloadbutton-android .downloadmenu {
-		display: block;
-		animation: fadein .4s;
+	.downloadbutton input:checked + span {
+		max-height: 8.000em;
 	}
 }
 /* Print Style */
