@@ -547,7 +547,7 @@ button:focus {
 
 @media (max-width: 60em) {
 	body {
-		padding: 0 0 3.750em 0;
+		padding: 3.750em 0;
 	}
 	/* Menus */
 
