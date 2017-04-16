@@ -555,6 +555,7 @@ button:focus {
 		text-align: center;
 	}
 	#logo a {
+		display: block;
 		float: none;
 		margin: 0;
 	}
@@ -562,18 +563,25 @@ button:focus {
 		display: none;
 	}
 	#footer {
-		background: rgba(10, 10, 10, 0.7);
+		background: rgba(10, 10, 10, 0.95);
 		position: fixed;
 		right: 0;
 		bottom: 0;
 		left: 0;
 		transition: all 150ms ease;
 	}
+	#footer a:hover,
+	#footer a:focus,
+	#footer-links label:hover,
+	#footer-links label:focus,
+	.active {
+		background: #000;
+	}
 	#footer-links {
 		margin: 0;
 	}
 	#footer-links-body {
-		background: rgba(10, 10, 10, .9);
+		background: rgba(10, 10, 10, .95);
 		overflow-y: scroll;
 		position: fixed;
 		width: 100%;
@@ -596,10 +604,6 @@ button:focus {
 		display: block;
 		float: none;
 		margin: 0;
-	}
-	#footer-links a:hover,
-	#footer-links a:focus {
-		background: #000;
 	}
 	.show-mobile,
 	.show-mobile-block {
