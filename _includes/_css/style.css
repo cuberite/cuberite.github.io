@@ -144,7 +144,6 @@ h2 {
 }
 h2 svg {
 	margin: 0 0.563em 0 0;
-	top: 0.188em;
 }
 h3 {
 	font-size: 1.125em;
@@ -159,9 +158,6 @@ em {
 }
 strong {
 	font-weight: bold;
-}
-svg {
-	position: relative;
 }
 a {
 	color: rgba(255, 255, 255, .4);
@@ -199,6 +195,9 @@ a:focus {
 #footer-links label:focus,
 .active {
 	background: rgba(10, 10, 10, .35);
+}
+h2 span, svg, #navigation span {
+	vertical-align: middle;
 }
 p,
 #banner-blue,
@@ -278,7 +277,7 @@ input {
 #navigation {
 	background: rgba(10, 10, 10, 0.4);
 	display: table-row;
-	line-height: 3.875em;
+	line-height: 3.750em;
 }
 #logo a {
 	float: left;
@@ -289,7 +288,6 @@ input {
 }
 #logo svg {
 	margin: 0 0.625em 0 0;
-	top: 0.250em;
 }
 #navigation-links {
 	float: right;
@@ -303,7 +301,6 @@ input {
 }
 #navigation-links svg {
 	margin: 0 0.875em 0 0;
-	top: 0.313em;
 }
 /* Intro and Main */
 
@@ -353,7 +350,7 @@ input {
 }
 .downloadbutton svg {
 	float: left;
-	top: 0.750em;
+	margin: 0.750em 0;
 }
 .downloadbutton span {
 	background: #C3C3C3;
@@ -366,7 +363,6 @@ input {
 	position: absolute;
 	transition: max-height 150ms ease;
 	width: 100%;
-	z-index: 1;
 }
 .downloadbutton span a {
 	color: #1e1e1e;
@@ -405,7 +401,6 @@ input {
 #banner-blue svg,
 #banner-green svg {
 	padding: 0 0.750em 0 0;
-	top: 0.188em;
 }
 #banner-blue {
 	background: rgba(43, 149, 255, .05);
@@ -482,13 +477,7 @@ input {
 	margin: 0 0.813em 0 0;
 }
 #media-links a:first-child {
-	padding: 0 1.375em;
-}
-#media-links a {
 	padding: 0 1.625em;
-}
-#media-links svg {
-	top: 0.313em;
 }
 /* Inputs */
 
@@ -548,10 +537,9 @@ button:focus {
 		text-align: center;
 		top: 0;
 		width: 100%;
-		z-index: 1;
 	}
 	#logo a {
-		display: block;
+		display: inline-block;
 		float: none;
 		margin: 0;
 	}
@@ -562,7 +550,8 @@ button:focus {
 		background: rgba(10, 10, 10, 0.95);
 		bottom: -15.000em;
 		position: fixed;
-		transition: all 200ms ease;
+		transition: bottom 200ms ease;
+		z-index: 1;
 	}
 	#footer-links-toggle:checked + #footer {
 		bottom: 0;
@@ -634,7 +623,7 @@ button:focus {
 	}
 	.downloadbutton span {
 		box-shadow: none;
-		position: relative;
+		position: initial;
 		background: none;
 		margin: 0 -0.750em 0 -0.750em;
 		width: auto;
