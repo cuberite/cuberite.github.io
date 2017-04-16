@@ -190,12 +190,11 @@ a:focus {
 }
 /* Combined Rules */
 
-#intro input,
-#footer img,
-#footer label,
-#footer-links-toggle,
 .show-mobile,
-.show-mobile-block {
+#intro input,
+#footer-links-toggle,
+#footer img,
+#mobile-links {
 	display: none;
 }
 #intro-body,
@@ -549,11 +548,14 @@ button:focus {
 	body {
 		padding: 3.750em 0;
 	}
+	.show-mobile {
+		display: initial;
+	}
 	/* Menus */
 
 	#navigation,
 	#footer,
-	#footer-links-body {
+	#footer-links {
 		background: rgba(10, 10, 10, 0.95);
 		right: 0;
 		left: 0;
@@ -563,8 +565,8 @@ button:focus {
 	#navigation a:focus,
 	#footer a:hover,
 	#footer a:focus,
-	#footer-links label:hover,
-	#footer-links label:focus,
+	#footer label:hover,
+	#footer label:focus,
 	.active {
 		background: #000;
 	}
@@ -582,63 +584,46 @@ button:focus {
 		display: none;
 	}
 	#footer {
-		bottom: 0;
+		bottom: -15.000em;
 		position: fixed;
 		transition: all 200ms ease;
 	}
-	#footer-links {
-		margin: 0;
-	}
-	#footer-links-body {
-		overflow-y: scroll;
-		position: absolute;
-		height: 15.000em;
-		bottom: -15.000em;
-	}
-	#footer-links-body,
-	#media-links a {
-		line-height: 3.375em;
-	}
 	#footer-links-toggle:checked + #footer {
-		bottom: 15.000em;
+		bottom: 0;
+	}
+	#footer-links {
+		height: 15.000em;
+		line-height: 3.375em;
+		overflow-y: scroll;
 	}
 	#footer-links a {
 		display: block;
 		float: none;
 		margin: 0;
 	}
-	.show-mobile,
-	.show-mobile-block {
-		display: initial;
+	#mobile-links {
+		font-size: 0.750em;
+		line-height: 2.500em;
 	}
-	#mobile-links,
-	#media-links {
-		display: table;
-		line-height: 1.875em;
-		table-layout: fixed;
-		width: 100%;
-	}
-	#mobile-links a.show-mobile svg,
-	#footer-links label svg {
+	#mobile-links svg {
 		display: block;
 		padding: 0.750em 0 0 0;
 		margin: 0 auto;
 	}
-	#mobile-links a.show-mobile,
-	#media-links a {
-		display: table-cell;
-	}
-	#footer-links label {
-		cursor: pointer;
-		display: block;
-	}
-	#mobile-links a.show-mobile,
-	#footer-links label {
-		font-size: 0.750em;
-		text-align: center;
-	}
-	#media-links {
+	#footer-links, #media-links {
 		margin: 0;
+	}
+	#media-links,
+	#mobile-links {
+		display: table;
+		table-layout: fixed;
+		width: 100%;
+	}
+	#media-links a,
+	#mobile-links a,
+	#mobile-links label {
+		cursor: pointer;
+		display: table-cell;
 		text-align: center;
 	}
 	/* Columns */
