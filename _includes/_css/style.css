@@ -557,6 +557,7 @@ button:focus {
 		position: fixed;
 		right: 0;
 		left: 0;
+		z-index: 1;
 	}
 	#navigation a:hover,
 	#navigation a:focus,
