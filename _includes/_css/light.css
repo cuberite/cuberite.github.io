@@ -1,6 +1,7 @@
 body {
 	background: #EAEAEA;
 	color: #464646;
+	fill: #464646;
 	text-shadow: none;
 }
 ::-moz-selection {
@@ -33,6 +34,7 @@ a:focus {
 #navigation-links a,
 #footer a {
 	color: #4A4A4A;
+	fill: #4A4A4A;
 }
 #post-footer {
 	color: #797979

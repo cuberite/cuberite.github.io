@@ -3,19 +3,21 @@ layout: default
 ---
 <div id="main">
 	<div id="main-body">
-		<h2>
-			<svg aria-hidden="true" height="1.000em" viewBox="0 0 24 24" width="1.000em">
-				<path d="{% include _icons/news %}" />
-			</svg>
-			{{ page.title }}
-		</h2>
-		{{ content }}
-		<div id="post-footer">
-			{{ page.date | date: "%B %e, %Y" }}
-			{% if page.discussion-id %}
-				<span>&bull;</span>
-				<a href="https://forum.cuberite.org/thread-{{ page.discussion-id }}.html">Discuss this post</a>
-			{% endif %}
+		<div id="inner">
+			<h2>
+				<svg aria-hidden="true" height="1.000em" viewBox="0 0 24 24" width="1.000em">
+					<path d="{% include _icons/news %}" />
+				</svg>
+				{{ page.title }}
+			</h2>
+			{{ content }}
+			<div id="post-footer">
+				{{ page.date | date: "%B %e, %Y" }}
+				{% if page.discussion-id %}
+					<span>&bull;</span>
+					<a href="https://forum.cuberite.org/thread-{{ page.discussion-id }}.html">Discuss this post</a>
+				{% endif %}
+			</div>
 		</div>
 	</div>
 </div>
