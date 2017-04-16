@@ -191,9 +191,9 @@ a:focus {
 /* Combined Rules */
 
 #intro input,
-#footer input,
 #footer img,
 #footer label,
+#footer-links-toggle,
 .show-mobile,
 .show-mobile-block {
 	display: none;
@@ -380,7 +380,7 @@ input {
 .downloadmenu a {
 	color: #1e1e1e;
 	display: block;
-	line-height: 2.625em;
+	padding: 0 0.500em;
 }
 .downloadmenu a:hover,
 .downloadmenu a:focus {
@@ -567,32 +567,30 @@ button:focus {
 		right: 0;
 		bottom: 0;
 		left: 0;
+		transition: all 200ms ease;
 	}
 	#footer-links {
 		margin: 0;
 	}
 	#footer-links-body {
 		background: rgba(10, 10, 10, .9);
-		display: none;
 		overflow-y: scroll;
 		position: fixed;
 		width: 100%;
 		height: 15.000em;
-		bottom: 3.750em;
+		bottom: -18.000em;
 		left: 0;
+		transition: all 100ms ease;
 	}
 	#footer-links-body,
 	#media-links a {
 		line-height: 3.375em;
 	}
-	#footer-links-toggle:checked + #footer-links #footer-links-body,
-	#downloadbutton-linux-mobile:checked + #downloadbutton-linux .downloadmenu,
-	#downloadbutton-windows-mobile:checked + #downloadbutton-windows .downloadmenu,
-	#downloadbutton-freebsd-mobile:checked + #downloadbutton-freebsd .downloadmenu,
-	#downloadbutton-macos-mobile:checked + #downloadbutton-macos .downloadmenu,
-	#downloadbutton-android-mobile:checked + #downloadbutton-android .downloadmenu {
-		display: block;
-		animation: fadein .4s;
+	#footer-links-toggle:checked + #footer #footer-links-body {
+		bottom: 0;
+	}
+	#footer-links-toggle:checked + #footer {
+		bottom: 15.000em;
 	}
 	#footer-links a {
 		display: block;
@@ -682,6 +680,14 @@ button:focus {
 	#downloadbutton-macos:hover #downloadmenu-macos,
 	#downloadbutton-android:hover #downloadmenu-android {
 		display: none;
+	}
+	#downloadbutton-linux-mobile:checked + #downloadbutton-linux .downloadmenu,
+	#downloadbutton-windows-mobile:checked + #downloadbutton-windows .downloadmenu,
+	#downloadbutton-freebsd-mobile:checked + #downloadbutton-freebsd .downloadmenu,
+	#downloadbutton-macos-mobile:checked + #downloadbutton-macos .downloadmenu,
+	#downloadbutton-android-mobile:checked + #downloadbutton-android .downloadmenu {
+		display: block;
+		animation: fadein .4s;
 	}
 }
 @media print {
