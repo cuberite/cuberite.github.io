@@ -317,7 +317,7 @@ input {
 	text-align: center;
 }
 #intro h2 {
-	margin: 0 0 1.000em 0;
+	margin: 0 0 0.625em 0;
 }
 #inner {
 	margin: auto;
@@ -333,17 +333,17 @@ input {
 	font-size: 1.125em;
 	cursor: pointer;
 	width: 8.500em;
-	margin: 0 0.500em;
+	margin: 0.500em;
 	padding: 0 0.750em 0 0;
 	position: relative;
 	line-height: 3.125em;
-	transition-delay: .19s;
+	transition-delay: .12s
 }
 .downloadbutton:hover,
 .downloadbutton:focus {
 	background: #C3C3C3;
 	border-radius: 0.313em 0.313em 0 0;
-	transition-delay: 0s;
+	transition: 0s background;
 }
 .downloadbutton:hover > span {
 	max-height: 8.000em;
@@ -362,6 +362,7 @@ input {
 	position: absolute;
 	transition: max-height 150ms ease;
 	width: 100%;
+	z-index: 1;
 }
 .downloadbutton span a {
 	color: #1e1e1e;
@@ -378,7 +379,7 @@ input {
 }
 #download-footer {
 	font-size: 0.875em;
-	margin: 1.875em 0 0 0;
+	margin: 1.375em 0 0 0;
 }
 #download-footer a {
 	color: rgba(255, 255, 255, .7);
