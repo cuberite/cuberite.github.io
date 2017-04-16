@@ -133,16 +133,6 @@ body {
 ::selection {
 	background: #4f4f4f;
 }
-::-webkit-input-placeholder {
-	color: rgba(0, 0, 0, .55);
-}
-::-moz-placeholder {
-	color: rgba(0, 0, 0, .55);
-	opacity: 1;
-}
-:-ms-input-placeholder {
-	color: rgba(0, 0, 0, .55);
-}
 h1,
 h2,
 h3 {

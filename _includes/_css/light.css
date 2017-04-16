@@ -21,8 +21,8 @@ a:focus {
 #navigation a:focus,
 #footer a:hover,
 #footer a:focus,
-#footer-links label:hover,
-#footer-links label:focus,
+#footer label:hover,
+#footer label:focus,
 .active {
 	background: #C6C6C6;
 }
@@ -39,7 +39,7 @@ a:focus {
 #post-footer {
 	color: #797979
 }
-#footer-links-body {
+#footer-links {
 	background: #BBBBBB;
 }
 @media print {
