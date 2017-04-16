@@ -552,9 +552,9 @@ button:focus {
 	/* Menus */
 
 	#navigation,
-	#footer {
+	#footer,
+	#footer-links-body {
 		background: rgba(10, 10, 10, 0.95);
-		position: fixed;
 		right: 0;
 		left: 0;
 		z-index: 1;
@@ -569,6 +569,7 @@ button:focus {
 		background: #000;
 	}
 	#navigation {
+		position: fixed;
 		text-align: center;
 		top: 0;
 	}
@@ -582,27 +583,21 @@ button:focus {
 	}
 	#footer {
 		bottom: 0;
-		transition: all 150ms ease;
+		position: fixed;
+		transition: all 200ms ease;
 	}
 	#footer-links {
 		margin: 0;
 	}
 	#footer-links-body {
-		background: rgba(10, 10, 10, .95);
 		overflow-y: scroll;
-		position: fixed;
-		width: 100%;
+		position: absolute;
 		height: 15.000em;
-		bottom: -18.000em;
-		left: 0;
-		transition: all 100ms ease;
+		bottom: -15.000em;
 	}
 	#footer-links-body,
 	#media-links a {
 		line-height: 3.375em;
-	}
-	#footer-links-toggle:checked + #footer #footer-links-body {
-		bottom: 0;
 	}
 	#footer-links-toggle:checked + #footer {
 		bottom: 15.000em;
@@ -643,7 +638,7 @@ button:focus {
 		text-align: center;
 	}
 	#media-links {
-		float: none;
+		margin: 0;
 		text-align: center;
 	}
 	/* Columns */
