@@ -16,6 +16,7 @@ description: 'Receive the latest news and updates about Cuberite. You may also s
 			<svg aria-hidden="true" height="1.000em" viewBox="0 0 24 24" width="1.000em">
 				<path d="{% include _icons/previous %}" />
 			</svg>
+			<span>Previous Page</span>
 		</a>
 	{% else %}
 		<span id="previous">
@@ -29,6 +30,7 @@ description: 'Receive the latest news and updates about Cuberite. You may also s
 			<svg aria-hidden="true" height="1.000em" viewBox="0 0 24 24" width="1.000em">
 				<path d="{% include _icons/next %}" />
 			</svg>
+			<span>Next Page</span>
 		</a>
 	{% else %}
 		<span id="next">
@@ -39,9 +41,9 @@ description: 'Receive the latest news and updates about Cuberite. You may also s
 	{% endif %}
 </div>
 
-<h3 id="subscribe">Subscribe</h3>
-<p>Do you want to be notified by email when news are released? You can subscribe below.</p>
+<label for="email"><h2 id="subscribe">Subscribe</h2></label>
+<p>Do you want to get these news sent to your e-mail address whenever they are released? You can subscribe below.</p>
 <form action="https://newsletter.cuberite.org/subscribe.php" method="POST">
-	<input name="email" type="email" placeholder="email@example.com" required>
+	<input name="email" type="email" id="email" placeholder="email@example.com" required>
 	<button type="submit">Subscribe</button>
 </form>
