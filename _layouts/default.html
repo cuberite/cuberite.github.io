@@ -12,10 +12,13 @@
 	<link rel="icon" type="image/png" href="/icons/favicon-16x16.png" sizes="16x16">
 	<link rel="manifest" href="/icons/manifest.json">
 	<link rel="mask-icon" href="/icons/safari-pinned-tab.svg">
-	<meta name="theme-color" content="#1e1e1e">
+	<meta name="theme-color" content="#245A48">
 	<style type="text/css">
 		{% capture style %}
 		{% include _css/style.css %}
+		{% if page.url == "/" %}
+			{% include _css/index.css %}		
+		{% endif %}
 		{% endcapture %}
 		{{ style | scssify }}
 	</style>
@@ -111,16 +114,19 @@
 					<svg aria-hidden="true" height="1.375em" viewBox="7 0 24 24" width="2.188em">
 						<path d="{% include _icons/google %}" />
 					</svg>
+					<span>Google+</span>
 				</a>
 				<a href="https://twitter.com/cuberiteproject">
 					<svg aria-hidden="true" height="1.375em" viewBox="0 0 24 24" width="1.375em">
 						<path d="{% include _icons/twitter %}" />
 					</svg>
+					<span>Twitter</span>
 				</a>
 				<a href="https://www.youtube.com/c/cuberiteorg">
 					<svg aria-hidden="true" height="1.375em" viewBox="0 0 24 24" width="1.375em" >
 						<path d="{% include _icons/youtube %}" />
 					</svg>
+					<span>YouTube</span>
 				</a>
 			</div>
 		</div>

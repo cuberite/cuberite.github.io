@@ -2,69 +2,90 @@
 layout: default
 ---
 <div id="intro">
+	<input id="show-desktop-downloads" type="checkbox"/>
 	<div id="intro-body">
 		<h1>A lightweight, fast and extensible game server for Minecraft</h1>
 		<h2>Download for Minecraft 1.8 - 1.11</h2>
-		<label class="downloadbutton">
-			<svg aria-hidden="true" height="1.688em" viewBox="0 0 24 24" width="1.688em">
-				<path d="{% include _icons/linux %}" />
-			</svg>
-			Linux
-			<input type="checkbox"/>
-			<span class="downloadmenu">
-				<a href="https://builds.cuberite.org/job/Cuberite%20Linux%20x86%20Master/lastSuccessfulBuild/artifact/Cuberite.tar.gz">32-bit</a>
-				<a href="https://builds.cuberite.org/job/Cuberite%20Linux%20x64%20Master/lastSuccessfulBuild/artifact/Cuberite.tar.gz">64-bit</a>
-				<a href="https://builds.cuberite.org/job/Cuberite%20Linux%20raspi-armhf%20Master/lastSuccessfulBuild/artifact/Cuberite.tar.gz">Raspberry Pi</a>
-			</span>
-		</label>
-		<label class="downloadbutton">
-			<svg aria-hidden="true" height="1.688em" viewBox="0 0 24 24" width="1.688em">
-				<path d="{% include _icons/windows %}" />
-			</svg>
-			Windows
-			<input type="checkbox"/>
-			<span class="downloadmenu">
-				<a href="https://builds.cuberite.org/job/Cuberite%20Windows%20x86%20Master/lastSuccessfulBuild/artifact/Install/Cuberite.zip">32-bit</a>
-				<a href="https://builds.cuberite.org/job/Cuberite%20Windows%20x64%20Master/lastSuccessfulBuild/artifact/Install/Cuberite.zip">64-bit</a>
-			</span>
-		</label>
-		<label class="downloadbutton">
-			<svg aria-hidden="true" height="1.688em" viewBox="0 0 24 24" width="1.688em">
-				<path d="{% include _icons/freebsd %}" />
-			</svg>
-			FreeBSD
-			<input type="checkbox"/>
-			<span class="downloadmenu">
-				<a href="https://builds.cuberite.org/job/Cuberite-FreeBSD-x64-Master/lastSuccessfulBuild/artifact/Cuberite.tar.gz">64-bit</a>
-			</span>
-		</label>
-		<label class="downloadbutton">
-			<svg aria-hidden="true" height="1.688em" viewBox="0 0 24 24" width="1.688em">
-				<path d="{% include _icons/macos %}" />
-			</svg>
-			macOS
-			<input type="checkbox"/>
-			<span class="downloadmenu">
-				<a href="https://builds.cuberite.org/job/Cuberite%20OSX%20x64%20Master/lastSuccessfulBuild/artifact/Cuberite.tar.gz">64-bit</a>
-			</span>
-		</label>
-		<label class="downloadbutton">
-			<svg aria-hidden="true" height="1.688em" viewBox="0 0 24 24" width="1.688em">
-				<path d="{% include _icons/android %}" />
-			</svg>
-			Android™
-			<input type="checkbox"/>
-			<span class="downloadmenu">
-				<a href="https://play.google.com/store/apps/details?id=org.cuberite.android">Google Play</a>
-				<a href="https://github.com/cuberite/android/releases/latest">APK</a>
-			</span>
-		</label>
-		<div id="download-footer">
-			<a href="/getting-started/">Getting Started</a>
-			<span>&bull;</span>
-			<a href="https://book.cuberite.org/#1.2">Compile</a>
-			<span>&bull;</span>
-			<a href="https://github.com/cuberite/cuberite">Source Code</a>
+		<div id="downloads">
+			<div id="desktop-downloads">
+				<label class="downloadbutton">
+					<svg aria-hidden="true" height="1.688em" viewBox="0 0 24 24" width="1.688em">
+						<path d="{% include _icons/linux %}" />
+					</svg>
+					Linux
+					<input type="checkbox"/>
+					<span class="downloadmenu">
+						<a href="https://builds.cuberite.org/job/Cuberite%20Linux%20x86%20Master/lastSuccessfulBuild/artifact/Cuberite.tar.gz">32-bit</a>
+						<a href="https://builds.cuberite.org/job/Cuberite%20Linux%20x64%20Master/lastSuccessfulBuild/artifact/Cuberite.tar.gz">64-bit</a>
+						<a href="https://builds.cuberite.org/job/Cuberite%20Linux%20raspi-armhf%20Master/lastSuccessfulBuild/artifact/Cuberite.tar.gz">Raspberry Pi</a>
+					</span>
+				</label>
+				<label class="downloadbutton">
+					<svg aria-hidden="true" height="1.688em" viewBox="0 0 24 24" width="1.688em">
+						<path d="{% include _icons/windows %}" />
+					</svg>
+					Windows
+					<input type="checkbox"/>
+					<span class="downloadmenu">
+						<a href="https://builds.cuberite.org/job/Cuberite%20Windows%20x86%20Master/lastSuccessfulBuild/artifact/Install/Cuberite.zip">32-bit</a>
+						<a href="https://builds.cuberite.org/job/Cuberite%20Windows%20x64%20Master/lastSuccessfulBuild/artifact/Install/Cuberite.zip">64-bit</a>
+					</span>
+				</label>
+				<label class="downloadbutton">
+					<svg aria-hidden="true" height="1.688em" viewBox="0 0 24 24" width="1.688em">
+						<path d="{% include _icons/freebsd %}" />
+					</svg>
+					FreeBSD
+					<input type="checkbox"/>
+					<span class="downloadmenu">
+						<a href="https://builds.cuberite.org/job/Cuberite-FreeBSD-x64-Master/lastSuccessfulBuild/artifact/Cuberite.tar.gz">64-bit</a>
+					</span>
+				</label>
+				<label class="downloadbutton">
+					<svg aria-hidden="true" height="1.688em" viewBox="0 0 24 24" width="1.688em">
+						<path d="{% include _icons/macos %}" />
+					</svg>
+					macOS
+					<input type="checkbox"/>
+					<span class="downloadmenu">
+						<a href="https://builds.cuberite.org/job/Cuberite%20OSX%20x64%20Master/lastSuccessfulBuild/artifact/Cuberite.tar.gz">64-bit</a>
+					</span>
+				</label>
+			</div>
+			<div id="mobile-downloads">
+				<label class="downloadbutton">
+					<svg aria-hidden="true" height="1.688em" viewBox="0 0 24 24" width="1.688em">
+						<path d="{% include _icons/android %}" />
+					</svg>
+					Android™
+					<input type="checkbox"/>
+					<span class="downloadmenu">
+						<a href="https://play.google.com/store/apps/details?id=org.cuberite.android">Google Play</a>
+						<a href="https://github.com/cuberite/android/releases/latest">APK</a>
+					</span>
+				</label>
+			</div>
+			<div id="download-footer">
+				<a href="/getting-started/">Getting Started</a>
+				<span>&bull;</span>
+				<a href="https://book.cuberite.org/#1.2">Compile</a>
+				<span>&bull;</span>
+				<a href="https://github.com/cuberite/cuberite">Source Code</a>
+			</div>
 		</div>
+		<label id="show-desktop-downloads-button" for="show-desktop-downloads">
+			<div>
+				<span>More</span>
+				<svg aria-hidden="true" height="1.313em" viewBox="0 0 24 24" width="1.313em">
+					<path d="{% include _icons/arrow-more %}" />
+				</svg>
+			</div>
+			<div>
+				<span>Hide</span>
+				<svg aria-hidden="true" height="1.313em" viewBox="0 0 24 24" width="1.313em">
+					<path d="{% include _icons/arrow-less %}" />
+				</svg>
+			</div>
+		</label>
 	</div>
 </div>
