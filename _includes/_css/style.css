@@ -152,7 +152,7 @@ strong {
 }
 a {
 	color: #1B646B;
-	font-family:montserratregular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: montserratregular, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	text-decoration: none;
 }
 a:hover,
@@ -165,16 +165,6 @@ h1,
 h2,
 #show-desktop-downloads-button {
 	text-transform: uppercase;
-}
-.downloadbutton span a:hover,
-.downloadbutton span a:focus {
-	color: #2a6853;
-	fill: #2a6853;
-}
-.downloadbutton,
-.downloadbutton span a {
-	color: #245A48;
-	fill: #245A48;
 }
 .show-mobile,
 #intro input,
@@ -207,15 +197,16 @@ button {
 	fill: #F4F7F6;
 	text-shadow: 0 0.063em 0.063em rgba(0, 0, 0, .15);
 }
+#navigation .active,
 #navigation a:hover,
 #navigation a:focus,
 #download-footer a,
 #show-desktop-downloads-button,
+#footer .active,
 #footer a:hover,
 #footer a:focus,
 #mobile-links label:hover,
-#mobile-links label:focus,
-.active {
+#mobile-links label:focus {
 	color: #b1e0d0;
 	fill: #b1e0d0;
 }
@@ -245,6 +236,16 @@ input {
 #pagination a span, #media-links span {
 	position: absolute;
 	left: -20em;
+}
+.downloadbutton,
+.downloadbutton span a {
+	color: #245A48;
+	fill: #245A48;
+}
+.downloadbutton span a:hover,
+.downloadbutton span a:focus {
+	color: #2a6853;
+	fill: #2a6853;
 }
 .button,
 .downloadbutton,
