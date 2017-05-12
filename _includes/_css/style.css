@@ -231,11 +231,11 @@ input {
 	font-family: montserratlight, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	line-height: 1.625em;
 }
-#left-three,
-#center-three,
-#right-three,
-#left-two,
-#right-two,
+.column-left,
+.column-center,
+.column-right,
+.column-left-wide,
+.column-right-wide,
 button,
 input {
 	vertical-align: top;
@@ -287,23 +287,23 @@ button:focus {
 }
 /* Columns */
 
-#left-two,
-#left-three,
-#center-three {
+.column-left,
+.column-center,
+.column-left-wide {
 	margin: 0.500em 4.375em 0 0;
 }
-#right-two,
-#right-three {
+.column-right,
+.column-right-wide {
 	margin: 0.500em 0 0 0;
 }
-#left-three,
-#center-three,
-#right-three {
+.column-left,
+.column-center,
+.column-right {
 	display: inline-block;
 	width: 27%;
 }
-#left-two,
-#right-two {
+.column-left-wide,
+.column-right-wide {
 	display: inline-block;
 	width: 45%;
 }
@@ -603,19 +603,19 @@ button {
 	#inner-wide {
 		max-width: 50em;
 	}
-	#left-two,
-	#right-two,
-	#left-three,
-	#center-three,
-	#right-three {
+	.column-left,
+	.column-center,
+	.column-right,
+	.column-left-wide,
+	.column-right-wide {
 		display: block;
 		width: 100%;
 	}
-	#left-two,
-	#left-three {
+	.column-left,
+	.column-left-wide {
 		margin: 3.125em 0 4.000em 0;
 	}
-	#center-three {
+	.column-center {
 		margin: 0 0 4.000em 0;
 	}
 	/* Download Buttons */
@@ -748,19 +748,19 @@ button {
 	#main-body {
 		text-align: justify;
 	}
-	#left-two,
-	#right-two,
-	#left-three,
-	#center-three,
-	#right-three {
+	.column-left-wide,
+	.column-right-wide,
+	.column-left,
+	.column-center,
+	.column-right {
 		display: block;
 		width: 100%;
 	}
-	#left-two,
-	#left-three {
+	.column-left,
+	.column-left-wide {
 		margin: 3.125em 0 4.000em 0;
 	}
-	#center-three {
+	.column-center {
 		margin: 0 0 4.000em 0;
 	}
 	.button,
