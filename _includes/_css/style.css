@@ -144,6 +144,12 @@ p,
 ul {
 	margin: 0 0 0.938em 0;
 }
+ul {
+	list-style-position: inside;
+}
+li {
+	margin: 0 0 0.625em 0;
+}
 em {
 	font-style: italic;
 }
@@ -210,7 +216,12 @@ button {
 	color: #b1e0d0;
 	fill: #b1e0d0;
 }
-h1 span, svg, #navigation span, #show-desktop-downloads-button span {
+h1 span,
+svg,
+#navigation span,
+#show-desktop-downloads-button span,
+.status span,
+.status img {
 	vertical-align: middle;
 }
 p,
@@ -276,6 +287,11 @@ button:focus {
 }
 /* Columns */
 
+#left-two,
+#left-three,
+#center-three {
+	margin: 0.500em 4.375em 0 0;
+}
 #right-two,
 #right-three {
 	margin: 0.500em 0 0 0;
@@ -284,19 +300,12 @@ button:focus {
 #center-three,
 #right-three {
 	display: inline-block;
-	width: 30%;
-}
-#left-three,
-#center-three {
-	margin: 0.500em 2.500em 0 0;
+	width: 27%;
 }
 #left-two,
 #right-two {
 	display: inline-block;
 	width: 45%;
-}
-#left-two {
-	margin: 0.500em 2.500em 0 0;
 }
 /* Spacing */
 
@@ -467,6 +476,14 @@ button:focus {
 }
 #next {
 	margin: 0 0 0 0.313em;
+}
+/* Status */
+
+.status ul {
+	text-align: left;
+}
+.status a {
+	float: right;
 }
 /* Footer */
 
