@@ -677,11 +677,11 @@ button {
 		margin: 0.313em 0 1.375em 0;
 		max-height: 2.000em;
 	}
-	#show-desktop-downloads-button div:last-child,
-	#show-desktop-downloads:checked + div #show-desktop-downloads-button div:first-child {
+	#show-desktop-downloads-button #hide,
+	#show-desktop-downloads:checked + div #show-desktop-downloads-button #more {
 		display: none;
 	}
-	#show-desktop-downloads:checked + div #show-desktop-downloads-button div:last-child {
+	#show-desktop-downloads:checked + div #show-desktop-downloads-button #hide {
 		display: initial;
 	}
 }
