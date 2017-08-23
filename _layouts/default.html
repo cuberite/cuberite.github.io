@@ -1,3 +1,4 @@
+<!-- Website commit: {{ site.github.build_revision }} -->
 {% capture content %}<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,7 +18,7 @@
 		{% capture style %}
 		{% include _css/style.css %}
 		{% if page.url == "/" %}
-			{% include _css/index.css %}		
+			{% include _css/index.css %}
 		{% endif %}
 		{% endcapture %}
 		{{ style | scssify }}
@@ -109,6 +110,7 @@
 			<a href="https://salt.bountysource.com/teams/cuberite">Donate</a>
 			<a href="https://api.cuberite.org/">API</a>
 			<a href="/privacy/">Privacy</a>
+			<a href="https://github.com/cuberite/cuberite.github.io">Website Source</a>
 			<div id="media-links">
 				<a href="https://plus.google.com/+cuberiteorg">
 					<svg aria-hidden="true" height="1.375em" viewBox="7 0 24 24" width="2.188em">

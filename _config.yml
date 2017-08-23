@@ -10,6 +10,7 @@ sass:
   style: :compressed
 gems:
   - jekyll-feed
+  - jekyll-github-meta
   - jekyll-sitemap
 permalink: /:categories/:title/
 paginate: 5
