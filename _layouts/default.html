@@ -17,7 +17,7 @@
 		{% capture style %}
 		{% include _css/style.css %}
 		{% if page.url == "/" %}
-			{% include _css/index.css %}		
+			{% include _css/index.css %}
 		{% endif %}
 		{% endcapture %}
 		{{ style | scssify }}
@@ -109,6 +109,7 @@
 			<a href="https://salt.bountysource.com/teams/cuberite">Donate</a>
 			<a href="https://api.cuberite.org/">API</a>
 			<a href="/privacy/">Privacy</a>
+			<a href="https://github.com/cuberite/cuberite.github.io">Website Source (commit approx: <span id="commit-approx"></span>)</a>
 			<div id="media-links">
 				<a href="https://plus.google.com/+cuberiteorg">
 					<svg aria-hidden="true" height="1.375em" viewBox="7 0 24 24" width="2.188em">
@@ -134,6 +135,19 @@
 			<img src="https://analytics.cuberite.org/piwik.php?idsite=1&amp;rec=1" alt=""/>
 		</noscript>
 	</div>
+	<script type="text/javascript">
+		function get_commit_approx() {
+		  commits = request.response[0].sha.substring(0,7);
+			document.getElementById("commit-approx").innerHTML = commits;
+		  console.log(commits);
+		}
+
+		var request = new XMLHttpRequest();
+		request.onload = get_commit_approx;
+		request.responseType = 'json';
+		request.open('get', 'https://api.github.com/repos/cuberite/cuberite.github.io/commits', true);
+		request.send();
+	</script>
 	<script type="text/javascript">
 		var _paq = _paq || [];
 		_paq.push(['trackPageView']);
