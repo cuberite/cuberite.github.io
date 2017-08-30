@@ -157,13 +157,13 @@ strong {
 	font-weight: bold;
 }
 a {
-	color: #1B646B;
+	color: #007ba4;
 	font-family: montserratregular, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	text-decoration: none;
 }
 a:hover,
 a:focus {
-	color: #5f9297;
+	color: #4caccc;
 }
 /* Combined Rules */
 
