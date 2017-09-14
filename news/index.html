@@ -3,6 +3,13 @@ layout: page
 title: News
 description: 'Receive the latest news and updates about Cuberite. You may also subscribe to get the news sent to your e-mail.'
 ---
+<label for="email"><h2 id="subscribe">Subscribe</h2></label>
+<p>Do you want to get these news sent to your e-mail address whenever they are released? You can subscribe below.</p>
+<form action="https://newsletter.cuberite.org/subscribe.php" method="POST">
+	<input name="email" type="email" id="email" placeholder="email@example.com" required>
+	<button type="submit">Subscribe</button>
+</form>
+
 {% for post in paginator.posts %}
 	<div class="post">
 		<a href="{{ post.url }}">{{ post.title }}</a>
@@ -40,10 +47,3 @@ description: 'Receive the latest news and updates about Cuberite. You may also s
 		</span>
 	{% endif %}
 </div>
-
-<label for="email"><h2 id="subscribe">Subscribe</h2></label>
-<p>Do you want to get these news sent to your e-mail address whenever they are released? You can subscribe below.</p>
-<form action="https://newsletter.cuberite.org/subscribe.php" method="POST">
-	<input name="email" type="email" id="email" placeholder="email@example.com" required>
-	<button type="submit">Subscribe</button>
-</form>
