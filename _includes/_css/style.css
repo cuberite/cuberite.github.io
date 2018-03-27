@@ -591,6 +591,7 @@ button {
 		max-width: 50em;
 	}
 	.columns div {
+		display: block;
 		padding: 0 0 1.000em 0;
 	}
 	.columns div:last-child {
@@ -726,20 +727,12 @@ button {
 	#main-body {
 		text-align: justify;
 	}
-	.column-left-wide,
-	.column-right-wide,
-	.column-left,
-	.column-center,
-	.column-right {
+	.columns div {
 		display: block;
-		width: 100%;
+		padding: 0 0 1.000em 0;
 	}
-	.column-left,
-	.column-left-wide {
-		margin: 3.125em 0 4.000em 0;
-	}
-	.column-center {
-		margin: 0 0 4.000em 0;
+	.columns div:last-child {
+		padding: 0;
 	}
 	.button,
 	.downloadbutton,
