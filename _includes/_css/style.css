@@ -287,25 +287,9 @@ button:focus {
 }
 /* Columns */
 
-.column-left,
-.column-center,
-.column-left-wide {
-	margin: 0.500em 4.375em 0 0;
-}
-.column-right,
-.column-right-wide {
-	margin: 0.500em 0 0 0;
-}
-.column-left,
-.column-center,
-.column-right {
-	display: inline-block;
-	width: 27%;
-}
-.column-left-wide,
-.column-right-wide {
-	display: inline-block;
-	width: 45%;
+.columns div {
+	display: table-cell;
+	padding: 0.500em 1.375em;
 }
 /* Spacing */
 
@@ -606,20 +590,11 @@ button {
 	#inner-wide {
 		max-width: 50em;
 	}
-	.column-left,
-	.column-center,
-	.column-right,
-	.column-left-wide,
-	.column-right-wide {
-		display: block;
-		width: 100%;
+	.columns div {
+		padding: 0 0 1.000em 0;
 	}
-	.column-left,
-	.column-left-wide {
-		margin: 3.125em 0 4.000em 0;
-	}
-	.column-center {
-		margin: 0 0 4.000em 0;
+	.columns div:last-child {
+		padding: 0;
 	}
 	/* Download Buttons */
 	
