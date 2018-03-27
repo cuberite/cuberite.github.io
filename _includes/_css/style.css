@@ -445,6 +445,9 @@ button:focus {
 }
 /* News */
 
+#subscribe {
+	margin: 0 0 2.813em 0;
+}
 .post {
 	margin: 1.375em 0 1.938em 0;
 }
@@ -462,7 +465,7 @@ button:focus {
 	padding: 0.375em 0 0 0;
 }
 #pagination {
-	margin: 2.188em 0 3.375em 0;
+	margin: 2.188em 0 0 0;
 }
 #pagination a,
 #pagination span {
