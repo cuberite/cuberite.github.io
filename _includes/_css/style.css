@@ -521,7 +521,7 @@ button {
 
 @media (max-width: 60em) {
 	body {
-		padding: 3.750em 0;
+		padding: 0 0 3.750em 0;
 	}
 	.show-mobile {
 		display: initial;
@@ -529,7 +529,6 @@ button {
 	/* Menus */
 
 	#navigation {
-		position: fixed;
 		text-align: center;
 		top: 0;
 		width: 100%;
