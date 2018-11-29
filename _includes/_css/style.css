@@ -231,11 +231,6 @@ input {
 	font-family: montserratlight, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	line-height: 1.625em;
 }
-.column-left,
-.column-center,
-.column-right,
-.column-left-wide,
-.column-right-wide,
 button,
 input {
 	vertical-align: top;
