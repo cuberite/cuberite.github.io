@@ -1,0 +1,10 @@
+{
+	"name": "Cuberite",
+	"icons": [
+		{
+			"src": "/icons/web-manifest-icon.png",
+			"sizes": "any",
+			"type": "image/png"
+		}
+	]
+}
