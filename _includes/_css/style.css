@@ -249,6 +249,8 @@ input {
 	color: #245A48;
 	fill: #245A48;
 }
+.downloadbutton:hover,
+.downloadbutton:focus,
 .downloadbutton span a:hover,
 .downloadbutton span a:focus {
 	color: #2a6853;
@@ -376,8 +378,11 @@ button:focus {
 .downloadbutton:hover,
 .downloadbutton:focus {
 	background: #fff;
-	border-radius: 0.313em 0.313em 0 0;
 	transition: 0s background;
+}
+label.downloadbutton:hover,
+label.downloadbutton:focus {
+	border-radius: 0.313em 0.313em 0 0;
 }
 .downloadbutton:hover > span {
 	max-height: 8.000em;
