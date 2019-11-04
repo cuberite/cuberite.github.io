@@ -33,23 +33,17 @@
 			</a>
 		</div>
 		<div id="navigation-links">
-			<a href="https://forum.cuberite.org/">
+			<a href="/discuss/"{% if page.url == "/discuss/" %} class="active"{% endif %}>
 				<svg aria-hidden="true" height="1.313em" viewBox="0 0 24 24" width="1.313em">
-					<path d="{% include _svg/forum %}" />
+					<path d="{% include _svg/discuss %}" />
 				</svg>
-				<span>Forum</span>
+				<span>Discuss</span>
 			</a>
 			<a href="https://book.cuberite.org/">
 				<svg aria-hidden="true" height="1.313em" viewBox="0 0 24 24" width="1.313em">
 					<path d="{% include _svg/manual %}" />
 				</svg>
 				<span>Manual</span>
-			</a>
-			<a href="/support/"{% if page.url == "/support/" %} class="active"{% endif %}>
-				<svg aria-hidden="true" height="1.313em" viewBox="0 0 24 24" width="1.313em">
-					<path d="{% include _svg/support %}" />
-				</svg>
-				<span>Support</span>
 			</a>
 			<a href="/plugins/"{% if page.url == "/plugins/" %} class="active"{% endif %}>
 				<svg aria-hidden="true" height="1.313em" viewBox="0 0 24 24" width="1.313em">
@@ -75,17 +69,17 @@
 				</svg>
 				Home
 			</a>
+			<a href="/discuss/"{% if page.url == "/discuss/" %} class="active"{% endif %}>
+				<svg aria-hidden="true" height="1.750em" viewBox="0 0 24 24" width="1.750em">
+					<path d="{% include _svg/discuss %}" />
+				</svg>
+				Discuss
+			</a>
 			<a href="https://book.cuberite.org/">
 				<svg aria-hidden="true" height="1.750em" viewBox="0 0 24 24" width="1.750em">
 					<path d="{% include _svg/manual %}" />
 				</svg>
 				Manual
-			</a>
-			<a href="/support/"{% if page.url == "/support/" %} class="active"{% endif %}>
-				<svg aria-hidden="true" height="1.750em" viewBox="0 0 24 24" width="1.750em">
-					<path d="{% include _svg/support %}" />
-				</svg>
-				Support
 			</a>
 			<a href="/plugins/"{% if page.url == "/plugins/" %} class="active"{% endif %}>
 				<svg aria-hidden="true" height="1.750em" viewBox="0 0 24 24" width="1.750em">
