@@ -84,3 +84,16 @@ layout: default
 		</label>
 	</div>
 </div>
+
+{% capture notice %}
+	{% include notice.md %}
+{% endcapture %}
+{% assign size = notice | strip_newlines | size %}
+
+{% if size > 1 %}
+	<div id="banner">
+		<div id="banner-body">
+			{{ notice | markdownify }}
+		</div>
+	</div>
+{% endif %}
