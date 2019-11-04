@@ -186,6 +186,10 @@ button:focus {
 }
 /* Columns */
 
+.columns {
+	display: table;
+	width: 100%;
+}
 .columns div {
 	display: table-cell;
 	padding: 0.500em 1.375em;
