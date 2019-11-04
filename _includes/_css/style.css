@@ -188,6 +188,7 @@ button:focus {
 
 .columns {
 	display: table;
+	table-layout: fixed;
 	width: 100%;
 }
 .columns div {
