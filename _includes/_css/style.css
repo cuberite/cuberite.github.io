@@ -158,7 +158,6 @@ input {
 	fill: #2a6853;
 }
 .button,
-.downloadbutton,
 #pagination a,
 #pagination span,
 button,
@@ -272,6 +271,9 @@ button:focus {
 }
 .downloadbutton {
 	background: #F4F7F6;
+	border-radius: 0.313em;
+	box-shadow: 0 0.125em 0.125em rgba(0, 0, 0, .15);
+	display: inline-block;
 	font-size: 1.125em;
 	cursor: pointer;
 	width: 9.000em;
