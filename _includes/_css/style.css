@@ -406,6 +406,9 @@ label.downloadbutton:focus {
 #media-links a:first-child {
 	padding: 0 1.625em;
 }
+#media-links svg {
+	vertical-align: text-top;
+}
 /* Inputs */
 
 button,
