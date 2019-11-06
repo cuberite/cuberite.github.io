@@ -163,7 +163,7 @@ input {
 #pagination span,
 button,
 input {
-	border-radius: 0.313em;
+	border-radius: 5em;
 	box-shadow: 0 0.125em 0.125em rgba(0, 0, 0, .15);
 	display: inline-block;
 }
@@ -360,7 +360,7 @@ label.downloadbutton:focus {
 }
 #pagination a,
 #pagination span {
-	padding: 0.750em 0.750em 0.625em 0.750em;
+	padding: 0.750em 0.875em;
 }
 #pagination span {
 	fill: #C0E1D2;
@@ -409,7 +409,7 @@ button,
 input {
 	height: 2.625em;
 	line-height: 2.625em;
-	padding: 0 0.875em;
+	padding: 0 1.125em;
 	vertical-align: top;
 }
 input {
@@ -423,7 +423,7 @@ button {
 }
 .button {
 	margin: 0.938em 0.500em 0 0.500em;
-	padding: 0.750em 0.875em;
+	padding: 0.750em 1.125em;
 }
 /* Tablet/Mobile Design */
 
