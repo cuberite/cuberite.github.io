@@ -529,8 +529,8 @@ button {
 		position: initial;
 		width: auto;
 	}
-	.downloadbutton:hover,
-	.downloadbutton:focus {
+	label.downloadbutton:hover,
+	label.downloadbutton:focus {	
 		border-radius: 0.313em;
 	}
 	.downloadbutton svg {
