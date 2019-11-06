@@ -411,7 +411,7 @@ button,
 input {
 	height: 2.625em;
 	line-height: 2.625em;
-	padding: 0 1.125em;
+	padding: 0 1.188em;
 	vertical-align: top;
 }
 input {
@@ -425,7 +425,7 @@ button {
 }
 .button {
 	margin: 0.938em 0.500em 0 0.500em;
-	padding: 0.750em 1.125em;
+	padding: 0.750em 1.188em;
 }
 /* Tablet/Mobile Design */
 
