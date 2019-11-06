@@ -362,7 +362,8 @@ label.downloadbutton:focus {
 }
 #pagination a,
 #pagination span {
-	padding: 0.750em 0.875em;
+	line-height: 0;
+	padding: 0.875em;
 }
 #pagination span {
 	fill: #C0E1D2;
