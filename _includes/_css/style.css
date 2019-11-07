@@ -80,6 +80,7 @@ h2,
 	text-transform: uppercase;
 }
 .show-mobile,
+#intro input,
 #show-desktop-downloads-button,
 #footer-links-toggle,
 #mobile-links {
@@ -99,7 +100,6 @@ h2,
 #download-footer a:focus,
 #show-desktop-downloads-button:hover,
 #show-desktop-downloads-button:focus,
-#show-desktop-downloads:checked + label,
 #pagination a,
 #pagination span,
 #footer a,
@@ -142,7 +142,6 @@ input {
 #download-footer span {
 	margin: 0 0.750em;
 }
-#intro input,
 #pagination a span,
 #media-links span {
 	position: absolute;
