@@ -299,7 +299,8 @@ label.downloadbutton:hover,
 label.downloadbutton:focus {
 	border-radius: 0.313em 0.313em 0 0;
 }
-.downloadbutton:hover > span {
+.downloadbutton:hover > span,
+.downloadbutton:focus > span {
 	max-height: 8.000em;
 }
 .downloadbutton svg {
@@ -549,7 +550,8 @@ button {
 		position: initial;
 		background: none;
 	}
-	.downloadbutton:hover > span {
+	.downloadbutton:hover > span,
+	.downloadbutton:focus > span {
 		max-height: 0;
 	}
 	.downloadbutton input:checked + span {
