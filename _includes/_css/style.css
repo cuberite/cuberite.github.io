@@ -430,6 +430,10 @@ input {
 	margin: 0.938em 0 0 0;
 	width: 13.750em;
 }
+input:focus {
+	box-shadow: 0 1px 0.125em 0.1em rgba(0, 122, 163, .35);
+	outline: none;
+}
 button {
 	cursor: pointer;
 	margin: 0.938em 0 0 0.625em;
