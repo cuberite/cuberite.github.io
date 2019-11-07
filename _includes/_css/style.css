@@ -34,7 +34,8 @@ h2 {
 	color: #245A48;
 	fill: #245A48;
 }
-h1, #intro h2 {
+h1,
+#intro h2 {
 	font-size: 1.500em;
 	line-height: 1.375em;
 	margin: 0 0 0.500em 0;
@@ -291,12 +292,14 @@ button:focus,
 	transition-delay: .12s
 }
 .downloadbutton:hover,
-.downloadbutton:focus {
+.downloadbutton:focus,
+.downloadbutton:focus-within {
 	background: #fff;
 	transition: 0s background;
 }
 label.downloadbutton:hover,
-label.downloadbutton:focus {
+label.downloadbutton:focus,
+label.downloadbutton:focus-within {
 	border-radius: 0.313em 0.313em 0 0;
 }
 .downloadbutton:hover > span,
@@ -486,7 +489,8 @@ button {
 		padding: 0.750em 0 0 0;
 		margin: 0 auto;
 	}
-	#footer-links, #media-links {
+	#footer-links,
+	#media-links {
 		margin: 0;
 	}
 	#media-links,
@@ -521,7 +525,8 @@ button {
 		margin: 1.500em 0 0.625em 0;
 		width: 100%;
 	}
-	#desktop-downloads, #download-footer {
+	#desktop-downloads,
+	#download-footer {
 		float: left;
 		margin: 0;
 		max-height: 0;
@@ -540,7 +545,8 @@ button {
 		width: auto;
 	}
 	label.downloadbutton:hover,
-	label.downloadbutton:focus {	
+	label.downloadbutton:focus,
+	label.downloadbutton:focus-within {	
 		border-radius: 0.313em;
 	}
 	.downloadbutton svg {
