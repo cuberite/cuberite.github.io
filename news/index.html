@@ -20,31 +20,19 @@ description: 'Receive the latest news and updates about Cuberite. You may also s
 
 <div id="pagination">
 	{% if paginator.previous_page %}
-		<a href="{{ paginator.previous_page_path }}" id="previous" title="Previous">
+		<a href="{{ paginator.previous_page_path }}" title="Previous Page">
 			<svg aria-hidden="true" height="1.000em" viewBox="0 0 24 24" width="1.000em">
 				<path d="{% include _svg/previous %}" />
 			</svg>
 			<span>Previous Page</span>
 		</a>
-	{% else %}
-		<span id="previous">
-			<svg aria-hidden="true" height="1.000em" viewBox="0 0 24 24" width="1.000em">
-				<path d="{% include _svg/previous %}" />
-			</svg>
-		</span>
 	{% endif %}
 	{% if paginator.next_page %}
-		<a href="{{ paginator.next_page_path }}" id="next" title="Next">
+		<a href="{{ paginator.next_page_path }}" title="Next Page">
 			<svg aria-hidden="true" height="1.000em" viewBox="0 0 24 24" width="1.000em">
 				<path d="{% include _svg/next %}" />
 			</svg>
 			<span>Next Page</span>
 		</a>
-	{% else %}
-		<span id="next">
-			<svg aria-hidden="true" height="1.000em" viewBox="0 0 24 24" width="1.000em">
-				<path d="{% include _svg/next %}" />
-			</svg>
-		</span>
 	{% endif %}
 </div>

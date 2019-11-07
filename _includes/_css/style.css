@@ -367,19 +367,10 @@ label.downloadbutton:focus {
 #pagination {
 	margin: 2.188em 0 0 0;
 }
-#pagination a,
-#pagination span {
+#pagination a {
 	line-height: 0;
+	margin: 0 0.313em;
 	padding: 0.875em;
-}
-#pagination span {
-	fill: #C0E1D2;
-}
-#previous {
-	margin: 0 0.313em 0 0;
-}
-#next {
-	margin: 0 0 0 0.313em;
 }
 /* Status */
 
