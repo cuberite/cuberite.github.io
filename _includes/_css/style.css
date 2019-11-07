@@ -481,6 +481,10 @@ button {
 	#footer-links {
 		height: 15.000em;
 		overflow-y: scroll;
+		visibility: hidden;
+	}
+	#footer-links-toggle:checked + #footer-links {
+		visibility: visible;
 	}
 	#footer-links a {
 		display: block;
@@ -539,6 +543,7 @@ button {
 		max-height: 0;
 		overflow: hidden;
 		transition: max-height 150ms ease;
+		visibility: hidden;
 		width: 100%;
 	}
 	#mobile-downloads {
@@ -587,10 +592,12 @@ button {
 	}
 	#show-desktop-downloads:checked + div #desktop-downloads {
 		max-height: 40.000em;
+		visibility: visible;
 	}
 	#show-desktop-downloads:checked + div #download-footer {
 		margin: 0.313em 0 1.375em 0;
 		max-height: 2.000em;
+		visibility: visible;
 	}
 	#show-desktop-downloads-button #hide,
 	#show-desktop-downloads:checked + div #show-desktop-downloads-button #more {
