@@ -292,18 +292,25 @@ button:focus,
 	transition-delay: .12s
 }
 .downloadbutton:hover,
-.downloadbutton:focus,
+.downloadbutton:focus {
+	background: #fff;
+	transition: 0s background;
+}
 .downloadbutton:focus-within {
 	background: #fff;
 	transition: 0s background;
 }
 label.downloadbutton:hover,
-label.downloadbutton:focus,
+label.downloadbutton:focus {
+	border-radius: 0.313em 0.313em 0 0;
+}
 label.downloadbutton:focus-within {
 	border-radius: 0.313em 0.313em 0 0;
 }
 .downloadbutton:hover > span,
-.downloadbutton:focus > span,
+.downloadbutton:focus > span {
+	max-height: 8.000em;
+}
 .downloadbutton:focus-within > span {
 	max-height: 8.000em;
 }
@@ -545,7 +552,9 @@ button {
 		width: auto;
 	}
 	label.downloadbutton:hover,
-	label.downloadbutton:focus,
+	label.downloadbutton:focus {	
+		border-radius: 0.313em;
+	}
 	label.downloadbutton:focus-within {	
 		border-radius: 0.313em;
 	}
@@ -558,7 +567,9 @@ button {
 		background: none;
 	}
 	.downloadbutton:hover > span,
-	.downloadbutton:focus > span,
+	.downloadbutton:focus > span {
+		max-height: 0;
+	}
 	.downloadbutton:focus-within > span {
 		max-height: 0;
 	}
