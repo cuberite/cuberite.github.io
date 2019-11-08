@@ -585,9 +585,10 @@ button {
 		max-height: 8.000em;
 	}
 	#show-desktop-downloads-button {
-		display: inline-block;
 		cursor: pointer;
+		display: inline-block;
 		font-size: 1.125em;
+		font-weight: bold;
 		text-shadow: 0 0.063em 0.063em rgba(0, 0, 0, .15);
 	}
 	#show-desktop-downloads-button svg {
