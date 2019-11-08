@@ -482,10 +482,6 @@ button {
 	#footer-links {
 		height: 15.000em;
 		overflow-y: scroll;
-		visibility: hidden;
-	}
-	#footer-links-toggle:checked + #footer-links {
-		visibility: visible;
 	}
 	#footer-links a {
 		display: block;
