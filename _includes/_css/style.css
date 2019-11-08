@@ -377,6 +377,7 @@ label.downloadbutton:focus-within {
 }
 #post-footer {
 	font-size: 0.875em;
+	font-weight: bold;
 	padding: 0.375em 0 0 0;
 }
 #pagination {
