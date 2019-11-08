@@ -26,13 +26,14 @@ body {
 	color: #464646;
 	fill: #464646;
 	font-size: calc(0.875em + .2vw);
-	font-family: montserratregular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	display: table;
 }
 h1,
 h2 {
 	color: #245A48;
 	fill: #245A48;
+	font-weight: bold;
 }
 h1,
 #intro h2 {
@@ -65,7 +66,7 @@ strong {
 }
 a {
 	color: #007AA3;
-	font-family: montserratregular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: bold;
 	text-decoration: none;
 }
 a:hover,
@@ -135,7 +136,6 @@ p,
 #banner,
 .post span,
 input {
-	font-family: montserratlight, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	line-height: 1.625em;
 }
 #post-footer span,
@@ -217,6 +217,7 @@ button:focus,
 	background: linear-gradient(200deg, #245d33, #24575D);
 	box-shadow: 0 0.188em 0.375em rgba(0, 0, 0, .1);
 	display: table-row;
+	font-weight: bold;
 	line-height: 3.750em;
 }
 #logo a {
@@ -272,6 +273,7 @@ button:focus,
 /* Download Buttons */
 
 #downloads {
+	font-weight: bold;
 	margin: 0.938em 0 0 0;
 }
 #desktop-downloads,
@@ -399,6 +401,7 @@ label.downloadbutton:focus-within {
 	background: linear-gradient(220deg, #245d33, #24575D);
 	box-shadow: 0 -0.188em 0.375em rgba(0, 0, 0, .1);
 	display: table-row;
+	font-weight: bold;
 	line-height: 3.375em;
 }
 #footer-links {
@@ -440,9 +443,11 @@ input:focus {
 }
 button {
 	cursor: pointer;
+	font-weight: bold;
 	margin: 0.938em 0 0 0.625em;
 }
 .button {
+	font-weight: bold;
 	margin: 0.938em 0.313em 0;
 	padding: 0.750em 1.188em;
 }
