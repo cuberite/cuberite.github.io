@@ -454,7 +454,7 @@ button {
 }
 /* Tablet/Mobile Design */
 
-@media (max-width: 60em) {
+@media (max-width: 54em) {
 	body {
 		padding: 0 0 3.750em 0;
 	}
