@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Newsletter 2019'
+title: 'Cuberite Newsletter 2019'
 discussion-id:
 ---
 Happy holidays everyone! We're approaching the end of 2019 (oh, where did the time go), which means it's time for a long-overdue status update for Cuberite.
