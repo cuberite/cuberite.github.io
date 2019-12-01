@@ -8,8 +8,8 @@ Happy holidays everyone! We're approaching the end of 2019 (oh, where did the ti
 General News
 ------------
 
- - Cuberite has an official Discord server! Feel free to drop by and say hello. [Invite link](https://discord.gg/76w5J6M)
- - Cuberite's [Android app](https://github.com/cuberite/android/releases/download/1.4/cuberite-android.apk) has received a redesign, as well as multiple bug fixes and code cleanups. Devices running Android 4.0 and above are supported.
+ - Cuberite has an official Discord server! Feel free to drop by to say hello. [Invite link](https://discord.gg/76w5J6M)
+ - Cuberite's [Android app](https://github.com/cuberite/android/releases/download/1.4/cuberite-android.apk) now targets Android 10, and has received a redesign, as well as multiple bug fixes and code cleanups. Devices running Android 4.0 and above are supported.
  - The build process of official Windows downloads, which used to take place on [xoft](https://github.com/madmaxoft)'s home server, is currently being moved to [AppVeyor](https://www.appveyor.com/).
  - Minecraft 1.13 support is partially done, and 1.14 support is planned.
  - Cuberite's website has been restructured and cleaned up, to make it easier to find relevant information. A new "Discuss" page houses information about official communication channels.
@@ -19,7 +19,7 @@ General News
 Cuberite Development
 -----------------
 
-In addition to smaller bug fixes and cleanups, these are a few notable changes to Cuberite since the end of 2017:
+In addition to smaller bug fixes and cleanups, here are a few notable changes to Cuberite since the end of 2017:
 
  - [#4017](https://github.com/cuberite/cuberite/pull/4017): Improve rain simulation
  - [#4041](https://github.com/cuberite/cuberite/pull/4041): Add support for Minecraft 1.12.2
