@@ -10,10 +10,11 @@ General News
 
  - Cuberite has an official Discord server! Feel free to drop by to say hello. [Invite link](https://discord.gg/76w5J6M)
  - Cuberite's [Android app](https://github.com/cuberite/android/releases) now targets Android 10, and has received a redesign, as well as multiple bug fixes and code cleanups. Devices running Android 4.0 and above are supported.
- - The build process of official Windows downloads, which used to take place on [xoft](https://github.com/madmaxoft)'s home server, is currently being moved to [AppVeyor](https://www.appveyor.com/).
+ - The build process of official Windows downloads, which used to take place on [xoft](https://github.com/madmaxoft)'s home server, has been moved to [AppVeyor](https://www.appveyor.com/).
  - FreeBSD and macOS downloads are no longer provided, since we no longer have access to servers for building them. There are plans to bring back macOS downloads in the future.
  - Minecraft 1.13 support is partially done, and 1.14 support is planned.
  - Cuberite's website has been restructured and cleaned up, to make it easier to find relevant information. A new "Discuss" page houses information about official communication channels.
+ - The Cuberite WebAdmin layout has been updated to work better on smaller screens
  - A few issues related to the forum, such as outdated templates and registrations not working, have been resolved.
  - Analytics are no longer collected from website visitors. Cuberite's analytics server has been permanently removed.
 
