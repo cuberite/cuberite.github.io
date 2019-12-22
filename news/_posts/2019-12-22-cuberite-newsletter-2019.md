@@ -37,6 +37,7 @@ In addition to smaller bug fixes and cleanups, here are a few notable changes to
  - [#4390](https://github.com/cuberite/cuberite/pull/4390): Initial support for 1.13 clients (unplayable early state)
  - [#4412](https://github.com/cuberite/cuberite/pull/4412): Fixed crash in hopper while pulling items from blockentity above itself
  - [#4417](https://github.com/cuberite/cuberite/pull/4417): Refactored block-to-pickup conversion
+ - [#4433](https://github.com/cuberite/cuberite/pull/4433): WebAdmin improvements
 
 As always, the latest Cuberite updates are available to download on the [homepage]({{ site.url }}).
 
