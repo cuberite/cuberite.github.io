@@ -3,7 +3,7 @@ layout: post
 title: 'Cuberite Newsletter 2019'
 discussion-id: 3255
 ---
-Happy holidays everyone! We're approaching the end of 2019 (oh, where did the time go), which means it's time for a long overdue status update for Cuberite.
+Happy new year! We're approaching the end of 2019 (oh, where did the time go), which means it's time for a long overdue status update for Cuberite.
 
 General News
 ------------
@@ -37,6 +37,7 @@ In addition to smaller bug fixes and cleanups, here are a few notable changes to
  - [#4390](https://github.com/cuberite/cuberite/pull/4390): Initial support for 1.13 clients (unplayable early state)
  - [#4412](https://github.com/cuberite/cuberite/pull/4412): Fixed crash in hopper while pulling items from blockentity above itself
  - [#4417](https://github.com/cuberite/cuberite/pull/4417): Refactored block-to-pickup conversion
+ - [#4424](https://github.com/cuberite/cuberite/pull/4424): Disable block placement in adventure mode
  - [#4433](https://github.com/cuberite/cuberite/pull/4433): WebAdmin improvements
 
 As always, the latest Cuberite updates are available to download on the [homepage]({{ site.url }}).
