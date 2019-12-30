@@ -108,8 +108,12 @@ h2,
 button {
 	color: #F4F7F6;
 	fill: #F4F7F6;
-	filter: drop-shadow(0 0.063em 0.063em rgba(0, 0, 0, .15));
 	text-shadow: 0 0.063em 0.063em rgba(0, 0, 0, .15);
+}
+#navigation svg,
+#intro svg,
+#pagination svg {
+	filter: drop-shadow(0 0.063em 0.063em rgba(0, 0, 0, .15));
 }
 #navigation .active,
 #navigation a:hover,
