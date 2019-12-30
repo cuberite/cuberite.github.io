@@ -411,6 +411,7 @@ label.downloadbutton:focus-within {
 	margin: 0 auto;
 }
 #footer-links a {
+	float: left;
 	font-size: 0.875em;
 	padding: 0 1.875em;
 	margin: 0 0.188em;
@@ -493,6 +494,7 @@ button {
 	}
 	#footer-links a {
 		display: block;
+		float: none;
 		margin: 0;
 	}
 	#mobile-links {
