@@ -407,15 +407,15 @@ label.downloadbutton:focus-within {
 	line-height: 3.375em;
 }
 #footer-links {
-	margin: 0 0 0 0.813em;
+	display: table;
+	margin: 0 auto;
 }
 #footer-links a {
-	float: left;
 	font-size: 0.875em;
 	padding: 0 1.875em;
 	margin: 0 0.188em;
 }
-#media-links {
+/*#media-links {
 	float: right;
 	margin: 0 0.813em 0 0;
 }
@@ -424,7 +424,7 @@ label.downloadbutton:focus-within {
 }
 #media-links svg {
 	vertical-align: text-top;
-}
+}*/
 /* Inputs */
 
 button,
@@ -487,12 +487,12 @@ button {
 		bottom: 0;
 	}
 	#footer-links {
+		display: block;
 		height: 15.000em;
 		overflow-y: scroll;
 	}
 	#footer-links a {
 		display: block;
-		float: none;
 		margin: 0;
 	}
 	#mobile-links {
