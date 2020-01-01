@@ -3,7 +3,7 @@ layout: post
 title: 'Cuberite Newsletter 2019'
 discussion-id: 3255
 ---
-Happy new year! We're approaching the end of 2019 (oh, where did the time go), which means it's time for a long overdue status update for Cuberite.
+Happy new year! It's the start of a new decade (oh, where did the time go), which means it's time for a long overdue status update for Cuberite.
 
 General News
 ------------
