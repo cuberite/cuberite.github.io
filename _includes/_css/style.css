@@ -53,7 +53,7 @@ ul {
 	margin: 0 0 0.938em 0;
 }
 ul {
-	list-style-position: inside;
+	padding: 0 0 0 1em;
 }
 li {
 	margin: 0 0 0.625em 0;
