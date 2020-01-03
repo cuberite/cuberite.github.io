@@ -89,6 +89,7 @@ h2,
 }
 #intro-body,
 #main-body,
+#news-body,
 #banner-body {
 	animation: fadein .7s;
 }
@@ -256,10 +257,14 @@ button:focus,
 	height: 100%;
 }
 #intro-body,
-#main-body {
+#main-body,
+#news-body {
 	display: table-cell;
 	padding: 5%;
 	vertical-align: middle;
+}
+#intro-body,
+#main-body {
 	text-align: center;
 }
 #intro h1 {
@@ -675,10 +680,12 @@ button {
 		margin: 0;
 	}
 	#intro-body,
-	#main-body {
+	#main-body,
+	#news-body {
 		padding: 0;
 	}
-	#main-body {
+	#main-body,
+	#news-body {
 		text-align: justify;
 	}
 	.columns div {
