@@ -8,6 +8,10 @@ exclude:
   - TRADEMARK
 sass:
   style: :compressed
+markdown: kramdown
+kramdown:
+   syntax_highlighter_opts:
+      disable: true
 gems:
   - jekyll-feed
   - jekyll-github-meta
