@@ -83,7 +83,7 @@ layout: default
 {% if size > 1 %}
 	<div id="banner">
 		<div id="banner-body">
-			{{ notice | markdownify }}
+			{{ notice | markdownify | remove: '<pre>' | remove: '<code>' | remove: '</pre>' | remove: '</code>' }}
 		</div>
 	</div>
 {% endif %}
