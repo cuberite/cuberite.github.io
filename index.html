@@ -4,74 +4,76 @@ layout: default
 <div id="intro">
 	<input id="show-desktop-downloads" type="checkbox"/>
 	<div id="intro-body">
-		<h1>A lightweight, fast and extensible game server for Minecraft</h1>
-		<h2>Download for Minecraft Java Edition 1.8 - 1.12.2</h2>
-		<div id="downloads">
-			<div id="desktop-downloads">
-				<label class="downloadbutton" tabindex="0">
-					<svg aria-hidden="true" height="1.688em" viewBox="0 0 24 24" width="1.688em">
-						<path d="{% include _svg/linux %}" />
-					</svg>
-					Linux
-					<input type="checkbox"/>
-					<span class="downloadmenu">
-						<a href="https://builds.cuberite.org/job/Cuberite%20Linux%20x86%20Master/lastSuccessfulBuild/artifact/Cuberite.tar.gz">32-bit</a>
-						<a href="https://builds.cuberite.org/job/Cuberite%20Linux%20x64%20Master/lastSuccessfulBuild/artifact/Cuberite.tar.gz">64-bit</a>
-						<a href="https://builds.cuberite.org/job/Cuberite%20Linux%20raspi-armhf%20Master/lastSuccessfulBuild/artifact/Cuberite.tar.gz">Raspberry Pi</a>
-					</span>
-				</label>
-				<label class="downloadbutton" tabindex="0">
-					<svg aria-hidden="true" height="1.688em" viewBox="0 0 24 24" width="1.688em">
-						<path d="{% include _svg/windows %}" />
-					</svg>
-					Windows
-					<input type="checkbox"/>
-					<span class="downloadmenu">
-						<a href="https://ci.appveyor.com/api/projects/cuberite/cuberite/artifacts/Cuberite.zip?job=Windows-x86&pr=false&branch=master">32-bit</a>
-						<a href="https://ci.appveyor.com/api/projects/cuberite/cuberite/artifacts/Cuberite.zip?job=Windows-x64&pr=false&branch=master">64-bit</a>
-					</span>
-				</label>
-				<!--<label class="downloadbutton" tabindex="0">
-					<svg aria-hidden="true" height="1.688em" viewBox="0 0 24 24" width="1.688em">
-						<path d="{% include _svg/macos %}" />
-					</svg>
-					macOS
-					<input type="checkbox"/>
-					<span class="downloadmenu">
-						<a href="https://builds.cuberite.org/job/Cuberite%20OSX%20x64%20Master/lastSuccessfulBuild/artifact/Cuberite.tar.gz">64-bit</a>
-					</span>
-				</label>-->
+		<div id="inner-wide">
+			<h1>A lightweight, fast and extensible game server for Minecraft</h1>
+			<h2>Download for Minecraft Java Edition 1.8 - 1.12.2</h2>
+			<div id="downloads">
+				<div id="desktop-downloads">
+					<label class="downloadbutton" tabindex="0">
+						<svg aria-hidden="true" height="1.688em" viewBox="0 0 24 24" width="1.688em">
+							<path d="{% include _svg/linux %}" />
+						</svg>
+						Linux
+						<input type="checkbox"/>
+						<span class="downloadmenu">
+							<a href="https://builds.cuberite.org/job/Cuberite%20Linux%20x86%20Master/lastSuccessfulBuild/artifact/Cuberite.tar.gz">32-bit</a>
+							<a href="https://builds.cuberite.org/job/Cuberite%20Linux%20x64%20Master/lastSuccessfulBuild/artifact/Cuberite.tar.gz">64-bit</a>
+							<a href="https://builds.cuberite.org/job/Cuberite%20Linux%20raspi-armhf%20Master/lastSuccessfulBuild/artifact/Cuberite.tar.gz">Raspberry Pi</a>
+						</span>
+					</label>
+					<label class="downloadbutton" tabindex="0">
+						<svg aria-hidden="true" height="1.688em" viewBox="0 0 24 24" width="1.688em">
+							<path d="{% include _svg/windows %}" />
+						</svg>
+						Windows
+						<input type="checkbox"/>
+						<span class="downloadmenu">
+							<a href="https://ci.appveyor.com/api/projects/cuberite/cuberite/artifacts/Cuberite.zip?job=Windows-x86&pr=false&branch=master">32-bit</a>
+							<a href="https://ci.appveyor.com/api/projects/cuberite/cuberite/artifacts/Cuberite.zip?job=Windows-x64&pr=false&branch=master">64-bit</a>
+						</span>
+					</label>
+					<!--<label class="downloadbutton" tabindex="0">
+						<svg aria-hidden="true" height="1.688em" viewBox="0 0 24 24" width="1.688em">
+							<path d="{% include _svg/macos %}" />
+						</svg>
+						macOS
+						<input type="checkbox"/>
+						<span class="downloadmenu">
+							<a href="https://builds.cuberite.org/job/Cuberite%20OSX%20x64%20Master/lastSuccessfulBuild/artifact/Cuberite.tar.gz">64-bit</a>
+						</span>
+					</label>-->
+				</div>
+				<div id="mobile-downloads">
+					<a href="https://github.com/cuberite/android/releases" class="downloadbutton">
+						<svg aria-hidden="true" height="1.688em" viewBox="0 0 24 24" width="1.688em">
+							<path d="{% include _svg/android %}" />
+						</svg>
+						Android™
+					</a>
+				</div>
+				<div id="download-footer">
+					<a href="https://forum.cuberite.org/thread-3261-post-29620.html#pid29620">Test Server</a>
+					<span>&bull;</span>
+					<a href="/get-started/">Get Started</a>
+					<span>&bull;</span>
+					<a href="https://github.com/cuberite/cuberite">Source Code</a>
+				</div>
 			</div>
-			<div id="mobile-downloads">
-				<a href="https://github.com/cuberite/android/releases" class="downloadbutton">
-					<svg aria-hidden="true" height="1.688em" viewBox="0 0 24 24" width="1.688em">
-						<path d="{% include _svg/android %}" />
+			<label id="show-desktop-downloads-button" for="show-desktop-downloads">
+				<span id="more">
+					<span>More</span>
+					<svg aria-hidden="true" height="1.313em" viewBox="0 0 24 24" width="1.313em">
+						<path d="{% include _svg/arrow-more %}" />
 					</svg>
-					Android™
-				</a>
-			</div>
-			<div id="download-footer">
-				<a href="https://forum.cuberite.org/thread-3261-post-29620.html#pid29620">Test Server</a>
-				<span>&bull;</span>
-				<a href="/get-started/">Get Started</a>
-				<span>&bull;</span>
-				<a href="https://github.com/cuberite/cuberite">Source Code</a>
-			</div>
+				</span>
+				<span id="hide">
+					<span>Hide</span>
+					<svg aria-hidden="true" height="1.313em" viewBox="0 0 24 24" width="1.313em">
+						<path d="{% include _svg/arrow-less %}" />
+					</svg>
+				</span>
+			</label>
 		</div>
-		<label id="show-desktop-downloads-button" for="show-desktop-downloads">
-			<span id="more">
-				<span>More</span>
-				<svg aria-hidden="true" height="1.313em" viewBox="0 0 24 24" width="1.313em">
-					<path d="{% include _svg/arrow-more %}" />
-				</svg>
-			</span>
-			<span id="hide">
-				<span>Hide</span>
-				<svg aria-hidden="true" height="1.313em" viewBox="0 0 24 24" width="1.313em">
-					<path d="{% include _svg/arrow-less %}" />
-				</svg>
-			</span>
-		</label>
 	</div>
 </div>
 
