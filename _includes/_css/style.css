@@ -297,7 +297,7 @@ button:focus,
 	display: inline-block;
 	font-size: 1.125em;
 	cursor: pointer;
-	width: 8.500em;
+	width: 10em;
 	margin: 0.500em;
 	padding: 0 0.750em 0 0;
 	position: relative;
@@ -465,7 +465,7 @@ button {
 }
 /* Tablet/Mobile Design */
 
-@media (max-width: 54em) {
+@media (max-width: 60em) {
 	body {
 		padding: 0 0 3.750em 0;
 	}
@@ -565,11 +565,8 @@ button {
 		display: table-header-group;
 	}
 	.downloadbutton {
-		display: block;
-		margin: 0 0 1.125em 0;
-		padding: 0;
-		position: initial;
-		width: auto;
+		margin: 0 auto 1.125em auto;
+		width: 50%;
 	}
 	label.downloadbutton:hover,
 	label.downloadbutton:focus {	
@@ -579,7 +576,7 @@ button {
 		border-radius: 0.313em;
 	}
 	.downloadbutton svg {
-		margin: 0.750em -2.500em 0.750em 0.750em;
+		margin: 0.750em -0.750em 0.750em 0.750em;
 	}
 	.downloadbutton span {
 		box-shadow: none;

@@ -11,7 +11,7 @@ body, h2 {
 }
 /* Tablet/Mobile Design */
 
-@media (max-width: 54em) {
+@media (max-width: 60em) {
 	#navigation,
 	#footer {
 		background: #2E7158;
