@@ -1,16 +1,6 @@
-This project is comprised of several parts, each of which has a
-separate license.
-
--------------------------
-
-The Cuberite icon (located next to the "Cuberite" text in the
-navigation bar) and the Cuberite name may only be used when connected
-to the Cuberite project in any way.
-
--------------------------
-
-The following license applies to the HTML and CSS code in this
-repository:
+  The following license applies to this repository by default. Certain
+  parts of the repository may use a different license, in which case
+  the separate license will be stated.
 
 This is free and unencumbered software released into the public domain.
 
@@ -39,7 +29,13 @@ For more information, please refer to <http://unlicense.org>
 
 -------------------------
 
-The following license applies to the fonts and icons in this repository:
+The Cuberite icon (located next to the "Cuberite" text in the
+navigation bar) and the Cuberite name may only be used when connected
+to the Cuberite project in any way.
+
+-------------------------
+
+  The following license applies to the fonts and icons in this repository:
 
 Copyright (c) 2012-2016, Dave Gandy (http://fontawesome.io),
 with Reserved Font Name "Font Awesome".
