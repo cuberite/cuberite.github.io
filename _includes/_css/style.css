@@ -420,16 +420,6 @@ label.downloadbutton:focus-within {
 	padding: 0 1.875em;
 	margin: 0 0.188em;
 }
-/*#media-links {
-	float: right;
-	margin: 0 0.813em 0 0;
-}
-#media-links a:first-child {
-	padding: 0 1.625em;
-}
-#media-links svg {
-	vertical-align: text-top;
-}*/
 /* Inputs */
 
 button,
