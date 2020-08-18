@@ -594,7 +594,7 @@ button {
 	}
 	#show-desktop-downloads:checked + div #download-footer {
 		margin: 0.313em 0 1.375em 0;
-		max-height: 2.000em;
+		max-height: 2.375em;
 		visibility: visible;
 	}
 	#show-desktop-downloads-button #hide,
