@@ -26,7 +26,7 @@ Development News
    - [#4723](https://github.com/cuberite/cuberite/pull/4723):
      Fix flower and foliage generation
    - [#4802](https://github.com/cuberite/cuberite/pull/4802):
-     Add correct implementation of crops #4802 
+     Add correct implementation of crops
    - [#4806](https://github.com/cuberite/cuberite/pull/4806):
      Adding basic Banner functionality
    - [#4821](https://github.com/cuberite/cuberite/pull/4821):
