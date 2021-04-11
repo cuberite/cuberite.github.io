@@ -127,13 +127,13 @@ Contribute
 ----------
 
  - If you are interested in developing Cuberite's core or plugins, 
-   please do not hesitate to join the forum (https://forum.cuberite.org) 
-   or Discord server (https://discord.gg/76w5J6M).
+   please do not hesitate to join the [forum](https://forum.cuberite.org) 
+   or [Discord server](https://discord.gg/76w5J6M).
  - Cuberite no longer accepts donations through the Bountysource 
    platform due to unethical behaviour by the present owners of the 
    service.
- - If you wish to contribute monetarily, please do use Liberapay 
-   (https://liberapay.com/Cuberite). Any contribution is very much 
-   welcomed.
+ - If you wish to contribute monetarily, please do use
+   [Liberapay](https://liberapay.com/Cuberite). Any contribution is very
+   much welcomed.
 
 Cuberite Team
