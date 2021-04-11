@@ -132,8 +132,8 @@ Contribute
  - Cuberite no longer accepts donations through the Bountysource 
    platform due to unethical behaviour by the present owners of the 
    service.
- - If you wish to contribute monetarily, please do use
-   [Liberapay](https://liberapay.com/Cuberite). Any contribution is very
+ - If you wish to contribute monetarily, please do use 
+   [Liberapay](https://liberapay.com/Cuberite). Any contribution is very 
    much welcomed.
 
 Cuberite Team
