@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Cuberite Newsletter Spring 2021'
-discussion-id: 3306
+discussion-id: 3350
 ---
 Hello all Cuberite fans - it's been about 9 months since the last 
 update, so it's about time to let you know the current status of the 
@@ -83,18 +83,18 @@ Development News
      Teleport off of mount when throwing enderpearl
 
  - Thanks to all the new contributors this period, as we now have 3 new 
-   entries in the CONTRIBUTORS file:
-   - 12xx12
-   - dImrich
-   - KingCol13
+   entries in the CONTRIBUTORS file: 
+   - 12xx12 
+   - dImrich 
+   - KingCol13 
 
 Contribute
 ----------
 
  - If you are interested in developing Cuberite's core or plugins, 
-   please do not hesitate to join the forum (https://forum.cuberite.org) 
-   or Discord server (https://discord.gg/76w5J6M).
- - If you wish to contribute monetarily, please do use Liberapay 
+   please do not hesitate to join the [forum](https://forum.cuberite.org) 
+   or [Discord server](https://discord.gg/76w5J6M). 
+ - If you wish to contribute monetarily, please do use [Liberapay] 
    (https://liberapay.com/Cuberite). Any contribution is very much 
    welcomed.
 
