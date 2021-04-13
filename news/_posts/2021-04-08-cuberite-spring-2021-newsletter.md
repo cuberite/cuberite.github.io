@@ -14,7 +14,7 @@ General News
     Connections from 1.13 clients are accepted but not realy playable. We're working
     on the needed changes for the new block state format.
     [#5151](https://github.com/cuberite/cuberite/pull/5151)
-  - Due to a few changes in the generator it's recommended to regenrate the world
+  - Due to a few changes in the generator it's recommended to regenerate the world
     or update the world.ini file manually to get access to the new features.
 
 Development News
@@ -77,16 +77,24 @@ Development News
      Added the ability to randomize blocks in generated structures
    - [#5124](https://github.com/cuberite/cuberite/pull/5124):
      Basic elytra fligt
+   - [#5129](https://github.com/cuberite/cuberite/pull/5129):
+     Improved generator for mega taiga
    - [#5134](https://github.com/cuberite/cuberite/pull/5134):
      Adds mushrooms to the generator and fixed up the roofed forest
    - [#5179](https://github.com/cuberite/cuberite/pull/5179):
      Teleport off of mount when throwing enderpearl
+   - [#5182](https://github.com/cuberite/cuberite/pull/5182):
+     Many, little improvements
 
  - Thanks to all the new contributors this period, as we now have 3 new 
    entries in the CONTRIBUTORS file: 
    - 12xx12 
    - dImrich 
    - KingCol13 
+   - ProjectBM 
+   - pwnOrbitals 
+   - theophriene 
+   - tympaniplayer (Nate Palmer) 
 
 Contribute
 ----------
