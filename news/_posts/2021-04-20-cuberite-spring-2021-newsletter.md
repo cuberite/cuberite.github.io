@@ -86,7 +86,7 @@ Development News
    - [#5182](https://github.com/cuberite/cuberite/pull/5182):
      Many, little improvements
 
- - Thanks to all the new contributors this period, as we now have 3 new 
+ - Thanks to all the new contributors this period, as we now have 7 new 
    entries in the CONTRIBUTORS file: 
    - 12xx12 
    - dImrich 
