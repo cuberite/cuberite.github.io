@@ -11,7 +11,7 @@ General News
 ------------
 
   - Progress for protocol versions greater than 1.12 is still encouraging.
-    Connections from 1.13 clients are accepted but not realy playable. We're working
+    Connections from 1.13 clients are accepted but not really playable. We're working
     on the needed changes for the new block state format.
     [#5151](https://github.com/cuberite/cuberite/pull/5151)
   - Due to a few changes in the generator it's recommended to regenerate the world
@@ -76,7 +76,7 @@ Development News
    - [#5122](https://github.com/cuberite/cuberite/pull/5122):
      Added the ability to randomize blocks in generated structures
    - [#5124](https://github.com/cuberite/cuberite/pull/5124):
-     Basic elytra fligt
+     Basic elytra flight
    - [#5129](https://github.com/cuberite/cuberite/pull/5129):
      Improved generator for mega taiga
    - [#5134](https://github.com/cuberite/cuberite/pull/5134):
