@@ -2,6 +2,7 @@ title: Cuberite
 description: A custom Minecraft compatible game server written in C++. It's a fast, lightweight, and awesome replacement for Vanilla.
 url: https://cuberite.org
 author: Cuberite Team
+include: [".well-known"]
 exclude:
   - LICENSE
   - README.md
