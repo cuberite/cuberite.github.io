@@ -1,2 +1,8 @@
+# Cuberite is a volunteer-supported project, and no security guarantees are given.
+# Security reports are encouraged, and will be considered but there is no fixed response
+# timeframe nor actions that will be performed.
+# If advisories are necessary, they will be published on the website and the mailing list
+# (newsletter.cuberite.org)
+
 # Contact this address for all security queries. 
 Contact: support@cuberite.org
