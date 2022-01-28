@@ -148,18 +148,6 @@ input {
 	position: absolute;
 	left: -999em;
 }
-.downloadbutton,
-.downloadbutton > .downloadmenu > a {
-	color: #245A48;
-	fill: #245A48;
-}
-.downloadbutton:hover,
-.downloadbutton:focus,
-.downloadbutton > .downloadmenu > a:hover,
-.downloadbutton > .downloadmenu > a:focus {
-	color: #2a6853;
-	fill: #2a6853;
-}
 .button,
 #pagination a,
 #pagination span,
@@ -298,6 +286,18 @@ button:focus,
 	position: relative;
 	line-height: 3.125em;
 	transition-delay: .12s
+}
+.downloadbutton,
+.downloadbutton > .downloadmenu > a {
+	color: #245A48;
+	fill: #245A48;
+}
+.downloadbutton:hover,
+.downloadbutton:focus,
+.downloadbutton > .downloadmenu > a:hover,
+.downloadbutton > .downloadmenu > a:focus {
+	color: #2a6853;
+	fill: #2a6853;
 }
 .downloadbutton:hover,
 .downloadbutton:focus {
