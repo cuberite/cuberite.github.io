@@ -149,14 +149,14 @@ input {
 	left: -999em;
 }
 .downloadbutton,
-.downloadbutton span a {
+.downloadbutton > .downloadmenu > a {
 	color: #245A48;
 	fill: #245A48;
 }
 .downloadbutton:hover,
 .downloadbutton:focus,
-.downloadbutton span a:hover,
-.downloadbutton span a:focus {
+.downloadbutton > .downloadmenu > a:hover,
+.downloadbutton > .downloadmenu > a:focus {
 	color: #2a6853;
 	fill: #2a6853;
 }
@@ -315,18 +315,18 @@ label.downloadbutton:focus {
 label.downloadbutton:focus-within {
 	border-radius: 0.313em 0.313em 0 0;
 }
-.downloadbutton:hover > span,
-.downloadbutton:focus > span {
-	max-height: 8.000em;
+.downloadbutton:hover > .downloadmenu,
+.downloadbutton:focus > .downloadmenu {
+	max-height: none;
 }
-.downloadbutton:focus-within > span {
-	max-height: 8.000em;
+.downloadbutton:focus-within > .downloadmenu {
+	max-height: none;
 }
-.downloadbutton svg {
+.downloadbutton > svg {
 	float: left;
 	margin: 0.750em 0 0.750em 0.750em;
 }
-.downloadbutton span {
+.downloadbutton > .downloadmenu {
 	background: #fff;
 	border-radius: 0 0 0.313em 0.313em;
 	box-shadow: 0 0.125em 0.063em rgba(0, 0, 0, 0.15);
@@ -338,12 +338,12 @@ label.downloadbutton:focus-within {
 	width: 100%;
 	z-index: 1;
 }
-.downloadbutton span a {
+.downloadbutton > .downloadmenu > a {
 	display: block;
 	line-height: 2.625em;
 }
-.downloadbutton span a:last-child:hover,
-.downloadbutton span a:last-child:focus {
+.downloadbutton > .downloadmenu > a:last-child:hover,
+.downloadbutton > .downloadmenu > a:last-child:focus {
 	border-radius: 0 0 0.313em 0.313em;
 }
 #download-footer {
@@ -563,20 +563,20 @@ button {
 	.downloadbutton svg {
 		margin: 0.750em -0.750em 0.750em 0.750em;
 	}
-	.downloadbutton span {
+	.downloadbutton > .downloadmenu {
 		box-shadow: none;
 		position: initial;
 		background: none;
 	}
-	.downloadbutton:hover > span,
-	.downloadbutton:focus > span {
+	.downloadbutton:hover > .downloadmenu,
+	.downloadbutton:focus > .downloadmenu {
 		max-height: 0;
 	}
-	.downloadbutton:focus-within > span {
+	.downloadbutton:focus-within > .downloadmenu {
 		max-height: 0;
 	}
-	.downloadbutton input:checked + span {
-		max-height: 8.000em;
+	.downloadbutton > input:checked + .downloadmenu {
+		max-height: none;
 	}
 	#show-desktop-downloads-button {
 		cursor: pointer;
