@@ -317,10 +317,10 @@ label.downloadbutton:focus-within {
 }
 .downloadbutton:hover > .downloadmenu,
 .downloadbutton:focus > .downloadmenu {
-	max-height: none;
+	max-height: 11.000em;
 }
 .downloadbutton:focus-within > .downloadmenu {
-	max-height: none;
+	max-height: 11.000em;
 }
 .downloadbutton > svg {
 	float: left;
@@ -576,7 +576,7 @@ button {
 		max-height: 0;
 	}
 	.downloadbutton > input:checked + .downloadmenu {
-		max-height: none;
+		max-height: 11.000em;
 	}
 	#show-desktop-downloads-button {
 		cursor: pointer;
